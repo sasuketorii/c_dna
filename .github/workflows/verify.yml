@@ -1,0 +1,24 @@
+name: C-DNA verification
+on:
+  push:
+    branches: [main, 'codex/**']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  registry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record actual registry versions
+        run: python3 scripts/probe_dependencies.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: registry-observations
+          path: verification/registry-observations.json
+          retention-days: 7
