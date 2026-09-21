@@ -1,0 +1,39 @@
+name: C-DNA source import and Rust verification
+on:
+  push:
+    branches: [feat/cdna-r1-foundation]
+    paths: ['.cdna-transfer/**', '.github/workflows/cdna-import.yml']
+permissions:
+  contents: write
+jobs:
+  materialize-and-test:
+    if: github.repository == 'sasuketorii/c_dna'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: feat/cdna-r1-foundation
+      - name: Validate transfer and materialize readable sources
+        run: python3 .cdna-transfer/import.py
+      - name: Commit source files to the authorized work branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Cargo.toml rust-toolchain.toml crates contracts learner apps
+          git diff --cached --quiet || git commit -m 'feat: materialize C-DNA local learning, encrypted vault and MCP core'
+          git push origin HEAD:feat/cdna-r1-foundation
+      - name: Install locked Rust toolchain
+        run: rustup toolchain install 1.98.1 --profile minimal
+      - name: Test the real core
+        run: cargo test -p cdna-core --features dev-bridge
+      - name: Check official MCP integration
+        run: cargo check -p cdna-mcp
+      - name: Preserve resolved Cargo lock
+        if: always()
+        run: |
+          if test -f Cargo.lock; then
+            git add Cargo.lock
+            git diff --cached --quiet || git commit -m 'build: lock resolved Rust dependencies'
+            git push origin HEAD:feat/cdna-r1-foundation
+          fi
