@@ -1,0 +1,289 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "request_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "workspace_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "case_kind": {
+      "enum": [
+        "actual",
+        "hypothetical"
+      ]
+    },
+    "family_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "domain": {
+      "enum": [
+        "resource_allocation",
+        "product_delivery",
+        "customer_commercial",
+        "organization_delegation",
+        "growth_strategy",
+        "risk_reputation"
+      ]
+    },
+    "context": {
+      "$ref": "#/$defs/context"
+    },
+    "candidates": {
+      "type": "array",
+      "maxItems": 16,
+      "items": {
+        "$ref": "#/$defs/candidate"
+      }
+    },
+    "response": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "choose_one",
+            "choose_set",
+            "pairwise",
+            "acceptability",
+            "need_information",
+            "none_fit",
+            "skip",
+            "defer"
+          ]
+        },
+        "selected_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 64
+          },
+          "maxItems": 16,
+          "uniqueItems": true
+        },
+        "value": {
+          "enum": [
+            "left",
+            "right",
+            "tie",
+            "accept",
+            "reject",
+            "conditional",
+            "insufficient",
+            null
+          ]
+        },
+        "note": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "reversal_condition": {
+          "type": "string",
+          "maxLength": 8192
+        }
+      },
+      "required": [
+        "kind",
+        "selected_ids"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "manual",
+            "chatgpt_export",
+            "claude_export",
+            "summary",
+            "external_agent",
+            "synthetic_seed"
+          ]
+        },
+        "reference": {
+          "type": "string",
+          "maxLength": 4096
+        },
+        "quote": {
+          "type": "string",
+          "maxLength": 32768
+        }
+      },
+      "required": [
+        "kind",
+        "reference"
+      ]
+    },
+    "model_exposure": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "request_id",
+    "workspace_id",
+    "case_kind",
+    "family_id",
+    "domain",
+    "context",
+    "candidates",
+    "source"
+  ],
+  "$defs": {
+    "fieldKey": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{0,63}$"
+    },
+    "money": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "amount_minor",
+        "currency"
+      ],
+      "properties": {
+        "amount_minor": {
+          "type": "integer",
+          "minimum": -9007199254740991,
+          "maximum": 9007199254740991
+        },
+        "currency": {
+          "type": "string",
+          "pattern": "^[A-Z]{3}$"
+        }
+      }
+    },
+    "factValue": {
+      "anyOf": [
+        {
+          "type": "string",
+          "maxLength": 2048
+        },
+        {
+          "type": "number",
+          "minimum": -1000000000000,
+          "maximum": 1000000000000
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/money"
+        },
+        {
+          "type": "array",
+          "maxItems": 32,
+          "items": {
+            "type": "string",
+            "maxLength": 128
+          }
+        }
+      ]
+    },
+    "fact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "value",
+        "evidence_status"
+      ],
+      "properties": {
+        "key": {
+          "$ref": "#/$defs/fieldKey"
+        },
+        "value": {
+          "$ref": "#/$defs/factValue"
+        },
+        "evidence_status": {
+          "enum": [
+            "explicit",
+            "inferred",
+            "unknown"
+          ]
+        },
+        "unit": {
+          "type": "string",
+          "maxLength": 32
+        }
+      }
+    },
+    "context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "as_of",
+        "summary",
+        "facts",
+        "unknown_fields"
+      ],
+      "properties": {
+        "as_of": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 32768
+        },
+        "facts": {
+          "type": "array",
+          "maxItems": 128,
+          "items": {
+            "$ref": "#/$defs/fact"
+          }
+        },
+        "unknown_fields": {
+          "type": "array",
+          "maxItems": 128,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/fieldKey"
+          }
+        }
+      }
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "text",
+        "attributes"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,64}$"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4096
+        },
+        "attributes": {
+          "type": "object",
+          "maxProperties": 64,
+          "propertyNames": {
+            "$ref": "#/$defs/fieldKey"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/factValue"
+          }
+        }
+      }
+    }
+  }
+}

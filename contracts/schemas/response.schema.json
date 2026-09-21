@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "kind": {
+      "enum": [
+        "choose_one",
+        "choose_set",
+        "pairwise",
+        "acceptability",
+        "need_information",
+        "none_fit",
+        "skip",
+        "defer"
+      ]
+    },
+    "selected_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 64
+      },
+      "maxItems": 16,
+      "uniqueItems": true
+    },
+    "value": {
+      "enum": [
+        "left",
+        "right",
+        "tie",
+        "accept",
+        "reject",
+        "conditional",
+        "insufficient",
+        null
+      ]
+    },
+    "note": {
+      "type": "string",
+      "maxLength": 16384
+    },
+    "reversal_condition": {
+      "type": "string",
+      "maxLength": 8192
+    }
+  },
+  "required": [
+    "kind",
+    "selected_ids"
+  ]
+}

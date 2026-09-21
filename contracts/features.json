@@ -1,0 +1,100 @@
+{
+  "version": "1.0",
+  "dtype": "float64",
+  "max_dimensions": 2048,
+  "domains": [
+    "resource_allocation",
+    "product_delivery",
+    "customer_commercial",
+    "organization_delegation",
+    "growth_strategy",
+    "risk_reputation"
+  ],
+  "context_features": [
+    {
+      "key": "deadline_days",
+      "kind": "number",
+      "scale": 30.0,
+      "unit": "day",
+      "minimum": 0,
+      "maximum": 3650
+    },
+    {
+      "key": "customer_impact",
+      "kind": "category",
+      "values": {
+        "low": 0.0,
+        "medium": 0.5,
+        "high": 1.0
+      }
+    },
+    {
+      "key": "resource_pressure",
+      "kind": "number",
+      "scale": 1.0,
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "key": "reversibility",
+      "kind": "category",
+      "values": {
+        "low": 0.0,
+        "medium": 0.5,
+        "high": 1.0
+      }
+    },
+    {
+      "key": "horizon_months",
+      "kind": "number",
+      "scale": 36.0,
+      "unit": "month",
+      "minimum": 0,
+      "maximum": 600
+    },
+    {
+      "key": "evidence_confidence",
+      "kind": "number",
+      "scale": 1.0,
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "key": "available_people",
+      "kind": "number",
+      "scale": 10.0,
+      "unit": "person",
+      "minimum": 0,
+      "maximum": 100000
+    }
+  ],
+  "candidate_features": [
+    "speed",
+    "quality",
+    "cost_efficiency",
+    "reversibility",
+    "knowledge_gain",
+    "autonomy",
+    "customer_protection"
+  ],
+  "layout": [
+    "candidate_value",
+    "candidate_missing",
+    "context_x_candidate",
+    "context_missing_x_candidate",
+    "domain_x_candidate"
+  ],
+  "prohibited_features": [
+    "candidate_id",
+    "candidate_position",
+    "case_id",
+    "family_id",
+    "person_name",
+    "company_name",
+    "reason",
+    "outcome",
+    "selected_ids"
+  ],
+  "tie_absolute_tolerance": 1e-09,
+  "clipping": "context numeric divided by scale, clamped to [0,1]; raw range outside manifest marks OOD; inferred facts treated missing"
+}
