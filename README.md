@@ -6,6 +6,8 @@
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
 
+**日本語** | [English](README.en.md)
+
 **経営者の判断を日常業務から集め、不足している判断材料を能動的に聞き出し、本人の判断基準を根拠付きで再現する、高速な意思決定学習基盤。**
 
 C-DNA が目指すのは「経営者っぽい返答をするチャットボット」ではありません。狙っているのは、**商談中や電話対応中に間に合う速度で、この会社の CEO なら何を選ぶかを、根拠と限界付きで返すこと**です。
@@ -281,12 +283,13 @@ C-DNA の強さは、大量の文章を保存することではなく、**「な
 
 ```text
 c-dna/
-├── README.md
+├── README.md         # 日本語
+├── README.en.md      # 英語
 ├── LICENSE
 ├── .gitignore
 ├── exec_plan/        # 要件定義・実行計画
 └── docs/
-    ├── assets/       # README などで使う画像
+    ├── assets/       # README で使う画像
     └── internal/     # 非公開。設計メモ置き場(gitignore 済み)
 ```
 
