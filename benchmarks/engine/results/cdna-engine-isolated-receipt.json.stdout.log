@@ -1,0 +1,3 @@
+{"output": "/tmp/cdna-engine-isolated/memory-final.json", "scenarios": 10, "validity": "stable_artifact_snapshot", "wall_seconds": 42.624329083, "peak_rss_bytes": 34521088}
+{"output": "/tmp/cdna-engine-isolated/signed-final.json", "scenarios": 0, "validity": "stable_artifact_snapshot", "wall_seconds": 1.570085334, "peak_rss_bytes": 16744448}
+{"accepted": true, "scope": "stable local synthetic memory/signed paths; no personal accuracy or arbitrary NL claim", "out_dir": "/tmp/cdna-engine-isolated"}

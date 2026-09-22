@@ -1,0 +1,424 @@
+{
+  "dtype": "float64",
+  "abs_tolerance": 1e-09,
+  "rel_tolerance": 1e-08,
+  "dimensions": 17,
+  "cpu_only": true,
+  "runs": 3,
+  "warmup": 20,
+  "samples_per_run": 100,
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "cpu_count": 12,
+  "thermal_state": "unmeasured",
+  "power_mode": "unmeasured",
+  "thread_limit": 1,
+  "measurements": {
+    "rust_ipc": [
+      {
+        "candidates": 1,
+        "run": 0,
+        "cold_ms": 5.299375,
+        "p50_ms": 0.0422505,
+        "p95_ms": 0.07413989999999997,
+        "p99_ms": 0.13688783000000013
+      },
+      {
+        "candidates": 1,
+        "run": 1,
+        "cold_ms": 4.993334,
+        "p50_ms": 0.0333755,
+        "p95_ms": 0.043337799999999996,
+        "p99_ms": 0.04566991
+      },
+      {
+        "candidates": 1,
+        "run": 2,
+        "cold_ms": 4.096875,
+        "p50_ms": 0.0323955,
+        "p95_ms": 0.03980205,
+        "p99_ms": 0.04331325000000001
+      },
+      {
+        "candidates": 4,
+        "run": 0,
+        "cold_ms": 4.780167,
+        "p50_ms": 0.064625,
+        "p95_ms": 0.09526905,
+        "p99_ms": 0.13634083000000005
+      },
+      {
+        "candidates": 4,
+        "run": 1,
+        "cold_ms": 4.694625,
+        "p50_ms": 0.06735350000000001,
+        "p95_ms": 0.094634,
+        "p99_ms": 0.10092709000000016
+      },
+      {
+        "candidates": 4,
+        "run": 2,
+        "cold_ms": 4.674584,
+        "p50_ms": 0.06275,
+        "p95_ms": 0.09845654999999999,
+        "p99_ms": 0.12008375000000004
+      },
+      {
+        "candidates": 16,
+        "run": 0,
+        "cold_ms": 4.40925,
+        "p50_ms": 0.1781045,
+        "p95_ms": 0.27564195,
+        "p99_ms": 0.3547795000000001
+      },
+      {
+        "candidates": 16,
+        "run": 1,
+        "cold_ms": 5.815792,
+        "p50_ms": 0.17672949999999998,
+        "p95_ms": 0.22701909999999997,
+        "p99_ms": 0.24687566000000022
+      },
+      {
+        "candidates": 16,
+        "run": 2,
+        "cold_ms": 5.378417,
+        "p50_ms": 0.177333,
+        "p95_ms": 0.20496635,
+        "p99_ms": 0.23238592000000022
+      },
+      {
+        "candidates": 1024,
+        "run": 0,
+        "cold_ms": 12.194417,
+        "p50_ms": 9.567145499999999,
+        "p95_ms": 9.8075872,
+        "p99_ms": 9.93420176
+      },
+      {
+        "candidates": 1024,
+        "run": 1,
+        "cold_ms": 12.220917,
+        "p50_ms": 9.577020999999998,
+        "p95_ms": 11.044241699999999,
+        "p99_ms": 12.88990816000001
+      },
+      {
+        "candidates": 1024,
+        "run": 2,
+        "cold_ms": 12.548833,
+        "p50_ms": 9.5879585,
+        "p95_ms": 10.954155599999998,
+        "p99_ms": 14.87697783000001
+      }
+    ],
+    "mojo_ipc": [
+      {
+        "candidates": 1,
+        "run": 0,
+        "cold_ms": 86.541,
+        "p50_ms": 0.046188,
+        "p95_ms": 0.07035145,
+        "p99_ms": 0.10906550000000005
+      },
+      {
+        "candidates": 1,
+        "run": 1,
+        "cold_ms": 66.220333,
+        "p50_ms": 0.0566875,
+        "p95_ms": 0.06909585,
+        "p99_ms": 0.09731625000000003
+      },
+      {
+        "candidates": 1,
+        "run": 2,
+        "cold_ms": 64.93525,
+        "p50_ms": 0.0582505,
+        "p95_ms": 0.08413154999999999,
+        "p99_ms": 0.10762866000000004
+      },
+      {
+        "candidates": 4,
+        "run": 0,
+        "cold_ms": 65.190125,
+        "p50_ms": 0.0985,
+        "p95_ms": 0.11993509999999998,
+        "p99_ms": 0.17743417000000028
+      },
+      {
+        "candidates": 4,
+        "run": 1,
+        "cold_ms": 64.656542,
+        "p50_ms": 0.096708,
+        "p95_ms": 0.13302259999999996,
+        "p99_ms": 0.15389458000000006
+      },
+      {
+        "candidates": 4,
+        "run": 2,
+        "cold_ms": 64.292334,
+        "p50_ms": 0.0987085,
+        "p95_ms": 0.12914579999999998,
+        "p99_ms": 0.15132408000000008
+      },
+      {
+        "candidates": 16,
+        "run": 0,
+        "cold_ms": 64.247708,
+        "p50_ms": 0.266833,
+        "p95_ms": 0.32746424999999996,
+        "p99_ms": 0.34547592
+      },
+      {
+        "candidates": 16,
+        "run": 1,
+        "cold_ms": 64.625792,
+        "p50_ms": 0.2620625,
+        "p95_ms": 0.33521695,
+        "p99_ms": 0.3760813400000003
+      },
+      {
+        "candidates": 16,
+        "run": 2,
+        "cold_ms": 64.835667,
+        "p50_ms": 0.266271,
+        "p95_ms": 0.3519374999999999,
+        "p99_ms": 0.3893081600000001
+      },
+      {
+        "candidates": 1024,
+        "run": 0,
+        "cold_ms": 73.591542,
+        "p50_ms": 14.786771,
+        "p95_ms": 15.19805655,
+        "p99_ms": 15.49379917
+      },
+      {
+        "candidates": 1024,
+        "run": 1,
+        "cold_ms": 75.514125,
+        "p50_ms": 15.012667,
+        "p95_ms": 15.542333650000002,
+        "p99_ms": 15.913912080000003
+      },
+      {
+        "candidates": 1024,
+        "run": 2,
+        "cold_ms": 72.826542,
+        "p50_ms": 14.839521,
+        "p95_ms": 15.2216497,
+        "p99_ms": 15.336508660000002
+      }
+    ],
+    "numpy_native": [
+      {
+        "candidates": 1,
+        "run": 0,
+        "p50_ms": 0.00075,
+        "p95_ms": 0.000792,
+        "p99_ms": 0.0016454200000000103
+      },
+      {
+        "candidates": 1,
+        "run": 1,
+        "p50_ms": 0.00075,
+        "p95_ms": 0.000791,
+        "p99_ms": 0.0007924200000000002
+      },
+      {
+        "candidates": 1,
+        "run": 2,
+        "p50_ms": 0.00075,
+        "p95_ms": 0.0007520499999999999,
+        "p99_ms": 0.0007924100000000001
+      },
+      {
+        "candidates": 4,
+        "run": 0,
+        "p50_ms": 0.000792,
+        "p95_ms": 0.000834,
+        "p99_ms": 0.000875
+      },
+      {
+        "candidates": 4,
+        "run": 1,
+        "p50_ms": 0.000791,
+        "p95_ms": 0.0007940499999999998,
+        "p99_ms": 0.000875
+      },
+      {
+        "candidates": 4,
+        "run": 2,
+        "p50_ms": 0.000792,
+        "p95_ms": 0.000875,
+        "p99_ms": 0.000875
+      },
+      {
+        "candidates": 16,
+        "run": 0,
+        "p50_ms": 0.000792,
+        "p95_ms": 0.000875,
+        "p99_ms": 0.000917
+      },
+      {
+        "candidates": 16,
+        "run": 1,
+        "p50_ms": 0.000792,
+        "p95_ms": 0.00083305,
+        "p99_ms": 0.000875
+      },
+      {
+        "candidates": 16,
+        "run": 2,
+        "p50_ms": 0.000792,
+        "p95_ms": 0.000834,
+        "p99_ms": 0.000875
+      },
+      {
+        "candidates": 1024,
+        "run": 0,
+        "p50_ms": 0.003667,
+        "p95_ms": 0.003709,
+        "p99_ms": 0.003846010000000028
+      },
+      {
+        "candidates": 1024,
+        "run": 1,
+        "p50_ms": 0.003666,
+        "p95_ms": 0.003709,
+        "p99_ms": 0.00375
+      },
+      {
+        "candidates": 1024,
+        "run": 2,
+        "p50_ms": 0.003667,
+        "p95_ms": 0.00375,
+        "p99_ms": 0.004595080000000007
+      }
+    ],
+    "rust_native": [
+      {
+        "candidates": 1,
+        "p50_ms": 8.3e-05,
+        "p95_ms": 0.00020800000000000001,
+        "p99_ms": 0.001833,
+        "run": 0
+      },
+      {
+        "candidates": 1,
+        "p50_ms": 8.3e-05,
+        "p95_ms": 8.4e-05,
+        "p99_ms": 0.000166,
+        "run": 1
+      },
+      {
+        "candidates": 1,
+        "p50_ms": 8.3e-05,
+        "p95_ms": 8.4e-05,
+        "p99_ms": 0.000167,
+        "run": 2
+      },
+      {
+        "candidates": 4,
+        "p50_ms": 0.000125,
+        "p95_ms": 0.000167,
+        "p99_ms": 0.0012920000000000002,
+        "run": 0
+      },
+      {
+        "candidates": 4,
+        "p50_ms": 0.000125,
+        "p95_ms": 0.000167,
+        "p99_ms": 0.00020800000000000001,
+        "run": 1
+      },
+      {
+        "candidates": 4,
+        "p50_ms": 0.000125,
+        "p95_ms": 0.000125,
+        "p99_ms": 0.000167,
+        "run": 2
+      },
+      {
+        "candidates": 16,
+        "p50_ms": 0.00029099999999999997,
+        "p95_ms": 0.00033299999999999996,
+        "p99_ms": 0.000375,
+        "run": 0
+      },
+      {
+        "candidates": 16,
+        "p50_ms": 0.00029099999999999997,
+        "p95_ms": 0.000292,
+        "p99_ms": 0.000292,
+        "run": 1
+      },
+      {
+        "candidates": 16,
+        "p50_ms": 0.00029099999999999997,
+        "p95_ms": 0.000292,
+        "p99_ms": 0.00033299999999999996,
+        "run": 2
+      },
+      {
+        "candidates": 1024,
+        "p50_ms": 0.013083,
+        "p95_ms": 0.013417,
+        "p99_ms": 0.013667,
+        "run": 0
+      },
+      {
+        "candidates": 1024,
+        "p50_ms": 0.013042,
+        "p95_ms": 0.013458000000000001,
+        "p99_ms": 0.014542000000000001,
+        "run": 1
+      },
+      {
+        "candidates": 1024,
+        "p50_ms": 0.013084,
+        "p95_ms": 0.015041,
+        "p99_ms": 0.023709,
+        "run": 2
+      }
+    ]
+  },
+  "equivalence": {
+    "rust_ipc": {
+      "rows": 260,
+      "max_abs_error": 8.881784197001252e-16,
+      "rank_matches": true
+    },
+    "mojo_ipc": {
+      "rows": 260,
+      "max_abs_error": 8.881784197001252e-16,
+      "rank_matches": true
+    }
+  },
+  "measured_at": "2026-09-22T08:15:25.644928+00:00",
+  "compiler": "Mojo 1.1.0 (8189361e)",
+  "source_sha256": {
+    "mojo/scorer.mojo": "a107ecdc812d0a4fa5ea119763c41454f14d97ed7e4de0f4a836938734339951",
+    "crates/cdna-inference/src/lib.rs": "49da182e0a4efad12526f274caa6811f8d2cc8e478e6a8d7e86d8b44d1ecd29b"
+  },
+  "hardware": {
+    "hw.model": "Mac14,5",
+    "hw.memsize": "103079215104",
+    "machdep.cpu.brand_string": "Apple M2 Max"
+  },
+  "binary_sha256": {
+    "rust_ipc": "45d012290706e5fb4dde1b252cbea6c05c0763ac75c92056eab7f17ff84b97dd",
+    "mojo_ipc": "906f3c30dc6c45f7793ce643b99d2d42981ec59afebadf5a24f5bd9af46790cb"
+  },
+  "parent_peak_rss_platform_units": 46628864,
+  "children_peak_rss_platform_units": 28295168,
+  "limitations": [
+    "17 dimensions, not 2048-dimensional or 10000-case acceptance fixture",
+    "RSS is aggregate process high water, not per-engine idle memory",
+    "Mojo JSON transport uses CPython interoperability",
+    "Thermal and power conditions not observed",
+    "No network observation performed",
+    "Complete product distribution gate required before adoption"
+  ],
+  "decision": "Rust remains default; Mojo not promoted"
+}

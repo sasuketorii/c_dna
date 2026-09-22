@@ -1,0 +1,1037 @@
+[
+  {
+    "id": "delivery",
+    "title": "納期が迫る。何を削る？",
+    "category": "プロダクト",
+    "summary": "主要顧客へのデモまで2週間。6人の開発チームで、運用に使える最小構成を届けたい。",
+    "keywords": [
+      "納期",
+      "リリース",
+      "デモ"
+    ],
+    "context": {
+      "as_of": "2026-01-01T00:00:00Z",
+      "summary": "主要顧客へのデモまで2週間。6人の開発チームで、運用に使える最小構成を届けたい。",
+      "unknown_fields": [],
+      "facts": [
+        {
+          "key": "deadline_pressure",
+          "value": 0.95,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "asset_importance",
+          "value": 0.65,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "loss_tolerance",
+          "value": 0.1,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "customer_impact",
+          "value": 0.7,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "budget_pressure",
+          "value": 0.5,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "id": "scope",
+        "text": "機能を絞り、既存部品で2週間の試験提供",
+        "attributes": {
+          "cost": 0.25,
+          "effort": 0.35,
+          "speed": 0.55,
+          "reuse": 0.85,
+          "customer_impact": 0.7,
+          "irreversibility": 0.15
+        }
+      },
+      {
+        "id": "build",
+        "text": "全機能を新規開発し、提供を6週間延期",
+        "attributes": {
+          "cost": 0.8,
+          "effort": 0.95,
+          "speed": 0.2,
+          "reuse": 0.2,
+          "customer_impact": 0.9,
+          "irreversibility": 0.5
+        }
+      },
+      {
+        "id": "outsource",
+        "text": "外注に一括委託し、予定通り全機能を納品",
+        "attributes": {
+          "cost": 0.4,
+          "effort": 0.35,
+          "speed": 1,
+          "reuse": 0.6,
+          "customer_impact": 0.65,
+          "irreversibility": 0.25
+        }
+      }
+    ]
+  },
+  {
+    "id": "cash",
+    "title": "資金が6か月分。何から手を打つ？",
+    "category": "資金配分",
+    "summary": "売上は横ばいで、現金は固定費6か月分。サービス品質を落とさず支出を抑えたい。",
+    "keywords": [
+      "資金",
+      "キャッシュ",
+      "固定費"
+    ],
+    "context": {
+      "as_of": "2026-01-01T00:00:00Z",
+      "summary": "売上は横ばいで、現金は固定費6か月分。サービス品質を落とさず支出を抑えたい。",
+      "unknown_fields": [],
+      "facts": [
+        {
+          "key": "deadline_pressure",
+          "value": 0.7,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "asset_importance",
+          "value": 0.5,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "loss_tolerance",
+          "value": -0.6,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "customer_impact",
+          "value": 0.6,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "budget_pressure",
+          "value": 0.95,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "id": "sales",
+        "text": "広告を倍増して新規売上を狙う",
+        "attributes": {
+          "cost": 0.9,
+          "effort": 0.5,
+          "speed": 0.65,
+          "reuse": 0.3,
+          "customer_impact": 0.7,
+          "irreversibility": 0.6
+        }
+      },
+      {
+        "id": "cut",
+        "text": "サポート部門を即時に半減する",
+        "attributes": {
+          "cost": 0.1,
+          "effort": 0.75,
+          "speed": 0.6,
+          "reuse": 0.1,
+          "customer_impact": -0.8,
+          "irreversibility": 0.9
+        }
+      },
+      {
+        "id": "trim",
+        "text": "未使用契約を整理し、採用を1か月保留",
+        "attributes": {
+          "cost": 0.1,
+          "effort": 0.3,
+          "speed": 0.85,
+          "reuse": 0.6,
+          "customer_impact": 0.45,
+          "irreversibility": 0.1
+        }
+      }
+    ]
+  },
+  {
+    "id": "enterprise",
+    "title": "大口顧客の特注、受ける？",
+    "category": "顧客対応",
+    "summary": "売上の20%を占める顧客が専用機能を要求。他社にも使える形なら成長につながる。",
+    "keywords": [
+      "特注",
+      "大口",
+      "カスタマイズ"
+    ],
+    "context": {
+      "as_of": "2026-01-01T00:00:00Z",
+      "summary": "売上の20%を占める顧客が専用機能を要求。他社にも使える形なら成長につながる。",
+      "unknown_fields": [],
+      "facts": [
+        {
+          "key": "deadline_pressure",
+          "value": 0.4,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "asset_importance",
+          "value": 0.95,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "loss_tolerance",
+          "value": 0.2,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "customer_impact",
+          "value": 0.85,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "budget_pressure",
+          "value": 0.5,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "id": "decline",
+        "text": "依頼を断り現行計画を続ける",
+        "attributes": {
+          "cost": 0.05,
+          "effort": 0.1,
+          "speed": 0.9,
+          "reuse": 0.65,
+          "customer_impact": -0.5,
+          "irreversibility": 0.4
+        }
+      },
+      {
+        "id": "shared",
+        "text": "共通機能として段階提供し、初期費用を合意",
+        "attributes": {
+          "cost": 0.4,
+          "effort": 0.5,
+          "speed": 0.65,
+          "reuse": 0.95,
+          "customer_impact": 0.8,
+          "irreversibility": 0.25
+        }
+      },
+      {
+        "id": "fork",
+        "text": "顧客専用の別製品を短期で作る",
+        "attributes": {
+          "cost": 0.75,
+          "effort": 0.85,
+          "speed": 0.85,
+          "reuse": 0.05,
+          "customer_impact": 0.9,
+          "irreversibility": 0.75
+        }
+      }
+    ]
+  },
+  {
+    "id": "hiring",
+    "title": "シニア採用か、業務委託か？",
+    "category": "組織",
+    "summary": "新規事業の需要がまだ読めない。2か月以内に技術検証を進め、知識も社内に残したい。",
+    "keywords": [
+      "採用",
+      "業務委託",
+      "人材"
+    ],
+    "context": {
+      "as_of": "2026-01-01T00:00:00Z",
+      "summary": "新規事業の需要がまだ読めない。2か月以内に技術検証を進め、知識も社内に残したい。",
+      "unknown_fields": [],
+      "facts": [
+        {
+          "key": "deadline_pressure",
+          "value": 0.7,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "asset_importance",
+          "value": 0.75,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "loss_tolerance",
+          "value": -0.3,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "customer_impact",
+          "value": 0.4,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "budget_pressure",
+          "value": 0.7,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "id": "contract",
+        "text": "週3日の専門家と社内担当で共同検証",
+        "attributes": {
+          "cost": 0.45,
+          "effort": 0.4,
+          "speed": 0.85,
+          "reuse": 0.75,
+          "customer_impact": 0.6,
+          "irreversibility": 0.2
+        }
+      },
+      {
+        "id": "hire",
+        "text": "正社員のシニアを採用し組織を新設",
+        "attributes": {
+          "cost": 0.8,
+          "effort": 0.7,
+          "speed": 0.3,
+          "reuse": 0.8,
+          "customer_impact": 0.75,
+          "irreversibility": 0.8
+        }
+      },
+      {
+        "id": "wait",
+        "text": "今のメンバーだけで余裕ができるまで待つ",
+        "attributes": {
+          "cost": 0.1,
+          "effort": 0.8,
+          "speed": 0.15,
+          "reuse": 0.8,
+          "customer_impact": 0.2,
+          "irreversibility": 0.1
+        }
+      }
+    ]
+  },
+  {
+    "id": "pricing",
+    "title": "値上げをどう始める？",
+    "category": "収益",
+    "summary": "原価が上がり粗利が低下。既存顧客への影響を観察しながら価格を見直したい。",
+    "keywords": [
+      "値上げ",
+      "価格",
+      "粗利"
+    ],
+    "context": {
+      "as_of": "2026-01-01T00:00:00Z",
+      "summary": "原価が上がり粗利が低下。既存顧客への影響を観察しながら価格を見直したい。",
+      "unknown_fields": [],
+      "facts": [
+        {
+          "key": "deadline_pressure",
+          "value": 0.45,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "asset_importance",
+          "value": 0.5,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "loss_tolerance",
+          "value": -0.4,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "customer_impact",
+          "value": 0.9,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "budget_pressure",
+          "value": 0.6,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "id": "all",
+        "text": "来月から全顧客を一律30%値上げ",
+        "attributes": {
+          "cost": 0.1,
+          "effort": 0.25,
+          "speed": 0.95,
+          "reuse": 0.4,
+          "customer_impact": -0.5,
+          "irreversibility": 0.8
+        }
+      },
+      {
+        "id": "freeze",
+        "text": "価格を据え置き機能開発を停止",
+        "attributes": {
+          "cost": 0.05,
+          "effort": 0.2,
+          "speed": 0.9,
+          "reuse": 0.3,
+          "customer_impact": -0.25,
+          "irreversibility": 0.5
+        }
+      },
+      {
+        "id": "pilot",
+        "text": "新規顧客で価格を試し、既存顧客には予告",
+        "attributes": {
+          "cost": 0.2,
+          "effort": 0.4,
+          "speed": 0.75,
+          "reuse": 0.75,
+          "customer_impact": 0.55,
+          "irreversibility": 0.2
+        }
+      }
+    ]
+  },
+  {
+    "id": "incident",
+    "title": "障害発生。最初の一手は？",
+    "category": "リスク",
+    "summary": "決済機能が一部停止。原因は未確定だが、直前の変更は安全に戻せる。",
+    "keywords": [
+      "障害",
+      "決済",
+      "復旧"
+    ],
+    "context": {
+      "as_of": "2026-01-01T00:00:00Z",
+      "summary": "決済機能が一部停止。原因は未確定だが、直前の変更は安全に戻せる。",
+      "unknown_fields": [],
+      "facts": [
+        {
+          "key": "deadline_pressure",
+          "value": 1,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "asset_importance",
+          "value": 0.5,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "loss_tolerance",
+          "value": -0.9,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "customer_impact",
+          "value": 1,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "budget_pressure",
+          "value": 0.2,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "id": "silent",
+        "text": "告知せず、完全に原因が分かるまで調査",
+        "attributes": {
+          "cost": 0.2,
+          "effort": 0.6,
+          "speed": 0.2,
+          "reuse": 0.5,
+          "customer_impact": -0.5,
+          "irreversibility": 0.5
+        }
+      },
+      {
+        "id": "rollback",
+        "text": "変更を戻し、状況を告知してから原因調査",
+        "attributes": {
+          "cost": 0.25,
+          "effort": 0.35,
+          "speed": 0.95,
+          "reuse": 0.8,
+          "customer_impact": 0.85,
+          "irreversibility": 0.1
+        }
+      },
+      {
+        "id": "rewrite",
+        "text": "原因候補の処理をその場で全面改修",
+        "attributes": {
+          "cost": 0.65,
+          "effort": 0.95,
+          "speed": 0.3,
+          "reuse": 0.4,
+          "customer_impact": 0.6,
+          "irreversibility": 0.9
+        }
+      }
+    ]
+  },
+  {
+    "id": "expansion",
+    "title": "海外展開、どこまで賭ける？",
+    "category": "成長戦略",
+    "summary": "海外から問い合わせが増加。販売実績はまだ少なく、3か月で需要を確かめたい。",
+    "keywords": [
+      "海外",
+      "新市場",
+      "展開"
+    ],
+    "context": {
+      "as_of": "2026-01-01T00:00:00Z",
+      "summary": "海外から問い合わせが増加。販売実績はまだ少なく、3か月で需要を確かめたい。",
+      "unknown_fields": [],
+      "facts": [
+        {
+          "key": "deadline_pressure",
+          "value": 0.5,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "asset_importance",
+          "value": 0.75,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "loss_tolerance",
+          "value": 0.2,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "customer_impact",
+          "value": 0.65,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "budget_pressure",
+          "value": 0.65,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "id": "partner",
+        "text": "現地パートナーと小規模販売を試す",
+        "attributes": {
+          "cost": 0.35,
+          "effort": 0.4,
+          "speed": 0.8,
+          "reuse": 0.7,
+          "customer_impact": 0.7,
+          "irreversibility": 0.2
+        }
+      },
+      {
+        "id": "office",
+        "text": "現地法人と常設チームを一度に設立",
+        "attributes": {
+          "cost": 0.95,
+          "effort": 0.9,
+          "speed": 0.3,
+          "reuse": 0.6,
+          "customer_impact": 0.85,
+          "irreversibility": 0.95
+        }
+      },
+      {
+        "id": "translate",
+        "text": "サイトだけ翻訳し営業対応は後回し",
+        "attributes": {
+          "cost": 0.15,
+          "effort": 0.2,
+          "speed": 0.95,
+          "reuse": 0.6,
+          "customer_impact": 0.15,
+          "irreversibility": 0.1
+        }
+      }
+    ]
+  },
+  {
+    "id": "build-buy",
+    "title": "作るか、既存サービスを買うか？",
+    "category": "技術投資",
+    "summary": "社内の請求業務が月40時間。差別化要素ではないが、3週間以内に負担を減らしたい。",
+    "keywords": [
+      "内製",
+      "SaaS",
+      "請求"
+    ],
+    "context": {
+      "as_of": "2026-01-01T00:00:00Z",
+      "summary": "社内の請求業務が月40時間。差別化要素ではないが、3週間以内に負担を減らしたい。",
+      "unknown_fields": [],
+      "facts": [
+        {
+          "key": "deadline_pressure",
+          "value": 0.85,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "asset_importance",
+          "value": 0.65,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "loss_tolerance",
+          "value": -0.3,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "customer_impact",
+          "value": 0.4,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "budget_pressure",
+          "value": 0.65,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "id": "custom",
+        "text": "独自の請求システムをゼロから開発",
+        "attributes": {
+          "cost": 0.8,
+          "effort": 0.95,
+          "speed": 0.15,
+          "reuse": 0.6,
+          "customer_impact": 0.75,
+          "irreversibility": 0.7
+        }
+      },
+      {
+        "id": "manual",
+        "text": "今の手作業を増員で続ける",
+        "attributes": {
+          "cost": 0.65,
+          "effort": 0.65,
+          "speed": 0.7,
+          "reuse": 0.1,
+          "customer_impact": 0.45,
+          "irreversibility": 0.4
+        }
+      },
+      {
+        "id": "saas",
+        "text": "既存サービスを試し、データ出口も確保",
+        "attributes": {
+          "cost": 0.35,
+          "effort": 0.2,
+          "speed": 0.95,
+          "reuse": 0.8,
+          "customer_impact": 0.65,
+          "irreversibility": 0.2
+        }
+      }
+    ]
+  },
+  {
+    "id": "roadmap",
+    "title": "要望が多すぎる。優先順位は？",
+    "category": "プロダクト",
+    "summary": "営業から20件の要望。共通する課題がある一方、全件対応する開発余力はない。",
+    "keywords": [
+      "優先順位",
+      "ロードマップ",
+      "要望"
+    ],
+    "context": {
+      "as_of": "2026-01-01T00:00:00Z",
+      "summary": "営業から20件の要望。共通する課題がある一方、全件対応する開発余力はない。",
+      "unknown_fields": [],
+      "facts": [
+        {
+          "key": "deadline_pressure",
+          "value": 0.6,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "asset_importance",
+          "value": 0.95,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "loss_tolerance",
+          "value": 0.1,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "customer_impact",
+          "value": 0.8,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "budget_pressure",
+          "value": 0.6,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "id": "research",
+        "text": "すべての要望の詳細調査を終えてから着手",
+        "attributes": {
+          "cost": 0.45,
+          "effort": 0.75,
+          "speed": 0.15,
+          "reuse": 0.75,
+          "customer_impact": 0.55,
+          "irreversibility": 0.1
+        }
+      },
+      {
+        "id": "common",
+        "text": "3社共通の課題を一つ解決して効果を測る",
+        "attributes": {
+          "cost": 0.35,
+          "effort": 0.45,
+          "speed": 0.8,
+          "reuse": 0.95,
+          "customer_impact": 0.8,
+          "irreversibility": 0.2
+        }
+      },
+      {
+        "id": "loudest",
+        "text": "声の大きい顧客から順番に個別対応",
+        "attributes": {
+          "cost": 0.65,
+          "effort": 0.85,
+          "speed": 0.65,
+          "reuse": 0.15,
+          "customer_impact": 0.6,
+          "irreversibility": 0.55
+        }
+      }
+    ]
+  },
+  {
+    "id": "delegation",
+    "title": "承認が社長に集中。どう任せる？",
+    "category": "組織",
+    "summary": "日々の小口承認で意思決定が遅い。重大な契約は引き続き確認しつつ、現場を速くしたい。",
+    "keywords": [
+      "承認",
+      "権限",
+      "委譲"
+    ],
+    "context": {
+      "as_of": "2026-01-01T00:00:00Z",
+      "summary": "日々の小口承認で意思決定が遅い。重大な契約は引き続き確認しつつ、現場を速くしたい。",
+      "unknown_fields": [],
+      "facts": [
+        {
+          "key": "deadline_pressure",
+          "value": 0.6,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "asset_importance",
+          "value": 0.85,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "loss_tolerance",
+          "value": -0.25,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "customer_impact",
+          "value": 0.5,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "budget_pressure",
+          "value": 0.4,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "id": "bounds",
+        "text": "金額上限と報告ルールを決め小口を委譲",
+        "attributes": {
+          "cost": 0.2,
+          "effort": 0.4,
+          "speed": 0.85,
+          "reuse": 0.9,
+          "customer_impact": 0.7,
+          "irreversibility": 0.2
+        }
+      },
+      {
+        "id": "all",
+        "text": "すべての契約判断を即日現場に任せる",
+        "attributes": {
+          "cost": 0.1,
+          "effort": 0.15,
+          "speed": 1,
+          "reuse": 0.4,
+          "customer_impact": 0.4,
+          "irreversibility": 0.95
+        }
+      },
+      {
+        "id": "central",
+        "text": "社長の承認時間を毎日2時間増やす",
+        "attributes": {
+          "cost": 0.2,
+          "effort": 0.9,
+          "speed": 0.4,
+          "reuse": 0.1,
+          "customer_impact": 0.4,
+          "irreversibility": 0.1
+        }
+      }
+    ]
+  },
+  {
+    "id": "marketing",
+    "title": "集客予算、どこに使う？",
+    "category": "成長戦略",
+    "summary": "月100万円の予算で新規商談を増やす。既存顧客には再現性のある成功事例がある。",
+    "keywords": [
+      "広告",
+      "集客",
+      "マーケティング"
+    ],
+    "context": {
+      "as_of": "2026-01-01T00:00:00Z",
+      "summary": "月100万円の予算で新規商談を増やす。既存顧客には再現性のある成功事例がある。",
+      "unknown_fields": [],
+      "facts": [
+        {
+          "key": "deadline_pressure",
+          "value": 0.5,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "asset_importance",
+          "value": 0.85,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "loss_tolerance",
+          "value": 0.1,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "customer_impact",
+          "value": 0.6,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "budget_pressure",
+          "value": 0.8,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "id": "ads",
+        "text": "全予算を未検証の広告媒体に投入",
+        "attributes": {
+          "cost": 0.95,
+          "effort": 0.3,
+          "speed": 0.9,
+          "reuse": 0.1,
+          "customer_impact": 0.5,
+          "irreversibility": 0.65
+        }
+      },
+      {
+        "id": "brand",
+        "text": "半年かけて全面的にブランドを作り直す",
+        "attributes": {
+          "cost": 0.8,
+          "effort": 0.9,
+          "speed": 0.15,
+          "reuse": 0.65,
+          "customer_impact": 0.6,
+          "irreversibility": 0.7
+        }
+      },
+      {
+        "id": "case",
+        "text": "顧客事例と紹介施策を小さく公開し測定",
+        "attributes": {
+          "cost": 0.25,
+          "effort": 0.45,
+          "speed": 0.7,
+          "reuse": 0.95,
+          "customer_impact": 0.75,
+          "irreversibility": 0.15
+        }
+      }
+    ]
+  },
+  {
+    "id": "uncertain",
+    "title": "買収提案。情報が足りない時は？",
+    "category": "リスク",
+    "summary": "買収候補から提案。価格と統合負担は分かるが、顧客への影響と許容損失が未確認。",
+    "keywords": [
+      "買収",
+      "M&A",
+      "情報不足"
+    ],
+    "context": {
+      "as_of": "2026-01-01T00:00:00Z",
+      "summary": "買収候補から提案。価格と統合負担は分かるが、顧客への影響と許容損失が未確認。",
+      "unknown_fields": [
+        "loss_tolerance",
+        "customer_impact"
+      ],
+      "facts": [
+        {
+          "key": "deadline_pressure",
+          "value": 0.4,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "asset_importance",
+          "value": 0.7,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        },
+        {
+          "key": "loss_tolerance",
+          "value": null,
+          "evidence_status": "unknown",
+          "unit": "ratio"
+        },
+        {
+          "key": "customer_impact",
+          "value": null,
+          "evidence_status": "unknown",
+          "unit": "ratio"
+        },
+        {
+          "key": "budget_pressure",
+          "value": 0.7,
+          "evidence_status": "explicit",
+          "unit": "ratio"
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "id": "reject",
+        "text": "検討を打ち切る",
+        "attributes": {
+          "cost": 0.05,
+          "effort": 0.1,
+          "speed": 0.95,
+          "reuse": 0.1,
+          "customer_impact": -0.3,
+          "irreversibility": 0.5
+        }
+      },
+      {
+        "id": "acquire",
+        "text": "今月中に買収を契約する",
+        "attributes": {
+          "cost": 0.95,
+          "effort": 0.9,
+          "speed": 0.65,
+          "reuse": 0.8,
+          "customer_impact": null,
+          "irreversibility": 0.95
+        }
+      },
+      {
+        "id": "diligence",
+        "text": "調査項目と期限を定めて追加確認する",
+        "attributes": {
+          "cost": 0.3,
+          "effort": 0.5,
+          "speed": 0.5,
+          "reuse": 0.65,
+          "customer_impact": 0.4,
+          "irreversibility": 0.15
+        }
+      }
+    ]
+  }
+]

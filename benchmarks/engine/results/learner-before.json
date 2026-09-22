@@ -1,0 +1,651 @@
+{
+  "synthetic": true,
+  "personal_accuracy": "not measured",
+  "worker_sha256": "19663bbaa17979c72ee8cd7372364d0fc5cd6da11f2933a1634d1a36278f9e8b",
+  "sources_unchanged": true,
+  "probes": [
+    {
+      "families": 1,
+      "same_timestamp": true,
+      "splits": {
+        "train": 1,
+        "validation": 0,
+        "calibration": 0,
+        "test": 0,
+        "purged": 0
+      },
+      "fast_minus_slow_score": 2.1280345020253444,
+      "learned_preference": true,
+      "calibration_status": "insufficient_data",
+      "validation_status": "insufficient_data",
+      "evaluation": {
+        "cases": 0,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": null,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {},
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair",
+        "calibration": {
+          "status": "unavailable",
+          "brier": null,
+          "log_loss": null,
+          "out_of_scope_cases": 0,
+          "uncertain_input_cases": 0
+        },
+        "memory_baseline": {
+          "kind": "feature_exact_replay_train_only",
+          "cases": 0,
+          "non_abstained": 0,
+          "correct": 0,
+          "coverage": 0.0,
+          "agreement": null,
+          "non_abstained_agreement": null,
+          "wilson_lower_95": 0.0,
+          "wilson_upper_95": 1.0,
+          "numeric_targets_met": false
+        },
+        "rule_baseline": {
+          "status": "unavailable",
+          "reason": "no_explicit_rule_snapshot"
+        },
+        "abstention_margin": 0.0,
+        "threshold_source": "validation",
+        "statistically_eligible": false,
+        "verified": false,
+        "promotion_allowed": false,
+        "reason": "independent_scope_policy_and_paired_evidence_required"
+      }
+    },
+    {
+      "families": 19,
+      "same_timestamp": true,
+      "splits": {
+        "train": 19,
+        "validation": 0,
+        "calibration": 0,
+        "test": 0,
+        "purged": 0
+      },
+      "fast_minus_slow_score": 4.4381789474670725,
+      "learned_preference": true,
+      "calibration_status": "insufficient_data",
+      "validation_status": "insufficient_data",
+      "evaluation": {
+        "cases": 0,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": null,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {},
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair",
+        "calibration": {
+          "status": "unavailable",
+          "brier": null,
+          "log_loss": null,
+          "out_of_scope_cases": 0,
+          "uncertain_input_cases": 0
+        },
+        "memory_baseline": {
+          "kind": "feature_exact_replay_train_only",
+          "cases": 0,
+          "non_abstained": 0,
+          "correct": 0,
+          "coverage": 0.0,
+          "agreement": null,
+          "non_abstained_agreement": null,
+          "wilson_lower_95": 0.0,
+          "wilson_upper_95": 1.0,
+          "numeric_targets_met": false
+        },
+        "rule_baseline": {
+          "status": "unavailable",
+          "reason": "no_explicit_rule_snapshot"
+        },
+        "abstention_margin": 0.0,
+        "threshold_source": "validation",
+        "statistically_eligible": false,
+        "verified": false,
+        "promotion_allowed": false,
+        "reason": "independent_scope_policy_and_paired_evidence_required"
+      }
+    },
+    {
+      "families": 20,
+      "same_timestamp": true,
+      "splits": {
+        "train": 0,
+        "validation": 0,
+        "calibration": 0,
+        "test": 20,
+        "purged": 0
+      },
+      "fast_minus_slow_score": 0.0,
+      "learned_preference": false,
+      "calibration_status": "insufficient_data",
+      "validation_status": "insufficient_data",
+      "evaluation": {
+        "cases": 20,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 20,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair",
+        "calibration": {
+          "status": "unavailable",
+          "brier": null,
+          "log_loss": null,
+          "out_of_scope_cases": 20,
+          "uncertain_input_cases": 0
+        },
+        "memory_baseline": {
+          "kind": "feature_exact_replay_train_only",
+          "cases": 20,
+          "non_abstained": 0,
+          "correct": 0,
+          "coverage": 0.0,
+          "agreement": 0.0,
+          "non_abstained_agreement": null,
+          "wilson_lower_95": 0.0,
+          "wilson_upper_95": 1.0,
+          "numeric_targets_met": false
+        },
+        "rule_baseline": {
+          "status": "unavailable",
+          "reason": "no_explicit_rule_snapshot"
+        },
+        "abstention_margin": 0.0,
+        "threshold_source": "validation",
+        "statistically_eligible": false,
+        "verified": false,
+        "promotion_allowed": false,
+        "reason": "independent_scope_policy_and_paired_evidence_required"
+      }
+    },
+    {
+      "families": 40,
+      "same_timestamp": true,
+      "splits": {
+        "train": 0,
+        "validation": 0,
+        "calibration": 0,
+        "test": 40,
+        "purged": 0
+      },
+      "fast_minus_slow_score": 0.0,
+      "learned_preference": false,
+      "calibration_status": "insufficient_data",
+      "validation_status": "insufficient_data",
+      "evaluation": {
+        "cases": 40,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 40,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair",
+        "calibration": {
+          "status": "unavailable",
+          "brier": null,
+          "log_loss": null,
+          "out_of_scope_cases": 40,
+          "uncertain_input_cases": 0
+        },
+        "memory_baseline": {
+          "kind": "feature_exact_replay_train_only",
+          "cases": 40,
+          "non_abstained": 0,
+          "correct": 0,
+          "coverage": 0.0,
+          "agreement": 0.0,
+          "non_abstained_agreement": null,
+          "wilson_lower_95": 0.0,
+          "wilson_upper_95": 1.0,
+          "numeric_targets_met": false
+        },
+        "rule_baseline": {
+          "status": "unavailable",
+          "reason": "no_explicit_rule_snapshot"
+        },
+        "abstention_margin": 0.0,
+        "threshold_source": "validation",
+        "statistically_eligible": false,
+        "verified": false,
+        "promotion_allowed": false,
+        "reason": "independent_scope_policy_and_paired_evidence_required"
+      }
+    },
+    {
+      "families": 200,
+      "same_timestamp": true,
+      "splits": {
+        "train": 0,
+        "validation": 0,
+        "calibration": 0,
+        "test": 200,
+        "purged": 0
+      },
+      "fast_minus_slow_score": 0.0,
+      "learned_preference": false,
+      "calibration_status": "insufficient_data",
+      "validation_status": "insufficient_data",
+      "evaluation": {
+        "cases": 200,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 200,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair",
+        "calibration": {
+          "status": "unavailable",
+          "brier": null,
+          "log_loss": null,
+          "out_of_scope_cases": 200,
+          "uncertain_input_cases": 0
+        },
+        "memory_baseline": {
+          "kind": "feature_exact_replay_train_only",
+          "cases": 200,
+          "non_abstained": 0,
+          "correct": 0,
+          "coverage": 0.0,
+          "agreement": 0.0,
+          "non_abstained_agreement": null,
+          "wilson_lower_95": 0.0,
+          "wilson_upper_95": 1.0,
+          "numeric_targets_met": false
+        },
+        "rule_baseline": {
+          "status": "unavailable",
+          "reason": "no_explicit_rule_snapshot"
+        },
+        "abstention_margin": 0.0,
+        "threshold_source": "validation",
+        "statistically_eligible": false,
+        "verified": false,
+        "promotion_allowed": false,
+        "reason": "independent_scope_policy_and_paired_evidence_required"
+      }
+    },
+    {
+      "families": 1,
+      "same_timestamp": false,
+      "splits": {
+        "train": 1,
+        "validation": 0,
+        "calibration": 0,
+        "test": 0,
+        "purged": 0
+      },
+      "fast_minus_slow_score": 2.1280345020253444,
+      "learned_preference": true,
+      "calibration_status": "insufficient_data",
+      "validation_status": "insufficient_data",
+      "evaluation": {
+        "cases": 0,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": null,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {},
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair",
+        "calibration": {
+          "status": "unavailable",
+          "brier": null,
+          "log_loss": null,
+          "out_of_scope_cases": 0,
+          "uncertain_input_cases": 0
+        },
+        "memory_baseline": {
+          "kind": "feature_exact_replay_train_only",
+          "cases": 0,
+          "non_abstained": 0,
+          "correct": 0,
+          "coverage": 0.0,
+          "agreement": null,
+          "non_abstained_agreement": null,
+          "wilson_lower_95": 0.0,
+          "wilson_upper_95": 1.0,
+          "numeric_targets_met": false
+        },
+        "rule_baseline": {
+          "status": "unavailable",
+          "reason": "no_explicit_rule_snapshot"
+        },
+        "abstention_margin": 0.0,
+        "threshold_source": "validation",
+        "statistically_eligible": false,
+        "verified": false,
+        "promotion_allowed": false,
+        "reason": "independent_scope_policy_and_paired_evidence_required"
+      }
+    },
+    {
+      "families": 19,
+      "same_timestamp": false,
+      "splits": {
+        "train": 19,
+        "validation": 0,
+        "calibration": 0,
+        "test": 0,
+        "purged": 0
+      },
+      "fast_minus_slow_score": 4.4381789474670725,
+      "learned_preference": true,
+      "calibration_status": "insufficient_data",
+      "validation_status": "insufficient_data",
+      "evaluation": {
+        "cases": 0,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": null,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {},
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair",
+        "calibration": {
+          "status": "unavailable",
+          "brier": null,
+          "log_loss": null,
+          "out_of_scope_cases": 0,
+          "uncertain_input_cases": 0
+        },
+        "memory_baseline": {
+          "kind": "feature_exact_replay_train_only",
+          "cases": 0,
+          "non_abstained": 0,
+          "correct": 0,
+          "coverage": 0.0,
+          "agreement": null,
+          "non_abstained_agreement": null,
+          "wilson_lower_95": 0.0,
+          "wilson_upper_95": 1.0,
+          "numeric_targets_met": false
+        },
+        "rule_baseline": {
+          "status": "unavailable",
+          "reason": "no_explicit_rule_snapshot"
+        },
+        "abstention_margin": 0.0,
+        "threshold_source": "validation",
+        "statistically_eligible": false,
+        "verified": false,
+        "promotion_allowed": false,
+        "reason": "independent_scope_policy_and_paired_evidence_required"
+      }
+    },
+    {
+      "families": 20,
+      "same_timestamp": false,
+      "splits": {
+        "train": 12,
+        "validation": 3,
+        "calibration": 2,
+        "test": 3,
+        "purged": 0
+      },
+      "fast_minus_slow_score": 4.061914842133836,
+      "learned_preference": true,
+      "calibration_status": "insufficient_data",
+      "validation_status": "insufficient_data",
+      "evaluation": {
+        "cases": 3,
+        "non_abstained": 3,
+        "correct": 3,
+        "coverage": 1.0,
+        "agreement": 1.0,
+        "non_abstained_agreement": 1.0,
+        "wilson_lower_95": 0.43849391955098227,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 3,
+            "non_abstained": 3,
+            "correct": 3,
+            "coverage": 1.0,
+            "agreement": 1.0,
+            "non_abstained_agreement": 1.0,
+            "wilson_lower_95": 0.43849391955098227,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair",
+        "calibration": {
+          "status": "unavailable",
+          "brier": null,
+          "log_loss": null,
+          "out_of_scope_cases": 3,
+          "uncertain_input_cases": 0
+        },
+        "memory_baseline": {
+          "kind": "feature_exact_replay_train_only",
+          "cases": 3,
+          "non_abstained": 3,
+          "correct": 3,
+          "coverage": 1.0,
+          "agreement": 1.0,
+          "non_abstained_agreement": 1.0,
+          "wilson_lower_95": 0.43849391955098227,
+          "wilson_upper_95": 1.0,
+          "numeric_targets_met": false
+        },
+        "rule_baseline": {
+          "status": "unavailable",
+          "reason": "no_explicit_rule_snapshot"
+        },
+        "abstention_margin": 0.0,
+        "threshold_source": "validation",
+        "statistically_eligible": false,
+        "verified": false,
+        "promotion_allowed": false,
+        "reason": "independent_scope_policy_and_paired_evidence_required"
+      }
+    },
+    {
+      "families": 40,
+      "same_timestamp": false,
+      "splits": {
+        "train": 24,
+        "validation": 6,
+        "calibration": 4,
+        "test": 6,
+        "purged": 0
+      },
+      "fast_minus_slow_score": 4.631261480866585,
+      "learned_preference": true,
+      "calibration_status": "insufficient_data",
+      "validation_status": "insufficient_data",
+      "evaluation": {
+        "cases": 6,
+        "non_abstained": 6,
+        "correct": 6,
+        "coverage": 1.0,
+        "agreement": 1.0,
+        "non_abstained_agreement": 1.0,
+        "wilson_lower_95": 0.6096569663469354,
+        "wilson_upper_95": 0.9999999999999999,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 6,
+            "non_abstained": 6,
+            "correct": 6,
+            "coverage": 1.0,
+            "agreement": 1.0,
+            "non_abstained_agreement": 1.0,
+            "wilson_lower_95": 0.6096569663469354,
+            "wilson_upper_95": 0.9999999999999999,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair",
+        "calibration": {
+          "status": "unavailable",
+          "brier": null,
+          "log_loss": null,
+          "out_of_scope_cases": 6,
+          "uncertain_input_cases": 0
+        },
+        "memory_baseline": {
+          "kind": "feature_exact_replay_train_only",
+          "cases": 6,
+          "non_abstained": 6,
+          "correct": 6,
+          "coverage": 1.0,
+          "agreement": 1.0,
+          "non_abstained_agreement": 1.0,
+          "wilson_lower_95": 0.6096569663469354,
+          "wilson_upper_95": 0.9999999999999999,
+          "numeric_targets_met": false
+        },
+        "rule_baseline": {
+          "status": "unavailable",
+          "reason": "no_explicit_rule_snapshot"
+        },
+        "abstention_margin": 0.0,
+        "threshold_source": "validation",
+        "statistically_eligible": false,
+        "verified": false,
+        "promotion_allowed": false,
+        "reason": "independent_scope_policy_and_paired_evidence_required"
+      }
+    },
+    {
+      "families": 200,
+      "same_timestamp": false,
+      "splits": {
+        "train": 120,
+        "validation": 30,
+        "calibration": 20,
+        "test": 30,
+        "purged": 0
+      },
+      "fast_minus_slow_score": 5.990542780378494,
+      "learned_preference": true,
+      "calibration_status": "fitted_calibration",
+      "validation_status": "fitted_validation",
+      "evaluation": {
+        "cases": 30,
+        "non_abstained": 30,
+        "correct": 30,
+        "coverage": 1.0,
+        "agreement": 1.0,
+        "non_abstained_agreement": 1.0,
+        "wilson_lower_95": 0.8864829086095221,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 30,
+            "non_abstained": 30,
+            "correct": 30,
+            "coverage": 1.0,
+            "agreement": 1.0,
+            "non_abstained_agreement": 1.0,
+            "wilson_lower_95": 0.8864829086095221,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair",
+        "calibration": {
+          "status": "heldout_test",
+          "cases": 30,
+          "brier": 0.0,
+          "log_loss": 3.412085828153813e-261,
+          "out_of_scope_cases": 0,
+          "uncertain_input_cases": 0
+        },
+        "memory_baseline": {
+          "kind": "feature_exact_replay_train_only",
+          "cases": 30,
+          "non_abstained": 30,
+          "correct": 30,
+          "coverage": 1.0,
+          "agreement": 1.0,
+          "non_abstained_agreement": 1.0,
+          "wilson_lower_95": 0.8864829086095221,
+          "wilson_upper_95": 1.0,
+          "numeric_targets_met": false
+        },
+        "rule_baseline": {
+          "status": "unavailable",
+          "reason": "no_explicit_rule_snapshot"
+        },
+        "abstention_margin": 0.0,
+        "threshold_source": "validation",
+        "statistically_eligible": false,
+        "verified": false,
+        "promotion_allowed": false,
+        "reason": "independent_scope_policy_and_paired_evidence_required"
+      }
+    }
+  ]
+}

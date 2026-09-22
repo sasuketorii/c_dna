@@ -1,0 +1,18 @@
+{
+  "owned_pid": 5547,
+  "owned_process_exited": true,
+  "pid_exists_at_readback": false,
+  "port_connect_ex": 61,
+  "ready_file_exists": false,
+  "raw_log_sha256_before_path_redaction": {
+    "guard-corrected.json.stderr.log": "1776c5006d71ed0c30d0b73ef8ccbd088661c9db857b57cfc9557e9636b5eada",
+    "guard-receipt.json.stdout.log": "7a5c7350424d186d473929e26400f56cef550008facc45603a7e22f4ed14c626",
+    "transport-format-failure.log": "7d7ea17015aa144c1f5530818521edfb898eb98814dd8b6d1a64ca8828418582",
+    "guard-final.json.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "guard-corrected.json.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "guard-receipt.json.stderr.log": "42f50876e010e85d76cdd8452c13c38594e56123854ee99b49c5b5432cd0de83",
+    "server.log": "cd95043aa4f4648840646d3a877f068274c67ee553717e79394557b14bdd9eac",
+    "guard-final.json.stdout.log": "37848aeed183539b82922915e5b8c0f784fe528a53c4b960a5fc5732d44d8f23"
+  },
+  "notes": "Repository log paths redacted, raw temporary logs retained. Model retained only in temporary experiment directory; no global config changed."
+}

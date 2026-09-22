@@ -1,0 +1,64 @@
+{
+  "argv": [
+    "python3",
+    "benchmarks/engine/verify.py",
+    "--out-dir",
+    "/tmp/cdna-engine-isolated",
+    "--iterations",
+    "200"
+  ],
+  "completedAt": "2026-09-22T09:56:38.943Z",
+  "cwd": ".",
+  "exitCode": 0,
+  "guard": {
+    "acquired": true,
+    "class": "heavy",
+    "lockKey": "7d6b28298ead7559f18f837f9fd902c55192ab1afaf2756e432efd15aa620242",
+    "mode": "required",
+    "resource": {
+      "cpuSystemSeconds": 17.353567,
+      "cpuUserSeconds": 114.684767,
+      "findings": [],
+      "measurementStatus": "CURRENT",
+      "orphanCount": 0,
+      "orphanDetected": false,
+      "peakRssMb": 418.90625,
+      "platform": "darwin",
+      "processCountAfter": 2130,
+      "processCountBefore": 2103,
+      "processCountDelta": 27,
+      "unavailable": [],
+      "wallSeconds": 101.908558875,
+      "writeBytes": "UNKNOWN"
+    },
+    "waitMs": 900000
+  },
+  "intent": "verify",
+  "requiredTools": [],
+  "revision": {
+    "baseCommit": "acf8c06c56a8fb27019b5b60936951433f713cb4",
+    "kind": "git-working-tree",
+    "worktreeDigest": "sha256:fa36577ca654a7d8720c35e5057f22299e77141f0cb3ff0b1431267a3d33bff6"
+  },
+  "schemaVersion": 1,
+  "sourceAfter": {
+    "headCommit": "acf8c06c56a8fb27019b5b60936951433f713cb4",
+    "worktreeDigest": "sha256:fa36577ca654a7d8720c35e5057f22299e77141f0cb3ff0b1431267a3d33bff6"
+  },
+  "sourceBefore": {
+    "headCommit": "acf8c06c56a8fb27019b5b60936951433f713cb4",
+    "worktreeDigest": "sha256:fa36577ca654a7d8720c35e5057f22299e77141f0cb3ff0b1431267a3d33bff6"
+  },
+  "sourceChanged": false,
+  "startedAt": "2026-09-22T09:54:56.971Z",
+  "stderrBytes": 788,
+  "stderrPath": "cdna-engine-isolated-receipt.json.stderr.log",
+  "stderrSha256": "c737d568405f4df3703a4872624afc8710da95c801c760a452747e938f27cea5",
+  "stderrTruncated": false,
+  "stdoutBytes": 502,
+  "stdoutPath": "cdna-engine-isolated-receipt.json.stdout.log",
+  "stdoutSha256": "5aaf5a2bde5a817e8fd121026e4165e01996d87431d14489ff967b2c97eadb26",
+  "stdoutTruncated": false,
+  "taskId": "task_b99ce282a76b",
+  "timedOut": false
+}

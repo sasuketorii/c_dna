@@ -1,0 +1,12 @@
+[workspace]
+members = ["crates/cdna-domain", "crates/cdna-store", "crates/cdna-inference", "crates/cdna-mcp", "crates/cdna-evolution", "crates/cdna-browser", "crates/cdna-app", "apps/desktop/src-tauri", "benchmarks/core"]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "AGPL-3.0-only"
+
+[profile.release]
+lto = "thin"
+strip = true

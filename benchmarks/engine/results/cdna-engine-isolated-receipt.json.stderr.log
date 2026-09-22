@@ -1,0 +1,8 @@
+   Compiling cdna-domain v0.1.0 (/private/tmp/cdna-engine-review-snapshot-o1mj6ojz/crates/cdna-domain)
+   Compiling cdna-evolution v0.1.0 (/private/tmp/cdna-engine-review-snapshot-o1mj6ojz/crates/cdna-evolution)
+   Compiling cdna-mcp v0.1.0 (/private/tmp/cdna-engine-review-snapshot-o1mj6ojz/crates/cdna-mcp)
+   Compiling cdna-store v0.1.0 (/private/tmp/cdna-engine-review-snapshot-o1mj6ojz/crates/cdna-store)
+   Compiling cdna-inference v0.1.0 (/private/tmp/cdna-engine-review-snapshot-o1mj6ojz/crates/cdna-inference)
+   Compiling cdna-app v0.1.0 (/private/tmp/cdna-engine-review-snapshot-o1mj6ojz/crates/cdna-app)
+   Compiling cdna-engine-review v0.1.0 (/private/tmp/cdna-engine-review-snapshot-o1mj6ojz/benchmarks/engine)
+    Finished `release` profile [optimized] target(s) in 56.30s

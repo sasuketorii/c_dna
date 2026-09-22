@@ -1,0 +1,31 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+import { resolve } from 'node:path';
+const assets = resolve(fileURLToPath(new URL('../assets/', import.meta.url)));
+const { loadPyodide } = await import(pathToFileURL(resolve(assets, 'pyodide/pyodide.mjs')));
+const py = await loadPyodide({ indexURL: `${assets}/pyodide/` });
+await py.loadPackage(['scikit-learn', 'pydantic']);
+py.globals.set('__name__', 'cdna_browser_learner');
+await py.runPythonAsync(await readFile(resolve(assets, 'learner.py'), 'utf8'));
+const stamp = '2025-01-01T00:00:00Z';
+const context = { as_of: stamp, summary: 'deadline', unknown_fields: [], facts: [{key:'deadline_pressure', value:1, evidence_status:'explicit', unit:'ratio'}] };
+const candidates = [{id:'fast',text:'Fast',attributes:{speed:1}},{id:'slow',text:'Slow',attributes:{speed:-1}}];
+const record = { family_id:'family-1',timestamp:stamp,domain:'product_delivery',context,candidates,chosen_ids:['fast'],verification_state:'confirmed',model_exposure:false,answer_kind:'choose_one' };
+async function run(value) {
+  py.globals.set('_smoke_input', JSON.stringify(value));
+  return JSON.parse(await py.runPythonAsync('json.dumps(run(Request.model_validate_json(_smoke_input)), allow_nan=False)'));
+}
+const positive = await run({operation:'train', feature_version:'1.0', records:[record]});
+const negative = await run({operation:'train', feature_version:'1.0', records:[{...record,chosen_ids:['slow']}]});
+const rank = async (model) => run({operation:'rank', feature_version:'1.0',model,context,candidates,domain:'product_delivery'});
+assert.equal((await rank(positive.model)).ranking[0].candidate_id, 'fast');
+assert.equal((await rank(negative.model)).ranking[0].candidate_id, 'slow');
+assert.notDeepEqual(positive.model.weights,negative.model.weights);
+const domain = await import(pathToFileURL(resolve(assets,'domain/cdna_browser.js')));
+await domain.default({ module_or_path: await readFile(resolve(assets,'domain/cdna_browser_bg.wasm')) });
+const request={schema_version:'1.0',request_id:'11111111-1111-4111-8111-111111111111',workspace_id:'22222222-2222-4222-8222-222222222222',mode:'imitate',domain:'product_delivery',context,candidates,include_evidence:true,allow_cloud:false};
+assert.equal(JSON.parse(domain.validate_rank(JSON.stringify(request))).domain,'product_delivery');
+assert.throws(()=>domain.validate_rank(JSON.stringify({...request,context:{...context,facts:[{...context.facts[0],unit:'day'}]}})));
+assert.throws(()=>domain.validate_rank('{"schema_version":"1.0","schema_version":"2.0"}'));
+console.log(JSON.stringify({success:true,actualWasmTraining:true,sourceReused:true,positiveWinner:'fast',negativeWinner:'slow',domainValidation:'shared Rust wasm',pyodide:py.version}));

@@ -1,0 +1,478 @@
+{
+  "build_profile": "release",
+  "iterations": 200,
+  "limitations": [
+    "numeric batch 1024 is an internal scorer load test; public RankRequest remains 2-16 candidates",
+    "cold means first call or database reopen, not OS-cache-cold",
+    "no Python training, Mojo IPC, browser, transport, or human accuracy measurement",
+    "Only truncated exact matches above 1000 abstain; unrelated corpus does not cause search-limit abstention",
+    "CPU and peak RSS in runner cover process including synthetic setup; no per-scenario attribution"
+  ],
+  "personal_accuracy": "not measured",
+  "results": [
+    {
+      "cold_definition": "first call for this scenario; OS page cache and process are not reset",
+      "correctness": {
+        "score_checksum": 0.715,
+        "score_count": 1
+      },
+      "cpu_per_scenario": "not measured",
+      "first_call_us": 51.5,
+      "memory_per_scenario": "not measured",
+      "result_bytes": 57,
+      "scenario": "numeric_json_to_features_to_scores",
+      "size": 1,
+      "warm": {
+        "max": 5.5840000000000005,
+        "min": 2.75,
+        "p50": 2.875,
+        "p95": 3.25,
+        "p99": 5.0,
+        "percentile_method": "nearest_rank",
+        "samples": 200,
+        "unit": "microseconds"
+      },
+      "warmup_calls": 10
+    },
+    {
+      "cold_definition": "first call for this scenario; OS page cache and process are not reset",
+      "correctness": {
+        "score_checksum": 2.86,
+        "score_count": 4
+      },
+      "cpu_per_scenario": "not measured",
+      "first_call_us": 8.667,
+      "memory_per_scenario": "not measured",
+      "result_bytes": 75,
+      "scenario": "numeric_json_to_features_to_scores",
+      "size": 4,
+      "warm": {
+        "max": 7.667,
+        "min": 5.75,
+        "p50": 5.875,
+        "p95": 6.084,
+        "p99": 6.7909999999999995,
+        "percentile_method": "nearest_rank",
+        "samples": 200,
+        "unit": "microseconds"
+      },
+      "warmup_calls": 10
+    },
+    {
+      "cold_definition": "first call for this scenario; OS page cache and process are not reset",
+      "correctness": {
+        "score_checksum": 11.44,
+        "score_count": 16
+      },
+      "cpu_per_scenario": "not measured",
+      "first_call_us": 22.667,
+      "memory_per_scenario": "not measured",
+      "result_bytes": 147,
+      "scenario": "numeric_json_to_features_to_scores",
+      "size": 16,
+      "warm": {
+        "max": 40.833,
+        "min": 18.791,
+        "p50": 19.084,
+        "p95": 19.583,
+        "p99": 22.209,
+        "percentile_method": "nearest_rank",
+        "samples": 200,
+        "unit": "microseconds"
+      },
+      "warmup_calls": 10
+    },
+    {
+      "cold_definition": "first call for this scenario; OS page cache and process are not reset",
+      "correctness": {
+        "score_checksum": 732.1600000000019,
+        "score_count": 1024
+      },
+      "cpu_per_scenario": "not measured",
+      "first_call_us": 1168.708,
+      "memory_per_scenario": "not measured",
+      "result_bytes": 6195,
+      "scenario": "numeric_json_to_features_to_scores",
+      "size": 1024,
+      "warm": {
+        "max": 1320.917,
+        "min": 1081.75,
+        "p50": 1102.5410000000002,
+        "p95": 1220.708,
+        "p99": 1305.125,
+        "percentile_method": "nearest_rank",
+        "samples": 200,
+        "unit": "microseconds"
+      },
+      "warmup_calls": 10
+    },
+    {
+      "cold_definition": "first call for this scenario; OS page cache and process are not reset",
+      "correctness": {
+        "abstained": false,
+        "abstention_reasons": [],
+        "evidence_count": 1,
+        "execution_authorization": "none",
+        "selected_candidate_id": "fast"
+      },
+      "cpu_per_scenario": "not measured",
+      "first_call_us": 114.375,
+      "matching_records": 1,
+      "memory_per_scenario": "not measured",
+      "reopen_and_first_rank_ms": 78.571209,
+      "reopen_definition": "SQLCipher Store::open plus first Engine::rank; no OS cache eviction",
+      "result_bytes": 751,
+      "scenario": "engine_rank_confirmed_memory",
+      "setup_ms": 92.118583,
+      "size": 1,
+      "warm": {
+        "max": 173.208,
+        "min": 73.25,
+        "p50": 76.5,
+        "p95": 93.958,
+        "p99": 151.083,
+        "percentile_method": "nearest_rank",
+        "samples": 200,
+        "unit": "microseconds"
+      },
+      "warmup_calls": 10
+    },
+    {
+      "approved_policies": 1,
+      "cold_definition": "first call for this scenario; OS page cache and process are not reset",
+      "correctness": {
+        "abstained": false,
+        "abstention_reasons": [],
+        "evidence_count": 1,
+        "execution_authorization": "none",
+        "selected_candidate_id": "fast"
+      },
+      "cpu_per_scenario": "not measured",
+      "first_call_us": 166.0,
+      "matching_records": 1,
+      "memory_per_scenario": "not measured",
+      "result_bytes": 728,
+      "scenario": "engine_rank_memory_and_approved_policy",
+      "size": 1,
+      "warm": {
+        "max": 168.209,
+        "min": 85.209,
+        "p50": 86.625,
+        "p95": 96.792,
+        "p99": 153.459,
+        "percentile_method": "nearest_rank",
+        "samples": 200,
+        "unit": "microseconds"
+      },
+      "warmup_calls": 10
+    },
+    {
+      "cold_definition": "first call for this scenario; OS page cache and process are not reset",
+      "correctness": {
+        "abstained": false,
+        "abstention_reasons": [],
+        "evidence_count": 20,
+        "execution_authorization": "none",
+        "selected_candidate_id": "fast"
+      },
+      "cpu_per_scenario": "not measured",
+      "first_call_us": 1541.0,
+      "matching_records": 100,
+      "memory_per_scenario": "not measured",
+      "reopen_and_first_rank_ms": 83.73404199999999,
+      "reopen_definition": "SQLCipher Store::open plus first Engine::rank; no OS cache eviction",
+      "result_bytes": 6736,
+      "scenario": "engine_rank_confirmed_memory",
+      "setup_ms": 276.27362500000004,
+      "size": 100,
+      "warm": {
+        "max": 1705.0,
+        "min": 1239.9170000000001,
+        "p50": 1287.084,
+        "p95": 1488.8329999999999,
+        "p99": 1592.375,
+        "percentile_method": "nearest_rank",
+        "samples": 200,
+        "unit": "microseconds"
+      },
+      "warmup_calls": 10
+    },
+    {
+      "approved_policies": 1,
+      "cold_definition": "first call for this scenario; OS page cache and process are not reset",
+      "correctness": {
+        "abstained": false,
+        "abstention_reasons": [],
+        "evidence_count": 20,
+        "execution_authorization": "none",
+        "selected_candidate_id": "fast"
+      },
+      "cpu_per_scenario": "not measured",
+      "first_call_us": 1488.541,
+      "matching_records": 100,
+      "memory_per_scenario": "not measured",
+      "result_bytes": 6713,
+      "scenario": "engine_rank_memory_and_approved_policy",
+      "size": 100,
+      "warm": {
+        "max": 5594.5,
+        "min": 1259.125,
+        "p50": 1342.7910000000002,
+        "p95": 2735.2909999999997,
+        "p99": 4538.2080000000005,
+        "percentile_method": "nearest_rank",
+        "samples": 200,
+        "unit": "microseconds"
+      },
+      "warmup_calls": 10
+    },
+    {
+      "cold_definition": "first call for this scenario; OS page cache and process are not reset",
+      "correctness": {
+        "abstained": false,
+        "abstention_reasons": [],
+        "evidence_count": 20,
+        "execution_authorization": "none",
+        "selected_candidate_id": "fast"
+      },
+      "cpu_per_scenario": "not measured",
+      "first_call_us": 18628.0,
+      "matching_records": 1000,
+      "memory_per_scenario": "not measured",
+      "reopen_and_first_rank_ms": 98.19225,
+      "reopen_definition": "SQLCipher Store::open plus first Engine::rank; no OS cache eviction",
+      "result_bytes": 6736,
+      "scenario": "engine_rank_confirmed_memory",
+      "setup_ms": 2246.94025,
+      "size": 1000,
+      "warm": {
+        "max": 24016.875,
+        "min": 17723.084,
+        "p50": 19600.708000000002,
+        "p95": 21084.0,
+        "p99": 21406.125,
+        "percentile_method": "nearest_rank",
+        "samples": 200,
+        "unit": "microseconds"
+      },
+      "warmup_calls": 10
+    },
+    {
+      "approved_policies": 1,
+      "cold_definition": "first call for this scenario; OS page cache and process are not reset",
+      "correctness": {
+        "abstained": false,
+        "abstention_reasons": [],
+        "evidence_count": 20,
+        "execution_authorization": "none",
+        "selected_candidate_id": "fast"
+      },
+      "cpu_per_scenario": "not measured",
+      "first_call_us": 20000.5,
+      "matching_records": 1000,
+      "memory_per_scenario": "not measured",
+      "result_bytes": 6713,
+      "scenario": "engine_rank_memory_and_approved_policy",
+      "size": 1000,
+      "warm": {
+        "max": 23599.125,
+        "min": 17822.791,
+        "p50": 20036.292,
+        "p95": 21518.75,
+        "p99": 22087.0,
+        "percentile_method": "nearest_rank",
+        "samples": 200,
+        "unit": "microseconds"
+      },
+      "warmup_calls": 10
+    },
+    {
+      "cold_definition": "first call for this scenario; OS page cache and process are not reset",
+      "correctness": {
+        "abstained": true,
+        "abstention_reasons": [
+          "memory_search_limit_reached"
+        ],
+        "evidence_count": 20,
+        "execution_authorization": "none",
+        "selected_candidate_id": null
+      },
+      "cpu_per_scenario": "not measured",
+      "first_call_us": 20449.333,
+      "matching_records": 1001,
+      "memory_per_scenario": "not measured",
+      "reopen_and_first_rank_ms": 102.500459,
+      "reopen_definition": "SQLCipher Store::open plus first Engine::rank; no OS cache eviction",
+      "result_bytes": 6763,
+      "scenario": "engine_rank_confirmed_memory",
+      "setup_ms": 2173.655959,
+      "size": 1001,
+      "warm": {
+        "max": 39250.25,
+        "min": 19088.917,
+        "p50": 20363.0,
+        "p95": 23575.540999999997,
+        "p99": 34795.583,
+        "percentile_method": "nearest_rank",
+        "samples": 200,
+        "unit": "microseconds"
+      },
+      "warmup_calls": 10
+    },
+    {
+      "approved_policies": 1,
+      "cold_definition": "first call for this scenario; OS page cache and process are not reset",
+      "correctness": {
+        "abstained": true,
+        "abstention_reasons": [
+          "memory_search_limit_reached"
+        ],
+        "evidence_count": 20,
+        "execution_authorization": "none",
+        "selected_candidate_id": null
+      },
+      "cpu_per_scenario": "not measured",
+      "first_call_us": 20813.709,
+      "matching_records": 1001,
+      "memory_per_scenario": "not measured",
+      "result_bytes": 6740,
+      "scenario": "engine_rank_memory_and_approved_policy",
+      "size": 1001,
+      "warm": {
+        "max": 46203.958000000006,
+        "min": 18152.0,
+        "p50": 20168.790999999997,
+        "p95": 24716.583,
+        "p99": 40591.083,
+        "percentile_method": "nearest_rank",
+        "samples": 200,
+        "unit": "microseconds"
+      },
+      "warmup_calls": 10
+    },
+    {
+      "cold_definition": "first call for this scenario; OS page cache and process are not reset",
+      "correctness": {
+        "abstained": false,
+        "abstention_reasons": [],
+        "evidence_count": 1,
+        "execution_authorization": "none",
+        "selected_candidate_id": "fast"
+      },
+      "cpu_per_scenario": "not measured",
+      "first_call_us": 111.083,
+      "matching_records": 1,
+      "memory_per_scenario": "not measured",
+      "reopen_and_first_rank_ms": 94.054417,
+      "reopen_definition": "SQLCipher Store::open plus first Engine::rank; no OS cache eviction",
+      "result_bytes": 751,
+      "scenario": "engine_rank_confirmed_memory",
+      "setup_ms": 2232.1910420000004,
+      "size": 1000,
+      "warm": {
+        "max": 891.958,
+        "min": 74.75,
+        "p50": 80.75,
+        "p95": 308.458,
+        "p99": 694.9159999999999,
+        "percentile_method": "nearest_rank",
+        "samples": 200,
+        "unit": "microseconds"
+      },
+      "warmup_calls": 10
+    },
+    {
+      "approved_policies": 1,
+      "cold_definition": "first call for this scenario; OS page cache and process are not reset",
+      "correctness": {
+        "abstained": false,
+        "abstention_reasons": [],
+        "evidence_count": 1,
+        "execution_authorization": "none",
+        "selected_candidate_id": "fast"
+      },
+      "cpu_per_scenario": "not measured",
+      "first_call_us": 317.583,
+      "matching_records": 1,
+      "memory_per_scenario": "not measured",
+      "result_bytes": 728,
+      "scenario": "engine_rank_memory_and_approved_policy",
+      "size": 1000,
+      "warm": {
+        "max": 845.792,
+        "min": 86.208,
+        "p50": 92.583,
+        "p95": 380.708,
+        "p99": 697.0830000000001,
+        "percentile_method": "nearest_rank",
+        "samples": 200,
+        "unit": "microseconds"
+      },
+      "warmup_calls": 10
+    }
+  ],
+  "schema_version": "1.0",
+  "synthetic": true,
+  "timing": "Instant monotonic wall clock; single-thread sequential scenarios",
+  "artifact_binding": {
+    "binary_sha256": "32ab3ab65978936cc5cd1fda6aea4a6a8a44d46be044f726c88f4e26d297e0ac",
+    "binary_unchanged": true,
+    "sources_sha256": {
+      "Cargo.lock": "c7b94c0e6fdf4e7c6e7535741914d6b2d7bff637b555cadce0815dbf4e7153a7",
+      "Cargo.toml": "106f49bfa891fd7f7d45e99b3f574e41f044ebac88d22c6977fc78fb43599d14",
+      "benchmarks/core/Cargo.toml": "fd01599ed308f824cb2517d30cf5c185406b5b480433b5be74df720600a4b122",
+      "benchmarks/core/run.py": "984e96bc65dd800a83ffa433197c0ab7ad8e3474aa01585df60689bd974702c8",
+      "benchmarks/core/src/main.rs": "11e4f9f969b57584eec818b4ed346b1e931585498bfb6a94264f7a681c7c0abb",
+      "crates/cdna-app/Cargo.toml": "21533cf1bcc1bbf19eaba2966a26ce5ebd8bbe2b5e63e1d05c462937b0768b36",
+      "crates/cdna-app/src/assessment.rs": "e9c4b55f951b1fd49a08cc31f0b64fb2516ee5b23f043ed9d5b559c8227b5845",
+      "crates/cdna-app/src/evolution_bridge.rs": "bd48761f87498c2a554c6be4fad0d7b2577eae7e8bf2d1a8ea349d4825ee514e",
+      "crates/cdna-app/src/importer.rs": "f40b99b665ff539a7e0c69225dd8381af2fc36082db62282b06d9a2987d6cff6",
+      "crates/cdna-app/src/lib.rs": "522ec3c50811f103310b998b7459e11c3e50357f446dfee2c552e851d6cd8808",
+      "crates/cdna-app/src/main.rs": "8ff91a6785a5e9321f8288dc6305c687053246d0d6e77f18ed6813b1d7586fb3",
+      "crates/cdna-app/src/mcp_bridge.rs": "000ffedbbdd300d68209dfdf8f8ded69ded4c9b8dac8357cc4971d6139f34f10",
+      "crates/cdna-app/src/policy.rs": "f564de429ed6d49b81945856f6d40ac2cd3bb83a6172018581d0b75a7072fb6f",
+      "crates/cdna-app/src/questions.rs": "81c9d38f6ae3f38db8a72c5f84cc5f014de5307f08ccbb36f729bcc9fae9e393",
+      "crates/cdna-app/tests/adversarial.rs": "d98010f319c5db6341878aa2f0a5a0bb879131e31684db5464cee73dc09d5c13",
+      "crates/cdna-app/tests/onboarding_workflow.rs": "7797ed52cc7c6a0f7ed10f586dba9c9b8ebc4ec7d01e2cb98ab34446f1dce78b",
+      "crates/cdna-app/tests/policy_workflow.rs": "77582e4b417aa9a2641d0b50ac9a866682437be2b5e5ba8d7b20e3541ec12d9c",
+      "crates/cdna-app/tests/workflow.rs": "fceb7321d426cf2cc72a7893bd490cd21310e243a1f898a78e9e28dde3343dbf",
+      "crates/cdna-domain/Cargo.toml": "d6f382deec1e5de29d3607d29bfb699f691dd92142722c568371a7141aa4f65a",
+      "crates/cdna-domain/examples/schemas.rs": "60266d79a06c80b3595bf55c7cd4103fe94d0253d6717a9c62ea062a26c8cc8e",
+      "crates/cdna-domain/src/lib.rs": "ef10c67bf77adac9d226b359a75653ae32fd6bcbc6d0c2ce482f80a16c7310e3",
+      "crates/cdna-inference/Cargo.toml": "67b026669092d842fa0341335078d100a64ec3022c128aa3116eda2ce5822100",
+      "crates/cdna-inference/examples/native_bench.rs": "f6e2f6961ce27988d8384f9bb1d84947a3e1817a5e4583893df2b10aa147485b",
+      "crates/cdna-inference/examples/verify_mojo.rs": "f6491779ab21ad7d8d39dd3e249e32f4e5dbf982fd14b681cb3912da9243fce7",
+      "crates/cdna-inference/src/lib.rs": "146af6b649183886e00536abfe987431d13b000613b66a010bc0bd6499314119",
+      "crates/cdna-inference/src/main.rs": "36b3e0b1c2134adf85a423e21121f459e4a6b451950b32a1390ee64f8046dbe9",
+      "crates/cdna-store/Cargo.toml": "562e2568f976a36fae6e4dd32142025af94d50f2026eea0083ff7701b976d31a",
+      "crates/cdna-store/src/lib.rs": "a471ece61941ca9df8e09848eab2d22647e49c6968033bbcbb06cc65352fefc5",
+      "crates/cdna-store/src/matching.rs": "9830f01aefbe2c6b19a8868ea28edb0d824745c211d5892e8eec17a449c95049"
+    },
+    "sources_unchanged": false,
+    "git_commit_after_run": "61b48f9895114fc156381f70ae9eaab0f06252b9",
+    "git_dirty_after_run": "M README.en.md\n M README.md\n?? Cargo.lock\n?? Cargo.toml\n?? HARNESS_FINDINGS.md\n?? HARNESS_LEARNINGS.md\n?? PROJECT_FINDINGS.md\n?? PROJECT_LEARNINGS.md\n?? SKILLS_FINDINGS.md\n?? SKILLS_LEARNINGS.md\n?? apps/\n?? benchmarks/\n?? contracts/\n?? crates/\n?? docs/QUICKSTART.md\n?? docs/architecture/\n?? docs/release/\n?? learner/\n?? mojo/\n?? rust-toolchain.toml\n?? scripts/",
+    "note": "Hashes bind existing files; build provenance is not inferred from matching timestamps. Git metadata is read after the run."
+  },
+  "process_resources": {
+    "scope": "entire benchmark process tree, including SQLCipher setup, database writes and cleanup",
+    "wall_seconds": 26.04351512505673,
+    "user_cpu_seconds": 19.716946,
+    "system_cpu_seconds": 4.170681,
+    "cpu_seconds_per_wall_second": 0.9172197718048235,
+    "peak_rss_bytes": 27394048,
+    "peak_rss_native_value": 27394048,
+    "measurement": "Python resource.getrusage(RUSAGE_CHILDREN); not instantaneous RSS, allocation count, or per-scenario memory"
+  },
+  "environment": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "architecture": "arm64",
+    "logical_cpu_count": 12,
+    "cpu_model": "Apple M2 Max",
+    "physical_memory_bytes": "103079215104",
+    "rustc_available": "rustc 1.98.1 (48a229cea 2026-09-01)",
+    "cargo_available": "cargo 1.98.1 (797e8a9bc 2026-08-05)",
+    "python": "3.14.5",
+    "compiler_note": "Available toolchain version is recorded; this is not proof it built the supplied binary."
+  },
+  "measurement_validity": "source_or_binary_changed"
+}

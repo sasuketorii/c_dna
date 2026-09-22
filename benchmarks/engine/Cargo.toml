@@ -1,0 +1,22 @@
+[package]
+name = "cdna-engine-review"
+version = "0.1.0"
+edition = "2024"
+publish = false
+[workspace]
+[dependencies]
+anyhow = "1"
+cdna-app = { path = "../../crates/cdna-app" }
+cdna-domain = { path = "../../crates/cdna-domain" }
+cdna-inference = { path = "../../crates/cdna-inference" }
+cdna-store = { path = "../../crates/cdna-store" }
+serde_json = "1"
+tempfile = "3"
+uuid = { version = "1", features = ["v4"] }
+zeroize = "1"
+cdna-evolution = { path = "../../crates/cdna-evolution" }
+ed25519-dalek = "3"
+serde = "1"
+[profile.release]
+lto = "thin"
+strip = true

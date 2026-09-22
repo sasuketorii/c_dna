@@ -1,0 +1,63 @@
+{
+  "argv": [
+    "env",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "PYTHONPATH=learner/src",
+    "/Users/sasuketorii/dev/c-dna/learner/.venv/bin/python",
+    "benchmarks/engine/learner_probes.py"
+  ],
+  "completedAt": "2026-09-22T09:58:33.582Z",
+  "cwd": ".",
+  "exitCode": 0,
+  "guard": {
+    "acquired": true,
+    "class": "heavy",
+    "lockKey": "7d6b28298ead7559f18f837f9fd902c55192ab1afaf2756e432efd15aa620242",
+    "mode": "required",
+    "resource": {
+      "cpuSystemSeconds": 0.23263599999999998,
+      "cpuUserSeconds": 1.11201,
+      "findings": [],
+      "measurementStatus": "CURRENT",
+      "orphanCount": 0,
+      "orphanDetected": false,
+      "peakRssMb": 129.890625,
+      "platform": "darwin",
+      "processCountAfter": 2132,
+      "processCountBefore": 2134,
+      "processCountDelta": -2,
+      "unavailable": [],
+      "wallSeconds": 1.937442583,
+      "writeBytes": "UNKNOWN"
+    },
+    "waitMs": 900000
+  },
+  "intent": "verify",
+  "requiredTools": [],
+  "revision": {
+    "baseCommit": "acf8c06c56a8fb27019b5b60936951433f713cb4",
+    "kind": "git-working-tree",
+    "worktreeDigest": "sha256:7264393eef180ecf56842172ce35de47ce77fdba098171fbfddb35197011dafa"
+  },
+  "schemaVersion": 1,
+  "sourceAfter": {
+    "headCommit": "acf8c06c56a8fb27019b5b60936951433f713cb4",
+    "worktreeDigest": "sha256:7264393eef180ecf56842172ce35de47ce77fdba098171fbfddb35197011dafa"
+  },
+  "sourceBefore": {
+    "headCommit": "acf8c06c56a8fb27019b5b60936951433f713cb4",
+    "worktreeDigest": "sha256:7264393eef180ecf56842172ce35de47ce77fdba098171fbfddb35197011dafa"
+  },
+  "sourceChanged": false,
+  "startedAt": "2026-09-22T09:58:31.577Z",
+  "stderrBytes": 0,
+  "stderrPath": "cdna-engine-learner-isolated-final.json.stderr.log",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderrTruncated": false,
+  "stdoutBytes": 18934,
+  "stdoutPath": "cdna-engine-learner-isolated-final.json.stdout.log",
+  "stdoutSha256": "3ac978c9d1a4e7759b2e2a955628381a9775d0a855acfbbcc686d7ad7b572188",
+  "stdoutTruncated": false,
+  "taskId": "task_b99ce282a76b",
+  "timedOut": false
+}

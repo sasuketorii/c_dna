@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "request_id": "8e2a3e91-43c8-4e0e-97a2-783c744dab71",
+  "workspace_id": "1a859684-a286-47bf-8574-8bdcd28099b5",
+  "mode": "imitate",
+  "domain": "product_delivery",
+  "context": {
+    "as_of": "2026-09-21T10:00:00Z",
+    "summary": "重要顧客に影響する不具合対応と新機能の開発優先度を比較する。",
+    "facts": [
+      {
+        "key": "customer_impact",
+        "value": "high",
+        "evidence_status": "explicit"
+      },
+      {
+        "key": "deadline_days",
+        "value": 7,
+        "evidence_status": "explicit",
+        "unit": "day"
+      },
+      {
+        "key": "available_engineers",
+        "value": 2,
+        "evidence_status": "explicit",
+        "unit": "person"
+      },
+      {
+        "key": "new_feature_contract_signed",
+        "value": false,
+        "evidence_status": "explicit"
+      }
+    ],
+    "unknown_fields": [
+      "bug_fix_effort_days"
+    ]
+  },
+  "candidates": [
+    {
+      "id": "repair_first",
+      "text": "新機能を一時停止して不具合対応を先にする。",
+      "attributes": {
+        "delivery_strategy": "repair_first"
+      }
+    },
+    {
+      "id": "repair_first",
+      "text": "新機能を優先し、不具合対応を次の作業に回す。",
+      "attributes": {
+        "delivery_strategy": "feature_first"
+      }
+    }
+  ],
+  "include_evidence": true,
+  "allow_cloud": false
+}

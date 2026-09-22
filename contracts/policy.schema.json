@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PolicyExpr",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "args": {
+          "type": "array",
+          "items": {
+            "$ref": "#"
+          }
+        },
+        "op": {
+          "type": "string",
+          "const": "all"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "op",
+        "args"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "args": {
+          "type": "array",
+          "items": {
+            "$ref": "#"
+          }
+        },
+        "op": {
+          "type": "string",
+          "const": "any"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "op",
+        "args"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "arg": {
+          "$ref": "#"
+        },
+        "op": {
+          "type": "string",
+          "const": "not"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "op",
+        "arg"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "field": {
+          "type": "string"
+        },
+        "op": {
+          "type": "string",
+          "const": "exists"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "op",
+        "field"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "comparison": {
+          "$ref": "#/$defs/Comparison"
+        },
+        "field": {
+          "type": "string"
+        },
+        "op": {
+          "type": "string",
+          "const": "compare"
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "value": {
+          "$ref": "#/$defs/FactValue"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "op",
+        "field",
+        "comparison",
+        "value"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "field": {
+          "type": "string"
+        },
+        "op": {
+          "type": "string",
+          "const": "in"
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "values": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/FactValue"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "op",
+        "field",
+        "values"
+      ]
+    }
+  ],
+  "$defs": {
+    "Comparison": {
+      "type": "string",
+      "enum": [
+        "eq",
+        "lt",
+        "lte",
+        "gt",
+        "gte"
+      ]
+    },
+    "FactValue": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number",
+          "format": "double"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "$ref": "#/$defs/Money"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "Money": {
+      "type": "object",
+      "properties": {
+        "amount_minor": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "currency": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "amount_minor",
+        "currency"
+      ]
+    }
+  }
+}

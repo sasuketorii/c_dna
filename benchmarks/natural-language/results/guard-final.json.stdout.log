@@ -1,0 +1,14 @@
+READY http://127.0.0.1:18765 pid=5547
+negation: 7.694s schema_valid=True
+budget_pending: 8.773s schema_valid=True
+budget_rejected: 16.812s schema_valid=False
+deadline_date: 14.230s schema_valid=False
+deadline_missing: 2.361s schema_valid=True
+yen_units: 12.713s schema_valid=False
+usd_and_duration: 13.329s schema_valid=False
+role_a: 13.467s schema_valid=False
+role_b: 9.844s schema_valid=True
+missing_facts: 14.221s schema_valid=False
+abstain: 15.152s schema_valid=False
+injection: 14.427s schema_valid=False
+{"n": 12, "schema_valid": 4, "invalid_or_transport_error": 8, "valid_result_p50_seconds": 7.693550540949218, "valid_result_p95_seconds": 9.8438015000429, "percentile_method": "nearest rank; small heterogeneous single-pass corpus, not production SLO evidence", "semantic_error_count": null, "semantic_correct_count": null, "abstention_count": 1}

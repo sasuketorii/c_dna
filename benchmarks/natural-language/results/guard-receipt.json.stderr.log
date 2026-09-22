@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "$REPO/scripts/natural-language-bench.py", line 150, in <module>
+    main()
+    ~~~~^^
+  File "$REPO/scripts/natural-language-bench.py", line 107, in main
+    response = request('/v1/chat/completions', payload)
+  File "$REPO/scripts/natural-language-bench.py", line 39, in request
+    with HTTP.open(req, timeout=timeout) as res:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "$USER_HOME/.local/share/mise/installs/python/3.14.5/lib/python3.14/urllib/request.py", line 487, in open
+    response = self._open(req, data)
+  File "$USER_HOME/.local/share/mise/installs/python/3.14.5/lib/python3.14/urllib/request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "$USER_HOME/.local/share/mise/installs/python/3.14.5/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "$USER_HOME/.local/share/mise/installs/python/3.14.5/lib/python3.14/urllib/request.py", line 1350, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$USER_HOME/.local/share/mise/installs/python/3.14.5/lib/python3.14/urllib/request.py", line 1325, in do_open
+    r = h.getresponse()
+  File "$USER_HOME/.local/share/mise/installs/python/3.14.5/lib/python3.14/http/client.py", line 1459, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "$USER_HOME/.local/share/mise/installs/python/3.14.5/lib/python3.14/http/client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "$USER_HOME/.local/share/mise/installs/python/3.14.5/lib/python3.14/http/client.py", line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "$USER_HOME/.local/share/mise/installs/python/3.14.5/lib/python3.14/socket.py", line 729, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "$REPO/scripts/natural-language-bench.py", line 74, in interrupted
+    raise KeyboardInterrupt(f'signal {signum}')
+KeyboardInterrupt: signal 15

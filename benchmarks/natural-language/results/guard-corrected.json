@@ -1,0 +1,70 @@
+{
+  "argv": [
+    "python3",
+    "scripts/natural-language-bench.py"
+  ],
+  "completedAt": "2026-09-22T09:46:29.350Z",
+  "cwd": ".",
+  "exitCode": 1,
+  "guard": {
+    "acquired": false,
+    "class": "heavy",
+    "errorCode": "GUARD_WAIT_TIMEOUT",
+    "lockKey": "829fe49329cfcc89a423bec72b5345891adcbec754b8e0006b5fd2c3f6b6172b",
+    "mode": "required",
+    "resource": {
+      "cpuSystemSeconds": "UNKNOWN",
+      "cpuUserSeconds": "UNKNOWN",
+      "findings": [
+        {
+          "code": "RESOURCE_MEASUREMENT_UNAVAILABLE",
+          "message": "resource measurement unavailable; command did not start",
+          "metric": "measurement",
+          "severity": "measurement-unavailable"
+        }
+      ],
+      "measurementStatus": "UNKNOWN",
+      "orphanCount": "UNKNOWN",
+      "orphanDetected": "UNKNOWN",
+      "peakRssMb": "UNKNOWN",
+      "platform": "unsupported",
+      "processCountAfter": "UNKNOWN",
+      "processCountBefore": "UNKNOWN",
+      "processCountDelta": "UNKNOWN",
+      "unavailable": [
+        "guard-wait-timeout"
+      ],
+      "wallSeconds": "UNKNOWN",
+      "writeBytes": "UNKNOWN"
+    },
+    "waitMs": 60000
+  },
+  "intent": "generate",
+  "requiredTools": [],
+  "revision": {
+    "baseCommit": "61b48f9895114fc156381f70ae9eaab0f06252b9",
+    "kind": "git-working-tree",
+    "worktreeDigest": "sha256:d29c56e86ef57d5ce86c06f31c19cd9da083eaa4a8bcf9f9a7978ca1f083252e"
+  },
+  "schemaVersion": 1,
+  "sourceAfter": {
+    "headCommit": "61b48f9895114fc156381f70ae9eaab0f06252b9",
+    "worktreeDigest": "sha256:79377cb41aa8222429a54b8cb1c5d919482fe8c158a304a0cf34324f9e10374e"
+  },
+  "sourceBefore": {
+    "headCommit": "61b48f9895114fc156381f70ae9eaab0f06252b9",
+    "worktreeDigest": "sha256:d29c56e86ef57d5ce86c06f31c19cd9da083eaa4a8bcf9f9a7978ca1f083252e"
+  },
+  "sourceChanged": true,
+  "startedAt": "2026-09-22T09:46:29.349Z",
+  "stderrBytes": 19,
+  "stderrPath": "guard-corrected.json.stderr.log",
+  "stderrSha256": "1776c5006d71ed0c30d0b73ef8ccbd088661c9db857b57cfc9557e9636b5eada",
+  "stderrTruncated": false,
+  "stdoutBytes": 0,
+  "stdoutPath": "guard-corrected.json.stdout.log",
+  "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdoutTruncated": false,
+  "taskId": "cdna-nl-experiment-fixed-transport",
+  "timedOut": false
+}

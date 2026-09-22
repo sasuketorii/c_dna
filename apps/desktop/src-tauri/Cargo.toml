@@ -1,0 +1,11 @@
+[package]
+name = "cdna-desktop-shell"
+version = "0.1.0"
+edition = "2024"
+
+[build-dependencies]
+tauri-build = { version = "=2.6.3", features = [] }
+
+[dependencies]
+tauri = { version = "=2.11.6", features = [] }
+libc = "0.2"

@@ -1,0 +1,63 @@
+{
+  "evidence": "synthetic independent policy holdout; not human accuracy",
+  "promotion_allowed": false,
+  "feature_version": "1.0",
+  "weights": 17,
+  "fit_seed": 95173,
+  "holdout_seed": 86249,
+  "source_sha256": {
+    "learner/src/cdna_learner/worker.py": "bdb22770986d72476e5d951465ea13d64ed379f5c216149b63681126a342e780",
+    "learner/benchmarks/domain_scope.py": "279fa30a5689cb2c06861b6bd8a0a3bdc17e0d8b31b7205a01e35738dc69f1cc"
+  },
+  "training_records_total": 1200,
+  "fit_ms": {
+    "None": 137.43383390828967,
+    "product_delivery": 49.132500076666474,
+    "risk_reputation": 45.63562502153218
+  },
+  "splits": {
+    "None": {
+      "train": 720,
+      "validation": 180,
+      "calibration": 120,
+      "test": 180,
+      "purged": 0
+    },
+    "product_delivery": {
+      "train": 360,
+      "validation": 90,
+      "calibration": 60,
+      "test": 90,
+      "purged": 0
+    },
+    "risk_reputation": {
+      "train": 360,
+      "validation": 90,
+      "calibration": 60,
+      "test": 90,
+      "purged": 0
+    }
+  },
+  "results": {
+    "pooled": {
+      "cases": 800,
+      "raw_top1_accuracy": 0.2325,
+      "coverage": 0.0,
+      "selective_accuracy": null,
+      "ood_abstention_rate": 1.0,
+      "rank_ms_median": 0.033458927646279335,
+      "rank_ms_p95": 0.057466921862214755
+    },
+    "domain_scoped": {
+      "cases": 800,
+      "raw_top1_accuracy": 0.98375,
+      "coverage": 1.0,
+      "selective_accuracy": 0.98375,
+      "ood_abstention_rate": 1.0,
+      "rank_ms_median": 0.03341701813042164,
+      "rank_ms_p95": 0.042340165236964815
+    }
+  },
+  "wall_ms_in_process": 843.3487920556217,
+  "timing_scope": "Single process, imports excluded; rank excludes Request validation; no IPC or Rust latency claim"
+}

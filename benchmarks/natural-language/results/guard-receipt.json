@@ -1,0 +1,60 @@
+{
+  "argv": [
+    "python3",
+    "scripts/natural-language-bench.py"
+  ],
+  "completedAt": "2026-09-22T09:44:50.005Z",
+  "cwd": ".",
+  "exitCode": 130,
+  "guard": {
+    "acquired": true,
+    "class": "heavy",
+    "lockKey": "829fe49329cfcc89a423bec72b5345891adcbec754b8e0006b5fd2c3f6b6172b",
+    "mode": "required",
+    "resource": {
+      "cpuSystemSeconds": 2.898913,
+      "cpuUserSeconds": 150.824877,
+      "findings": [],
+      "measurementStatus": "CURRENT",
+      "orphanCount": 0,
+      "orphanDetected": false,
+      "peakRssMb": 1490.953125,
+      "platform": "darwin",
+      "processCountAfter": 2169,
+      "processCountBefore": 2175,
+      "processCountDelta": -6,
+      "unavailable": [],
+      "wallSeconds": 46.997089,
+      "writeBytes": "UNKNOWN"
+    },
+    "waitMs": 60000
+  },
+  "intent": "verify",
+  "requiredTools": [],
+  "revision": {
+    "baseCommit": "61b48f9895114fc156381f70ae9eaab0f06252b9",
+    "kind": "git-working-tree",
+    "worktreeDigest": "sha256:bd2fccb73fd897fe5fa41a4b436aef0d4bd85f761acf9cc27b5c09b7568b6361"
+  },
+  "schemaVersion": 1,
+  "sourceAfter": {
+    "headCommit": "61b48f9895114fc156381f70ae9eaab0f06252b9",
+    "worktreeDigest": "sha256:2d2c97ec81700e413685cd00a45297de738928ad4481ba28944030da45663028"
+  },
+  "sourceBefore": {
+    "headCommit": "61b48f9895114fc156381f70ae9eaab0f06252b9",
+    "worktreeDigest": "sha256:bd2fccb73fd897fe5fa41a4b436aef0d4bd85f761acf9cc27b5c09b7568b6361"
+  },
+  "sourceChanged": true,
+  "startedAt": "2026-09-22T09:44:02.948Z",
+  "stderrBytes": 2399,
+  "stderrPath": "guard-receipt.json.stderr.log",
+  "stderrSha256": "0cd180ddac2879ae448987d2d2f1699e7b335524540fe83989044c3097802fff",
+  "stderrTruncated": false,
+  "stdoutBytes": 567,
+  "stdoutPath": "guard-receipt.json.stdout.log",
+  "stdoutSha256": "7a5c7350424d186d473929e26400f56cef550008facc45603a7e22f4ed14c626",
+  "stdoutTruncated": false,
+  "taskId": "cdna-nl-experiment",
+  "timedOut": false
+}

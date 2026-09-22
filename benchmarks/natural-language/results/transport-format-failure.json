@@ -1,0 +1,371 @@
+{
+  "experiment": "synthetic Japanese business extraction; not personalized scoring",
+  "model_sha256": "57d1997790d1744fba5b40a7317df71ea5e2acee28c47e78f0cce39c0703f8cf",
+  "input_hashes": {
+    "benchmarks/natural-language/system-prompt.txt": "a5859ffc751c70bebb9ed0af442cc32dc27a2ff661406d6cfe8dd744c690bb5c",
+    "benchmarks/natural-language/schema.json": "07f6a4281fd369463363e3820d10a0b4ebab7d0caaffda0be2df72cc6de86136",
+    "benchmarks/natural-language/holdout.json": "b96d3d3eedc87da34142a82d8f28410721e73b3364b15f2b329ede43dbc50137"
+  },
+  "server_binary_sha256": "8939a1cf8a4e9a5cc18d6cd4d2d55440b48f8a44db00abe459a28d837ea051f7",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "max_tokens": 768,
+  "sampling": {
+    "temperature": 0,
+    "seed": 42
+  },
+  "cases": [
+    {
+      "id": "negation",
+      "input": "業務メモ: 今回の変更で顧客データは削除しない。候補Aは現行機能を維持、候補Bは画面表示だけ改善する。どちらを検討するか。",
+      "oracle": [
+        "顧客データを削除しないという否定を保持する",
+        "維持と表示改善が異なる候補である",
+        "削除を候補に追加しない"
+      ],
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"action\": \"候補Aを検討する\",\n  \"reason\": \"候補Aは現行機能を維持するため、既存の業務フローとデータ構造を維持しつつ改善を行う可能性が高い。\",\n  \"action\": \"候補Bを検討する\",\n  \"reason\": \"候補Bは画面表示だけ改善するため、既存の機能は維持され、新しい機能は追加される可能性が高い。\",\n  \"action\": \"両候補を検討する\",\n  \"reason\": \"両候補を検討するため、各々の改善内容とリスクを詳細に分析し、最終的な選択を決定する。\",\n  \"action\": \"候補Aを検討する\",\n  \"reason\": \"候補Aは現行機能を維持するため、既存の業務フローとデータ構造を維持しつつ改善を行う可能性が高い。\",\n  \"action\": \"候補Bを検討する\",\n  \"reason\": \"候補Bは画面表示だけ改善するため、既存の機能は維持され、新しい機能は追加される可能性が高い。\",\n  \"action\": \"両候補を検討する\",\n  \"reason\": \"両候補を検討するため、各々の改善内容とリスクを詳細に分析し、最終的な選択を決定する。\",\n  \"action\": \"候補Aを検討する\",\n  \"reason\": \"候補Aは現行機能を維持するため、既存の業務フローとデータ構造を維持しつつ改善を行う可能性が高い。\",\n  \"action\": \"候補Bを検討する\",\n  \"reason\": \"候補Bは画面表示だけ改善するため、既存の機能は維持され、新しい機能は追加される可能性が高い。\",\n  \"action\": \"両候補を検討する\",\n  \"reason\": \"両候補を検討するため、各々の改善内容とリスクを詳細に分析し、最終的な選択を決定する。\",\n  \"action\": \"候補Aを検討する\",\n  \"reason\": \"候補Aは現行機能を維持するため、既存の業務フローとデータ構造を維持しつつ改善を行う可能性が高い。\",\n  \"action\": \"候補Bを検討する\",\n  \"reason\": \"候補Bは画面表示だけ改善するため、既存の機能は維持され、新しい機能は追加される可能性が高い。\",\n  \"action\": \"両候補を検討する\",\n  \"reason\": \"両候補を検討するため、各々の改善内容とリスクを詳細に分析し、最終的な選択を決定する。\",\n  \"action\": \"候補Aを検討する\",\n  \"reason\": \"候補Aは現行機能を維持するため、既存の業務フローとデータ構造を維持しつつ改善を行う可能性が高い。\",\n  \"action\": \"候補Bを検討する\",\n  \"reason\": \"候補Bは画面表示だけ改善するため、既存の機能は維持され、新しい機能は追加される可能性が高い。\",\n  \"action\": \"両候補を検討する\",\n  \"reason\": \"両候補を検討するため、各々の改善内容とリスクを詳細に分析し、最終的な選択を決定する。\",\n  \"action\": \"候補Aを検討する\",\n  \"reason\": \"候補Aは現行機能を維持するため、既存の業務フローとデータ構造を維持しつつ改善を行う可能性が高い。\",\n  \"action\": \"候補Bを検討する\",\n  \"reason\": \"候補Bは画面表示だけ改善するため、既存の機能は維持され、新しい機能は追加される可能性が高い。\",\n  \"action\": \"両候補を検討する\",\n  \"reason\": \"両候補を検討するため、各々の改善内容とリスクを詳細に分析し、最終的な選択を決定する。\",\n  \"action\": \"候補Aを検討する\","
+            }
+          }
+        ],
+        "created": 1790070266,
+        "model": "cdna-qwen35-08b-q4",
+        "system_fingerprint": "b10809-5266f24da",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 284,
+          "total_tokens": 1052,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-NG2BdwJY12YrBdpJFd6FHwLR5omYRhGm",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 284,
+          "prompt_ms": 1082.533,
+          "prompt_per_token_ms": 3.8117359154929575,
+          "prompt_per_second": 262.34766053321243,
+          "predicted_n": 768,
+          "predicted_ms": 19767.726,
+          "predicted_per_token_ms": 25.772784876140808,
+          "predicted_per_second": 38.800618745929604
+        }
+      },
+      "schema_valid": false,
+      "error": "Expecting property name enclosed in double quotes: line 38 column 24 (char 1561)",
+      "input_to_validated_result_seconds": 20.85620437504258
+    },
+    {
+      "id": "budget_pending",
+      "input": "広告費の申請額は30万円だが、経理はまだ承認していない。使える予算額は未確定。候補は承認を待つ、または費用ゼロの既存顧客向けメールを送る。",
+      "oracle": [
+        "申請額はJPY 300000",
+        "未承認を保持し、利用可能予算を30万円と断定しない",
+        "承認待ちと無料メールの2候補"
+      ],
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"action\": [\n    \"候補は承認を待つ\"\n  ],\n  \"action\": [\n    \"費用ゼロの既存顧客向けメールを送る\"\n  ]\n}"
+            }
+          }
+        ],
+        "created": 1790070267,
+        "model": "cdna-qwen35-08b-q4",
+        "system_fingerprint": "b10809-5266f24da",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 44,
+          "prompt_tokens": 290,
+          "total_tokens": 334,
+          "prompt_tokens_details": {
+            "cached_tokens": 239
+          }
+        },
+        "id": "chatcmpl-SRdcfX9EMcRWz3anCqjpMFCbfZJeuQbn",
+        "timings": {
+          "cache_n": 239,
+          "prompt_n": 51,
+          "prompt_ms": 312.034,
+          "prompt_per_token_ms": 6.118313725490196,
+          "prompt_per_second": 163.44372728612908,
+          "predicted_n": 44,
+          "predicted_ms": 934.368,
+          "predicted_per_token_ms": 21.729488372093023,
+          "predicted_per_second": 46.02041165793349
+        }
+      },
+      "schema_valid": false,
+      "error": "Additional properties are not allowed ('action' was unexpected)\n\nFailed validating 'additionalProperties' in schema:\n    {'type': 'object',\n     'additionalProperties': False,\n     'required': ['facts', 'unknown_fields', 'candidates'],\n     'properties': {'facts': {'type': 'array',\n                              'maxItems': 128,\n                              'items': {'type': 'object',\n                                        'additionalProperties': False,\n                                        'required': ['key',\n                                                     'value',\n                                                     'unit',\n                                                     'source_span'],\n                                        'properties': {'key': {'type': 'string',\n                                                               'pattern': '^[a-z][a-z0-9_]{0,63}$'},\n                                                       'value': {'anyOf': [{'type': 'null'},\n                                                                           {'type': 'boolean'},\n                                                                           {'type': 'number'},\n                                                                           {'type': 'string',\n                                                                            'maxLength': 2048},\n                                                                           {'type': 'array',\n                                                                            'maxItems': 32,\n                                                                            'items': {'type': 'string',\n                                                                                      'maxLength': 128}},\n                                                                           {'type': 'object',\n                                                                            'additionalProperties': False,\n                                     ",
+      "input_to_validated_result_seconds": 1.2882714580046013
+    },
+    {
+      "id": "budget_rejected",
+      "input": "採用費100万円の申請は却下された。増員は承認されていない。候補Aは現体制で範囲を縮小、候補Bは納期の再交渉。",
+      "oracle": [
+        "却下された申請額はJPY 1000000",
+        "採用予算や増員が承認済みという事実を作らない",
+        "範囲縮小と納期再交渉の2候補"
+      ],
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"action\": [\n    \"候補Aは現体制で範囲を縮小する。\",\n    \"候補Bは納期の再交渉を行う。\"\n  ]\n}"
+            }
+          }
+        ],
+        "created": 1790070268,
+        "model": "cdna-qwen35-08b-q4",
+        "system_fingerprint": "b10809-5266f24da",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 42,
+          "prompt_tokens": 289,
+          "total_tokens": 331,
+          "prompt_tokens_details": {
+            "cached_tokens": 239
+          }
+        },
+        "id": "chatcmpl-2tLob57jBkPYhtjjcbfT37gMaJ0cr3U4",
+        "timings": {
+          "cache_n": 239,
+          "prompt_n": 50,
+          "prompt_ms": 261.717,
+          "prompt_per_token_ms": 5.2343399999999995,
+          "prompt_per_second": 191.04605356167158,
+          "predicted_n": 42,
+          "predicted_ms": 1253.825,
+          "predicted_per_token_ms": 30.58109756097561,
+          "predicted_per_second": 32.69993818914123
+        }
+      },
+      "schema_valid": false,
+      "error": "Additional properties are not allowed ('action' was unexpected)\n\nFailed validating 'additionalProperties' in schema:\n    {'type': 'object',\n     'additionalProperties': False,\n     'required': ['facts', 'unknown_fields', 'candidates'],\n     'properties': {'facts': {'type': 'array',\n                              'maxItems': 128,\n                              'items': {'type': 'object',\n                                        'additionalProperties': False,\n                                        'required': ['key',\n                                                     'value',\n                                                     'unit',\n                                                     'source_span'],\n                                        'properties': {'key': {'type': 'string',\n                                                               'pattern': '^[a-z][a-z0-9_]{0,63}$'},\n                                                       'value': {'anyOf': [{'type': 'null'},\n                                                                           {'type': 'boolean'},\n                                                                           {'type': 'number'},\n                                                                           {'type': 'string',\n                                                                            'maxLength': 2048},\n                                                                           {'type': 'array',\n                                                                            'maxItems': 32,\n                                                                            'items': {'type': 'string',\n                                                                                      'maxLength': 128}},\n                                                                           {'type': 'object',\n                                                                            'additionalProperties': False,\n                                     ",
+      "input_to_validated_result_seconds": 1.5237270419020206
+    },
+    {
+      "id": "deadline_date",
+      "input": "納品の確定期限は2026年10月15日17時（日本時間）。10月10日は社内確認の目安で、納品期限ではない。候補は10月14日に出荷、または10月15日午前に出荷。",
+      "oracle": [
+        "納品期限10月15日17時日本時間を保持する",
+        "10月10日を納品期限としない",
+        "出荷候補2つの日付と午前の区別を保持する"
+      ],
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"action\": [\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n    \"提出候補を特定：10月14日に出荷または10月15日午前に出荷の条件を満たす可能性が高い候補を特定する。\",\n"
+            }
+          }
+        ],
+        "created": 1790070287,
+        "model": "cdna-qwen35-08b-q4",
+        "system_fingerprint": "b10809-5266f24da",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 768,
+          "prompt_tokens": 314,
+          "total_tokens": 1082,
+          "prompt_tokens_details": {
+            "cached_tokens": 239
+          }
+        },
+        "id": "chatcmpl-3dexrSoznUPUwAj9yOviTOj9RvMimhND",
+        "timings": {
+          "cache_n": 239,
+          "prompt_n": 75,
+          "prompt_ms": 455.642,
+          "prompt_per_token_ms": 6.0752266666666666,
+          "prompt_per_second": 164.60291193524742,
+          "predicted_n": 768,
+          "predicted_ms": 17764.945,
+          "predicted_per_token_ms": 23.161597131681877,
+          "predicted_per_second": 43.17491554294145
+        }
+      },
+      "schema_valid": false,
+      "error": "Expecting value: line 23 column 1 (char 1216)",
+      "input_to_validated_result_seconds": 18.226717457990162
+    },
+    {
+      "id": "deadline_missing",
+      "input": "回答期限は来週金曜日と言われたが、このメモを書いた日は不明。候補は先方に日付を確認する、または期限が確定するまで回答を保留する。",
+      "oracle": [
+        "相対期限を勝手に絶対日付へ変換しない",
+        "基準日または絶対期限の不明を表現する",
+        "日付確認と回答保留の2候補"
+      ],
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"action\": \"確認する候補を提出\",\n  \"reason\": \"期限が確定するまで回答を保留する。この状況下、候補を提出する行動は明確に定義され、その理由も明確に記述されている。\",\n  \"attributes\": {\n    \"action\": 1.0,\n    \"reason\": 1.0\n  }\n}"
+            }
+          }
+        ],
+        "created": 1790070288,
+        "model": "cdna-qwen35-08b-q4",
+        "system_fingerprint": "b10809-5266f24da",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 85,
+          "prompt_tokens": 289,
+          "total_tokens": 374,
+          "prompt_tokens_details": {
+            "cached_tokens": 239
+          }
+        },
+        "id": "chatcmpl-HJNErevo6nEk3dDTRVW3reCsjmRx4NUn",
+        "timings": {
+          "cache_n": 239,
+          "prompt_n": 50,
+          "prompt_ms": 229.209,
+          "prompt_per_token_ms": 4.58418,
+          "prompt_per_second": 218.1415214934841,
+          "predicted_n": 85,
+          "predicted_ms": 1341.252,
+          "predicted_per_token_ms": 15.967285714285714,
+          "predicted_per_second": 62.62805199917689
+        }
+      },
+      "schema_valid": false,
+      "error": "Additional properties are not allowed ('action', 'attributes', 'reason' were unexpected)\n\nFailed validating 'additionalProperties' in schema:\n    {'type': 'object',\n     'additionalProperties': False,\n     'required': ['facts', 'unknown_fields', 'candidates'],\n     'properties': {'facts': {'type': 'array',\n                              'maxItems': 128,\n                              'items': {'type': 'object',\n                                        'additionalProperties': False,\n                                        'required': ['key',\n                                                     'value',\n                                                     'unit',\n                                                     'source_span'],\n                                        'properties': {'key': {'type': 'string',\n                                                               'pattern': '^[a-z][a-z0-9_]{0,63}$'},\n                                                       'value': {'anyOf': [{'type': 'null'},\n                                                                           {'type': 'boolean'},\n                                                                           {'type': 'number'},\n                                                                           {'type': 'string',\n                                                                            'maxLength': 2048},\n                                                                           {'type': 'array',\n                                                                            'maxItems': 32,\n                                                                            'items': {'type': 'string',\n                                                                                      'maxLength': 128}},\n                                                                           {'type': 'object',\n                                                                            'additionalProperties': False,\n            ",
+      "input_to_validated_result_seconds": 1.594322832999751
+    }
+  ],
+  "semantic_adjudication": "pending; JSON validity is not correctness",
+  "launch_argv": [
+    "llama-server",
+    "--model",
+    "$MODEL_DIR/Qwen3.5-0.8B-Q4_0.gguf",
+    "--alias",
+    "cdna-qwen35-08b-q4",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18765",
+    "--parallel",
+    "1",
+    "--threads",
+    "4",
+    "--threads-batch",
+    "4",
+    "--threads-http",
+    "1",
+    "--ctx-size",
+    "4096",
+    "--n-predict",
+    "768",
+    "--gpu-layers",
+    "0",
+    "--batch-size",
+    "256",
+    "--ubatch-size",
+    "128",
+    "--jinja",
+    "--chat-template-kwargs",
+    "{\"enable_thinking\":false}",
+    "--no-webui"
+  ],
+  "model_path_note": "Model file is experiment-local temporary storage; not distributed",
+  "owned_pid": 89972,
+  "startup_seconds": 1.5202372920466587,
+  "models": {
+    "models": [
+      {
+        "name": "cdna-qwen35-08b-q4",
+        "model": "cdna-qwen35-08b-q4",
+        "modified_at": "",
+        "size": "",
+        "digest": "",
+        "type": "model",
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "capabilities": [
+          "completion"
+        ],
+        "parameters": "",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "",
+          "families": [
+            ""
+          ],
+          "parameter_size": "",
+          "quantization_level": ""
+        }
+      }
+    ],
+    "object": "list",
+    "data": [
+      {
+        "id": "cdna-qwen35-08b-q4",
+        "aliases": [
+          "cdna-qwen35-08b-q4"
+        ],
+        "tags": [],
+        "object": "model",
+        "created": 1790070245,
+        "owned_by": "llamacpp",
+        "meta": {
+          "vocab_type": true,
+          "n_vocab": 248320,
+          "n_ctx": 4096,
+          "n_ctx_train": 262144,
+          "n_embd": 1024,
+          "n_params": 752393024,
+          "size": 552074496,
+          "ftype": "Q4_0"
+        }
+      }
+    ]
+  },
+  "chat_template_sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+  "experiment_error": "KeyboardInterrupt: signal 15",
+  "server_returncode": 0,
+  "owned_process_exited": true,
+  "server_resources": {
+    "user_cpu_seconds": 150.374975,
+    "system_cpu_seconds": 2.762131,
+    "peak_rss_bytes": 1563377664,
+    "scope": "whole owned server lifetime, includes load and all requests, excludes Python"
+  },
+  "summary": {
+    "n": 5,
+    "schema_valid": 0,
+    "invalid_or_transport_error": 5,
+    "valid_result_p50_seconds": null,
+    "valid_result_p95_seconds": null,
+    "percentile_method": "nearest rank; small heterogeneous single-pass corpus, not production SLO evidence",
+    "semantic_error_count": null,
+    "semantic_correct_count": null,
+    "abstention_count": 0
+  },
+  "input_hashes_unchanged": true,
+  "wall_seconds": 46.18176825006958
+}

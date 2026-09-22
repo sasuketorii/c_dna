@@ -1,0 +1,6 @@
+{
+  "source": "crates/cdna-app/src/natural_language.rs",
+  "source_sha256": "f1f83cb6140ef4073dc17db7c654f1d31637f8d36c666d45efcadee0161d2510",
+  "prompt_sha256": "26947f6bf0a4d8b5b8b4abcdacd44a29d0271e887d8f3aa405a07d6b0be867f3",
+  "note": "Exact EXTRACTION_SYSTEM_PROMPT and extraction_json_schema snapshot; runtime acceptance separately required."
+}

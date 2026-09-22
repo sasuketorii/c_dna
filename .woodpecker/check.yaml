@@ -1,0 +1,32 @@
+when:
+  - event: [push, pull_request]
+
+clone:
+  git:
+    image: woodpeckerci/plugin-git:2.10.0@sha256:0f06b03ec33137b556c77538563f66c400339052d0c5199d4c3ad1a2a37e1964
+    settings:
+      partial: false
+      depth: 2
+
+steps:
+  - name: rust-core
+    image: rust:1.98.1-bookworm@sha256:93ce27a88655056a51dbdd8f5f2d7ddc071c7b0070fb288a37b5a285fc83971e
+    environment:
+      CARGO_BUILD_JOBS: "2"
+      CARGO_PROFILE_DEV_DEBUG: "0"
+      RUSTUP_TOOLCHAIN: "1.98.1"
+    commands:
+      - cargo test --locked -p cdna-domain -p cdna-store -p cdna-inference -p cdna-evolution -p cdna-mcp -p cdna-browser
+
+  - name: python-learner
+    image: python:3.14.7-slim-bookworm@sha256:82bc3c539b8813ada9d68c63b40158fa002f7f33de9bf3312a3dfdc0620dff56
+    environment:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      UV_PYTHON_DOWNLOADS: "never"
+    commands:
+      - apt-get update && apt-get install -y --no-install-recommends libgomp1 && rm -rf /var/lib/apt/lists/*
+      - python -m pip install --no-cache-dir uv==0.12.13
+      - uv sync --project learner --locked
+      - uv run --project learner --no-sync pytest learner/tests -q
+      - uv run --project learner --no-sync ruff check learner

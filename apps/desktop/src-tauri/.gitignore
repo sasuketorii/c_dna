@@ -1,0 +1,4 @@
+binaries/cdna-*
+resources/ui/*
+gen/
+resources/learner/

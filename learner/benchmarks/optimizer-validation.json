@@ -1,0 +1,2713 @@
+{
+  "selection": "equal mean across four predeclared profiles and four sizes",
+  "selected": "scaled_logistic10",
+  "validation_means": {
+    "sgd30": 0.4653125,
+    "averaged_sgd30": 0.4634375,
+    "logistic10": 0.5065625,
+    "scaled_logistic10": 0.650625
+  },
+  "results": [
+    {
+      "profile": "context_tradeoff",
+      "size": 8,
+      "method": "sgd30",
+      "fit_ms": 21.94387500640005,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 98,
+        "coverage": 1.0,
+        "agreement": 0.49,
+        "non_abstained_agreement": 0.49,
+        "wilson_lower_95": 0.4215615528275274,
+        "wilson_upper_95": 0.5588153672908391,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 50,
+            "coverage": 1.0,
+            "agreement": 0.5,
+            "non_abstained_agreement": 0.5,
+            "wilson_lower_95": 0.40382982859014716,
+            "wilson_upper_95": 0.5961701714098528,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 48,
+            "coverage": 1.0,
+            "agreement": 0.48,
+            "non_abstained_agreement": 0.48,
+            "wilson_lower_95": 0.38464384320080547,
+            "wilson_upper_95": 0.5768359490982345,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 8,
+      "method": "averaged_sgd30",
+      "fit_ms": 15.106915961951017,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 97,
+        "coverage": 1.0,
+        "agreement": 0.485,
+        "non_abstained_agreement": 0.485,
+        "wilson_lower_95": 0.4166726249238525,
+        "wilson_upper_95": 0.5538927552536972,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 50,
+            "coverage": 1.0,
+            "agreement": 0.5,
+            "non_abstained_agreement": 0.5,
+            "wilson_lower_95": 0.40382982859014716,
+            "wilson_upper_95": 0.5961701714098528,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 47,
+            "coverage": 1.0,
+            "agreement": 0.47,
+            "non_abstained_agreement": 0.47,
+            "wilson_lower_95": 0.3751065198210374,
+            "wilson_upper_95": 0.5671131686275227,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 8,
+      "method": "logistic10",
+      "fit_ms": 10.91516693122685,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 111,
+        "coverage": 1.0,
+        "agreement": 0.555,
+        "non_abstained_agreement": 0.555,
+        "wilson_lower_95": 0.4857317563236392,
+        "wilson_upper_95": 0.6221951830253456,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 57,
+            "coverage": 1.0,
+            "agreement": 0.57,
+            "non_abstained_agreement": 0.57,
+            "wilson_lower_95": 0.4721521169586435,
+            "wilson_upper_95": 0.6626686099947162,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 54,
+            "coverage": 1.0,
+            "agreement": 0.54,
+            "non_abstained_agreement": 0.54,
+            "wilson_lower_95": 0.44264685393523856,
+            "wilson_upper_95": 0.6343935614666815,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 8,
+      "method": "scaled_logistic10",
+      "fit_ms": 2.1335839992389083,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 137,
+        "coverage": 1.0,
+        "agreement": 0.685,
+        "non_abstained_agreement": 0.685,
+        "wilson_lower_95": 0.617649158589664,
+        "wilson_upper_95": 0.7453778192205573,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 64,
+            "coverage": 1.0,
+            "agreement": 0.64,
+            "non_abstained_agreement": 0.64,
+            "wilson_lower_95": 0.542352199811621,
+            "wilson_upper_95": 0.7272892540950986,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 73,
+            "coverage": 1.0,
+            "agreement": 0.73,
+            "non_abstained_agreement": 0.73,
+            "wilson_lower_95": 0.6356769977376873,
+            "wilson_upper_95": 0.8073053908233518,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 32,
+      "method": "sgd30",
+      "fit_ms": 15.585666988044977,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 164,
+        "coverage": 1.0,
+        "agreement": 0.82,
+        "non_abstained_agreement": 0.82,
+        "wilson_lower_95": 0.7608840628376157,
+        "wilson_upper_95": 0.8670544933746589,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 79,
+            "coverage": 1.0,
+            "agreement": 0.79,
+            "non_abstained_agreement": 0.79,
+            "wilson_lower_95": 0.7001985069803768,
+            "wilson_upper_95": 0.8583445046835422,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 85,
+            "coverage": 1.0,
+            "agreement": 0.85,
+            "non_abstained_agreement": 0.85,
+            "wilson_lower_95": 0.7671626666784216,
+            "wilson_upper_95": 0.906940968088377,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 32,
+      "method": "averaged_sgd30",
+      "fit_ms": 15.299375052563846,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 160,
+        "coverage": 1.0,
+        "agreement": 0.8,
+        "non_abstained_agreement": 0.8,
+        "wilson_lower_95": 0.7391436038882958,
+        "wilson_upper_95": 0.8495487925607118,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 77,
+            "coverage": 1.0,
+            "agreement": 0.77,
+            "non_abstained_agreement": 0.77,
+            "wilson_lower_95": 0.6784543514317231,
+            "wilson_upper_95": 0.841568452531236,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 83,
+            "coverage": 1.0,
+            "agreement": 0.83,
+            "non_abstained_agreement": 0.83,
+            "wilson_lower_95": 0.7445181876635703,
+            "wilson_upper_95": 0.8910652394022684,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 32,
+      "method": "logistic10",
+      "fit_ms": 2.9671250376850367,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 183,
+        "coverage": 1.0,
+        "agreement": 0.915,
+        "non_abstained_agreement": 0.915,
+        "wilson_lower_95": 0.8681031145576462,
+        "wilson_upper_95": 0.9462547005301477,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 91,
+            "coverage": 1.0,
+            "agreement": 0.91,
+            "non_abstained_agreement": 0.91,
+            "wilson_lower_95": 0.8377362530335634,
+            "wilson_upper_95": 0.9519280048361151,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 92,
+            "coverage": 1.0,
+            "agreement": 0.92,
+            "non_abstained_agreement": 0.92,
+            "wilson_lower_95": 0.8500173312059693,
+            "wilson_upper_95": 0.9589070305141891,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 32,
+      "method": "scaled_logistic10",
+      "fit_ms": 3.276541014201939,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 183,
+        "coverage": 1.0,
+        "agreement": 0.915,
+        "non_abstained_agreement": 0.915,
+        "wilson_lower_95": 0.8681031145576462,
+        "wilson_upper_95": 0.9462547005301477,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 93,
+            "coverage": 1.0,
+            "agreement": 0.93,
+            "non_abstained_agreement": 0.93,
+            "wilson_lower_95": 0.8625032899347025,
+            "wilson_upper_95": 0.965681175635936,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 90,
+            "coverage": 1.0,
+            "agreement": 0.9,
+            "non_abstained_agreement": 0.9,
+            "wilson_lower_95": 0.8256326956323347,
+            "wilson_upper_95": 0.9447714583868639,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 128,
+      "method": "sgd30",
+      "fit_ms": 20.990916062146425,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 173,
+        "coverage": 1.0,
+        "agreement": 0.865,
+        "non_abstained_agreement": 0.865,
+        "wilson_lower_95": 0.8107074954488287,
+        "wilson_upper_95": 0.9055349202307972,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 87,
+            "coverage": 1.0,
+            "agreement": 0.87,
+            "non_abstained_agreement": 0.87,
+            "wilson_lower_95": 0.7901947810519012,
+            "wilson_upper_95": 0.9224290614158575,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 86,
+            "coverage": 1.0,
+            "agreement": 0.86,
+            "non_abstained_agreement": 0.86,
+            "wilson_lower_95": 0.7786263961619276,
+            "wilson_upper_95": 0.914737342455351,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 128,
+      "method": "averaged_sgd30",
+      "fit_ms": 22.41691597737372,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 171,
+        "coverage": 1.0,
+        "agreement": 0.855,
+        "non_abstained_agreement": 0.855,
+        "wilson_lower_95": 0.7995121871510563,
+        "wilson_upper_95": 0.8971071486469359,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 84,
+            "coverage": 1.0,
+            "agreement": 0.84,
+            "non_abstained_agreement": 0.84,
+            "wilson_lower_95": 0.7557955544110557,
+            "wilson_upper_95": 0.8990479765052628,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 87,
+            "coverage": 1.0,
+            "agreement": 0.87,
+            "non_abstained_agreement": 0.87,
+            "wilson_lower_95": 0.7901947810519012,
+            "wilson_upper_95": 0.9224290614158575,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 128,
+      "method": "logistic10",
+      "fit_ms": 6.994999945163727,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 189,
+        "coverage": 1.0,
+        "agreement": 0.945,
+        "non_abstained_agreement": 0.945,
+        "wilson_lower_95": 0.9042120755340645,
+        "wilson_upper_95": 0.9690149791986299,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 93,
+            "coverage": 1.0,
+            "agreement": 0.93,
+            "non_abstained_agreement": 0.93,
+            "wilson_lower_95": 0.8625032899347025,
+            "wilson_upper_95": 0.965681175635936,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 96,
+            "coverage": 1.0,
+            "agreement": 0.96,
+            "non_abstained_agreement": 0.96,
+            "wilson_lower_95": 0.9016278276739262,
+            "wilson_upper_95": 0.984336949448152,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 128,
+      "method": "scaled_logistic10",
+      "fit_ms": 6.806083023548126,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 195,
+        "coverage": 1.0,
+        "agreement": 0.975,
+        "non_abstained_agreement": 0.975,
+        "wilson_lower_95": 0.9428208558483829,
+        "wilson_upper_95": 0.9892754385292123,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 97,
+            "coverage": 1.0,
+            "agreement": 0.97,
+            "non_abstained_agreement": 0.97,
+            "wilson_lower_95": 0.915479219195973,
+            "wilson_upper_95": 0.9897456617765851,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 98,
+            "coverage": 1.0,
+            "agreement": 0.98,
+            "non_abstained_agreement": 0.98,
+            "wilson_lower_95": 0.9299868370580063,
+            "wilson_upper_95": 0.9944981477650318,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 512,
+      "method": "sgd30",
+      "fit_ms": 42.271167039871216,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 177,
+        "coverage": 1.0,
+        "agreement": 0.885,
+        "non_abstained_agreement": 0.885,
+        "wilson_lower_95": 0.8333517476611362,
+        "wilson_upper_95": 0.9221368277817569,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 88,
+            "coverage": 1.0,
+            "agreement": 0.88,
+            "non_abstained_agreement": 0.88,
+            "wilson_lower_95": 0.8018773199709163,
+            "wilson_upper_95": 0.9300066263473222,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 89,
+            "coverage": 1.0,
+            "agreement": 0.89,
+            "non_abstained_agreement": 0.89,
+            "wilson_lower_95": 0.8136853697209698,
+            "wilson_upper_95": 0.9374586804477487,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 512,
+      "method": "averaged_sgd30",
+      "fit_ms": 44.47837499901652,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 175,
+        "coverage": 1.0,
+        "agreement": 0.875,
+        "non_abstained_agreement": 0.875,
+        "wilson_lower_95": 0.8219846471534161,
+        "wilson_upper_95": 0.9138808484078432,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 88,
+            "coverage": 1.0,
+            "agreement": 0.88,
+            "non_abstained_agreement": 0.88,
+            "wilson_lower_95": 0.8018773199709163,
+            "wilson_upper_95": 0.9300066263473222,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 87,
+            "coverage": 1.0,
+            "agreement": 0.87,
+            "non_abstained_agreement": 0.87,
+            "wilson_lower_95": 0.7901947810519012,
+            "wilson_upper_95": 0.9224290614158575,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 512,
+      "method": "logistic10",
+      "fit_ms": 23.46941700670868,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 193,
+        "coverage": 1.0,
+        "agreement": 0.965,
+        "non_abstained_agreement": 0.965,
+        "wilson_lower_95": 0.9295285391333187,
+        "wilson_upper_95": 0.9829446753626429,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 97,
+            "coverage": 1.0,
+            "agreement": 0.97,
+            "non_abstained_agreement": 0.97,
+            "wilson_lower_95": 0.915479219195973,
+            "wilson_upper_95": 0.9897456617765851,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 96,
+            "coverage": 1.0,
+            "agreement": 0.96,
+            "non_abstained_agreement": 0.96,
+            "wilson_lower_95": 0.9016278276739262,
+            "wilson_upper_95": 0.984336949448152,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 512,
+      "method": "scaled_logistic10",
+      "fit_ms": 24.205041001550853,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 196,
+        "coverage": 1.0,
+        "agreement": 0.98,
+        "non_abstained_agreement": 0.98,
+        "wilson_lower_95": 0.9497121344948062,
+        "wilson_upper_95": 0.9921956998236058,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 99,
+            "coverage": 1.0,
+            "agreement": 0.99,
+            "non_abstained_agreement": 0.99,
+            "wilson_lower_95": 0.9455124752390653,
+            "wilson_upper_95": 0.9982326134344526,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 97,
+            "coverage": 1.0,
+            "agreement": 0.97,
+            "non_abstained_agreement": 0.97,
+            "wilson_lower_95": 0.915479219195973,
+            "wilson_upper_95": 0.9897456617765851,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 8,
+      "method": "sgd30",
+      "fit_ms": 15.147541998885572,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 68,
+        "coverage": 1.0,
+        "agreement": 0.34,
+        "non_abstained_agreement": 0.34,
+        "wilson_lower_95": 0.2779143922159556,
+        "wilson_upper_95": 0.40811632967790723,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 34,
+            "coverage": 1.0,
+            "agreement": 0.34,
+            "non_abstained_agreement": 0.34,
+            "wilson_lower_95": 0.25461379497543,
+            "wilson_upper_95": 0.43722454341689065,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 34,
+            "coverage": 1.0,
+            "agreement": 0.34,
+            "non_abstained_agreement": 0.34,
+            "wilson_lower_95": 0.25461379497543,
+            "wilson_upper_95": 0.43722454341689065,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 8,
+      "method": "averaged_sgd30",
+      "fit_ms": 13.967667007818818,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 69,
+        "coverage": 1.0,
+        "agreement": 0.345,
+        "non_abstained_agreement": 0.345,
+        "wilson_lower_95": 0.2825968690139029,
+        "wilson_upper_95": 0.41324539282077655,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 34,
+            "coverage": 1.0,
+            "agreement": 0.34,
+            "non_abstained_agreement": 0.34,
+            "wilson_lower_95": 0.25461379497543,
+            "wilson_upper_95": 0.43722454341689065,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 35,
+            "coverage": 1.0,
+            "agreement": 0.35,
+            "non_abstained_agreement": 0.35,
+            "wilson_lower_95": 0.2636410465347802,
+            "wilson_upper_95": 0.4474573957080203,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 8,
+      "method": "logistic10",
+      "fit_ms": 1.9819580484181643,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 70,
+        "coverage": 1.0,
+        "agreement": 0.35,
+        "non_abstained_agreement": 0.35,
+        "wilson_lower_95": 0.28728715939415395,
+        "wilson_upper_95": 0.41836664238134236,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 35,
+            "coverage": 1.0,
+            "agreement": 0.35,
+            "non_abstained_agreement": 0.35,
+            "wilson_lower_95": 0.2636410465347802,
+            "wilson_upper_95": 0.4474573957080203,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 35,
+            "coverage": 1.0,
+            "agreement": 0.35,
+            "non_abstained_agreement": 0.35,
+            "wilson_lower_95": 0.2636410465347802,
+            "wilson_upper_95": 0.4474573957080203,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 8,
+      "method": "scaled_logistic10",
+      "fit_ms": 2.119000069797039,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 147,
+        "coverage": 1.0,
+        "agreement": 0.735,
+        "non_abstained_agreement": 0.735,
+        "wilson_lower_95": 0.6698229773344888,
+        "wilson_upper_95": 0.7913193998839003,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 71,
+            "coverage": 1.0,
+            "agreement": 0.71,
+            "non_abstained_agreement": 0.71,
+            "wilson_lower_95": 0.6146092505999207,
+            "wilson_upper_95": 0.7898529302601586,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 76,
+            "coverage": 1.0,
+            "agreement": 0.76,
+            "non_abstained_agreement": 0.76,
+            "wilson_lower_95": 0.6676748127670786,
+            "wilson_upper_95": 0.8330878873454004,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 32,
+      "method": "sgd30",
+      "fit_ms": 15.962874982506037,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 69,
+        "coverage": 1.0,
+        "agreement": 0.345,
+        "non_abstained_agreement": 0.345,
+        "wilson_lower_95": 0.2825968690139029,
+        "wilson_upper_95": 0.41324539282077655,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 36,
+            "coverage": 1.0,
+            "agreement": 0.36,
+            "non_abstained_agreement": 0.36,
+            "wilson_lower_95": 0.2727107459049014,
+            "wilson_upper_95": 0.45764780018837914,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 33,
+            "coverage": 1.0,
+            "agreement": 0.33,
+            "non_abstained_agreement": 0.33,
+            "wilson_lower_95": 0.24562983793895452,
+            "wilson_upper_95": 0.4269483966028862,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 32,
+      "method": "averaged_sgd30",
+      "fit_ms": 15.781750087626278,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 69,
+        "coverage": 1.0,
+        "agreement": 0.345,
+        "non_abstained_agreement": 0.345,
+        "wilson_lower_95": 0.2825968690139029,
+        "wilson_upper_95": 0.41324539282077655,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 36,
+            "coverage": 1.0,
+            "agreement": 0.36,
+            "non_abstained_agreement": 0.36,
+            "wilson_lower_95": 0.2727107459049014,
+            "wilson_upper_95": 0.45764780018837914,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 33,
+            "coverage": 1.0,
+            "agreement": 0.33,
+            "non_abstained_agreement": 0.33,
+            "wilson_lower_95": 0.24562983793895452,
+            "wilson_upper_95": 0.4269483966028862,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 32,
+      "method": "logistic10",
+      "fit_ms": 3.1892500119283795,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 67,
+        "coverage": 1.0,
+        "agreement": 0.335,
+        "non_abstained_agreement": 0.335,
+        "wilson_lower_95": 0.2732398096874265,
+        "wilson_upper_95": 0.4029793722656195,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 35,
+            "coverage": 1.0,
+            "agreement": 0.35,
+            "non_abstained_agreement": 0.35,
+            "wilson_lower_95": 0.2636410465347802,
+            "wilson_upper_95": 0.4474573957080203,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 32,
+            "coverage": 1.0,
+            "agreement": 0.32,
+            "non_abstained_agreement": 0.32,
+            "wilson_lower_95": 0.2366901081545688,
+            "wilson_upper_95": 0.4166280225367919,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 32,
+      "method": "scaled_logistic10",
+      "fit_ms": 3.1970839481800795,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 180,
+        "coverage": 1.0,
+        "agreement": 0.9,
+        "non_abstained_agreement": 0.9,
+        "wilson_lower_95": 0.8505931364369146,
+        "wilson_upper_95": 0.9343300588284289,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 89,
+            "coverage": 1.0,
+            "agreement": 0.89,
+            "non_abstained_agreement": 0.89,
+            "wilson_lower_95": 0.8136853697209698,
+            "wilson_upper_95": 0.9374586804477487,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 91,
+            "coverage": 1.0,
+            "agreement": 0.91,
+            "non_abstained_agreement": 0.91,
+            "wilson_lower_95": 0.8377362530335634,
+            "wilson_upper_95": 0.9519280048361151,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 128,
+      "method": "sgd30",
+      "fit_ms": 22.016292088665068,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 68,
+        "coverage": 1.0,
+        "agreement": 0.34,
+        "non_abstained_agreement": 0.34,
+        "wilson_lower_95": 0.2779143922159556,
+        "wilson_upper_95": 0.40811632967790723,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 35,
+            "coverage": 1.0,
+            "agreement": 0.35,
+            "non_abstained_agreement": 0.35,
+            "wilson_lower_95": 0.2636410465347802,
+            "wilson_upper_95": 0.4474573957080203,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 33,
+            "coverage": 1.0,
+            "agreement": 0.33,
+            "non_abstained_agreement": 0.33,
+            "wilson_lower_95": 0.24562983793895452,
+            "wilson_upper_95": 0.4269483966028862,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 128,
+      "method": "averaged_sgd30",
+      "fit_ms": 22.282207966782153,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 68,
+        "coverage": 1.0,
+        "agreement": 0.34,
+        "non_abstained_agreement": 0.34,
+        "wilson_lower_95": 0.2779143922159556,
+        "wilson_upper_95": 0.40811632967790723,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 34,
+            "coverage": 1.0,
+            "agreement": 0.34,
+            "non_abstained_agreement": 0.34,
+            "wilson_lower_95": 0.25461379497543,
+            "wilson_upper_95": 0.43722454341689065,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 34,
+            "coverage": 1.0,
+            "agreement": 0.34,
+            "non_abstained_agreement": 0.34,
+            "wilson_lower_95": 0.25461379497543,
+            "wilson_upper_95": 0.43722454341689065,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 128,
+      "method": "logistic10",
+      "fit_ms": 7.425333024002612,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 76,
+        "coverage": 1.0,
+        "agreement": 0.38,
+        "non_abstained_agreement": 0.38,
+        "wilson_lower_95": 0.3155889366123922,
+        "wilson_upper_95": 0.4489341048080049,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 38,
+            "coverage": 1.0,
+            "agreement": 0.38,
+            "non_abstained_agreement": 0.38,
+            "wilson_lower_95": 0.2909744920013438,
+            "wilson_upper_95": 0.47790426179289663,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 38,
+            "coverage": 1.0,
+            "agreement": 0.38,
+            "non_abstained_agreement": 0.38,
+            "wilson_lower_95": 0.2909744920013438,
+            "wilson_upper_95": 0.47790426179289663,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 128,
+      "method": "scaled_logistic10",
+      "fit_ms": 6.79899996612221,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 192,
+        "coverage": 1.0,
+        "agreement": 0.96,
+        "non_abstained_agreement": 0.96,
+        "wilson_lower_95": 0.9230670617058012,
+        "wilson_upper_95": 0.9795946128493436,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 97,
+            "coverage": 1.0,
+            "agreement": 0.97,
+            "non_abstained_agreement": 0.97,
+            "wilson_lower_95": 0.915479219195973,
+            "wilson_upper_95": 0.9897456617765851,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 95,
+            "coverage": 1.0,
+            "agreement": 0.95,
+            "non_abstained_agreement": 0.95,
+            "wilson_lower_95": 0.8882480347279118,
+            "wilson_upper_95": 0.9784566385436864,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 512,
+      "method": "sgd30",
+      "fit_ms": 42.82833298202604,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 67,
+        "coverage": 1.0,
+        "agreement": 0.335,
+        "non_abstained_agreement": 0.335,
+        "wilson_lower_95": 0.2732398096874265,
+        "wilson_upper_95": 0.4029793722656195,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 33,
+            "coverage": 1.0,
+            "agreement": 0.33,
+            "non_abstained_agreement": 0.33,
+            "wilson_lower_95": 0.24562983793895452,
+            "wilson_upper_95": 0.4269483966028862,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 34,
+            "coverage": 1.0,
+            "agreement": 0.34,
+            "non_abstained_agreement": 0.34,
+            "wilson_lower_95": 0.25461379497543,
+            "wilson_upper_95": 0.43722454341689065,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 512,
+      "method": "averaged_sgd30",
+      "fit_ms": 44.75466604344547,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 73,
+        "coverage": 1.0,
+        "agreement": 0.365,
+        "non_abstained_agreement": 0.365,
+        "wilson_lower_95": 0.3014041621876483,
+        "wilson_upper_95": 0.4336842594102984,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 36,
+            "coverage": 1.0,
+            "agreement": 0.36,
+            "non_abstained_agreement": 0.36,
+            "wilson_lower_95": 0.2727107459049014,
+            "wilson_upper_95": 0.45764780018837914,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 37,
+            "coverage": 1.0,
+            "agreement": 0.37,
+            "non_abstained_agreement": 0.37,
+            "wilson_lower_95": 0.28182212569509163,
+            "wilson_upper_95": 0.46779652424866885,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 512,
+      "method": "logistic10",
+      "fit_ms": 27.945958077907562,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 107,
+        "coverage": 1.0,
+        "agreement": 0.535,
+        "non_abstained_agreement": 0.535,
+        "wilson_lower_95": 0.46586521028994954,
+        "wilson_upper_95": 0.6028155692957681,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 53,
+            "coverage": 1.0,
+            "agreement": 0.53,
+            "non_abstained_agreement": 0.53,
+            "wilson_lower_95": 0.4328868313724773,
+            "wilson_upper_95": 0.6248934801789626,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 54,
+            "coverage": 1.0,
+            "agreement": 0.54,
+            "non_abstained_agreement": 0.54,
+            "wilson_lower_95": 0.44264685393523856,
+            "wilson_upper_95": 0.6343935614666815,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 512,
+      "method": "scaled_logistic10",
+      "fit_ms": 26.21570904739201,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 197,
+        "coverage": 1.0,
+        "agreement": 0.985,
+        "non_abstained_agreement": 0.985,
+        "wilson_lower_95": 0.9568335194437211,
+        "wilson_upper_95": 0.9948858548155076,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 98,
+            "coverage": 1.0,
+            "agreement": 0.98,
+            "non_abstained_agreement": 0.98,
+            "wilson_lower_95": 0.9299868370580063,
+            "wilson_upper_95": 0.9944981477650318,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 99,
+            "coverage": 1.0,
+            "agreement": 0.99,
+            "non_abstained_agreement": 0.99,
+            "wilson_lower_95": 0.9455124752390653,
+            "wilson_upper_95": 0.9982326134344526,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 8,
+      "method": "sgd30",
+      "fit_ms": 15.336999902501702,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 62,
+        "coverage": 1.0,
+        "agreement": 0.31,
+        "non_abstained_agreement": 0.31,
+        "wilson_lower_95": 0.24998842733633997,
+        "wilson_upper_95": 0.377173054912622,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 26,
+            "coverage": 1.0,
+            "agreement": 0.26,
+            "non_abstained_agreement": 0.26,
+            "wilson_lower_95": 0.18404578126986462,
+            "wilson_upper_95": 0.35371172631861636,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 36,
+            "coverage": 1.0,
+            "agreement": 0.36,
+            "non_abstained_agreement": 0.36,
+            "wilson_lower_95": 0.2727107459049014,
+            "wilson_upper_95": 0.45764780018837914,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 8,
+      "method": "averaged_sgd30",
+      "fit_ms": 13.948041945695877,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 60,
+        "coverage": 1.0,
+        "agreement": 0.3,
+        "non_abstained_agreement": 0.3,
+        "wilson_lower_95": 0.24074644243406385,
+        "wilson_upper_95": 0.3667919599332645,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 25,
+            "coverage": 1.0,
+            "agreement": 0.25,
+            "non_abstained_agreement": 0.25,
+            "wilson_lower_95": 0.1754509400372426,
+            "wilson_upper_95": 0.3430464637007583,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 35,
+            "coverage": 1.0,
+            "agreement": 0.35,
+            "non_abstained_agreement": 0.35,
+            "wilson_lower_95": 0.2636410465347802,
+            "wilson_upper_95": 0.4474573957080203,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 8,
+      "method": "logistic10",
+      "fit_ms": 2.1162499906495214,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 65,
+        "coverage": 1.0,
+        "agreement": 0.325,
+        "non_abstained_agreement": 0.325,
+        "wilson_lower_95": 0.2639146705018621,
+        "wilson_upper_95": 0.39268143156955027,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 27,
+            "coverage": 1.0,
+            "agreement": 0.27,
+            "non_abstained_agreement": 0.27,
+            "wilson_lower_95": 0.1926946091766482,
+            "wilson_upper_95": 0.3643230022623127,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 38,
+            "coverage": 1.0,
+            "agreement": 0.38,
+            "non_abstained_agreement": 0.38,
+            "wilson_lower_95": 0.2909744920013438,
+            "wilson_upper_95": 0.47790426179289663,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 8,
+      "method": "scaled_logistic10",
+      "fit_ms": 2.0815409952774644,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 90,
+        "coverage": 1.0,
+        "agreement": 0.45,
+        "non_abstained_agreement": 0.45,
+        "wilson_lower_95": 0.38263948633754313,
+        "wilson_upper_95": 0.519245114254289,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 48,
+            "coverage": 1.0,
+            "agreement": 0.48,
+            "non_abstained_agreement": 0.48,
+            "wilson_lower_95": 0.38464384320080547,
+            "wilson_upper_95": 0.5768359490982345,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 42,
+            "coverage": 1.0,
+            "agreement": 0.42,
+            "non_abstained_agreement": 0.42,
+            "wilson_lower_95": 0.327982249185113,
+            "wilson_upper_95": 0.5179369200110473,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 32,
+      "method": "sgd30",
+      "fit_ms": 15.320165897719562,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 106,
+        "coverage": 1.0,
+        "agreement": 0.53,
+        "non_abstained_agreement": 0.53,
+        "wilson_lower_95": 0.46091557335361155,
+        "wilson_upper_95": 0.5979536662912893,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 50,
+            "coverage": 1.0,
+            "agreement": 0.5,
+            "non_abstained_agreement": 0.5,
+            "wilson_lower_95": 0.40382982859014716,
+            "wilson_upper_95": 0.5961701714098528,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 56,
+            "coverage": 1.0,
+            "agreement": 0.56,
+            "non_abstained_agreement": 0.56,
+            "wilson_lower_95": 0.4622792771125631,
+            "wilson_upper_95": 0.6532813459903167,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 32,
+      "method": "averaged_sgd30",
+      "fit_ms": 15.61170897912234,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 101,
+        "coverage": 1.0,
+        "agreement": 0.505,
+        "non_abstained_agreement": 0.505,
+        "wilson_lower_95": 0.4362687594824017,
+        "wilson_upper_95": 0.5735427804584151,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 49,
+            "coverage": 1.0,
+            "agreement": 0.49,
+            "non_abstained_agreement": 0.49,
+            "wilson_lower_95": 0.3942183009238615,
+            "wilson_upper_95": 0.5865215952256586,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 52,
+            "coverage": 1.0,
+            "agreement": 0.52,
+            "non_abstained_agreement": 0.52,
+            "wilson_lower_95": 0.4231640509017654,
+            "wilson_upper_95": 0.6153561567991945,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 32,
+      "method": "logistic10",
+      "fit_ms": 3.3542499877512455,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 107,
+        "coverage": 1.0,
+        "agreement": 0.535,
+        "non_abstained_agreement": 0.535,
+        "wilson_lower_95": 0.46586521028994954,
+        "wilson_upper_95": 0.6028155692957681,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 55,
+            "coverage": 1.0,
+            "agreement": 0.55,
+            "non_abstained_agreement": 0.55,
+            "wilson_lower_95": 0.45244427031643447,
+            "wilson_upper_95": 0.6438562489359654,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 52,
+            "coverage": 1.0,
+            "agreement": 0.52,
+            "non_abstained_agreement": 0.52,
+            "wilson_lower_95": 0.4231640509017654,
+            "wilson_upper_95": 0.6153561567991945,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 32,
+      "method": "scaled_logistic10",
+      "fit_ms": 2.952749957330525,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 111,
+        "coverage": 1.0,
+        "agreement": 0.555,
+        "non_abstained_agreement": 0.555,
+        "wilson_lower_95": 0.4857317563236392,
+        "wilson_upper_95": 0.6221951830253456,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 56,
+            "coverage": 1.0,
+            "agreement": 0.56,
+            "non_abstained_agreement": 0.56,
+            "wilson_lower_95": 0.4622792771125631,
+            "wilson_upper_95": 0.6532813459903167,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 55,
+            "coverage": 1.0,
+            "agreement": 0.55,
+            "non_abstained_agreement": 0.55,
+            "wilson_lower_95": 0.45244427031643447,
+            "wilson_upper_95": 0.6438562489359654,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 128,
+      "method": "sgd30",
+      "fit_ms": 20.742291933856905,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 126,
+        "coverage": 1.0,
+        "agreement": 0.63,
+        "non_abstained_agreement": 0.63,
+        "wilson_lower_95": 0.5612250134987606,
+        "wilson_upper_95": 0.6938750249624759,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 62,
+            "coverage": 1.0,
+            "agreement": 0.62,
+            "non_abstained_agreement": 0.62,
+            "wilson_lower_95": 0.5220957382071033,
+            "wilson_upper_95": 0.7090255079986562,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 64,
+            "coverage": 1.0,
+            "agreement": 0.64,
+            "non_abstained_agreement": 0.64,
+            "wilson_lower_95": 0.542352199811621,
+            "wilson_upper_95": 0.7272892540950986,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 128,
+      "method": "averaged_sgd30",
+      "fit_ms": 21.1719999788329,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 122,
+        "coverage": 1.0,
+        "agreement": 0.61,
+        "non_abstained_agreement": 0.61,
+        "wilson_lower_95": 0.5409361758928832,
+        "wilson_upper_95": 0.6749177028050861,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 58,
+            "coverage": 1.0,
+            "agreement": 0.58,
+            "non_abstained_agreement": 0.58,
+            "wilson_lower_95": 0.4820630799889527,
+            "wilson_upper_95": 0.672017750814887,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 64,
+            "coverage": 1.0,
+            "agreement": 0.64,
+            "non_abstained_agreement": 0.64,
+            "wilson_lower_95": 0.542352199811621,
+            "wilson_upper_95": 0.7272892540950986,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 128,
+      "method": "logistic10",
+      "fit_ms": 7.2855830658227205,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 127,
+        "coverage": 1.0,
+        "agreement": 0.635,
+        "non_abstained_agreement": 0.635,
+        "wilson_lower_95": 0.5663157405897017,
+        "wilson_upper_95": 0.6985958378123518,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 62,
+            "coverage": 1.0,
+            "agreement": 0.62,
+            "non_abstained_agreement": 0.62,
+            "wilson_lower_95": 0.5220957382071033,
+            "wilson_upper_95": 0.7090255079986562,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 65,
+            "coverage": 1.0,
+            "agreement": 0.65,
+            "non_abstained_agreement": 0.65,
+            "wilson_lower_95": 0.5525426042919797,
+            "wilson_upper_95": 0.7363589534652197,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 128,
+      "method": "scaled_logistic10",
+      "fit_ms": 6.784582976251841,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 128,
+        "coverage": 1.0,
+        "agreement": 0.64,
+        "non_abstained_agreement": 0.64,
+        "wilson_lower_95": 0.5714139956562682,
+        "wilson_upper_95": 0.7033091226866021,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 62,
+            "coverage": 1.0,
+            "agreement": 0.62,
+            "non_abstained_agreement": 0.62,
+            "wilson_lower_95": 0.5220957382071033,
+            "wilson_upper_95": 0.7090255079986562,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 66,
+            "coverage": 1.0,
+            "agreement": 0.66,
+            "non_abstained_agreement": 0.66,
+            "wilson_lower_95": 0.5627754565831095,
+            "wilson_upper_95": 0.74538620502457,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 512,
+      "method": "sgd30",
+      "fit_ms": 41.02654103189707,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 138,
+        "coverage": 1.0,
+        "agreement": 0.69,
+        "non_abstained_agreement": 0.69,
+        "wilson_lower_95": 0.622826945087378,
+        "wilson_upper_95": 0.75001157266366,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 68,
+            "coverage": 1.0,
+            "agreement": 0.68,
+            "non_abstained_agreement": 0.68,
+            "wilson_lower_95": 0.5833719774632081,
+            "wilson_upper_95": 0.7633098918454312,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 70,
+            "coverage": 1.0,
+            "agreement": 0.7,
+            "non_abstained_agreement": 0.7,
+            "wilson_lower_95": 0.6041496156718804,
+            "wilson_upper_95": 0.7810524613377188,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 512,
+      "method": "averaged_sgd30",
+      "fit_ms": 45.571208000183105,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 139,
+        "coverage": 1.0,
+        "agreement": 0.695,
+        "non_abstained_agreement": 0.695,
+        "wilson_lower_95": 0.6280132012185453,
+        "wilson_upper_95": 0.7546368564733095,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 69,
+            "coverage": 1.0,
+            "agreement": 0.69,
+            "non_abstained_agreement": 0.69,
+            "wilson_lower_95": 0.5937376052204429,
+            "wilson_upper_95": 0.7722043679386762,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 70,
+            "coverage": 1.0,
+            "agreement": 0.7,
+            "non_abstained_agreement": 0.7,
+            "wilson_lower_95": 0.6041496156718804,
+            "wilson_upper_95": 0.7810524613377188,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 512,
+      "method": "logistic10",
+      "fit_ms": 23.570833960548043,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 140,
+        "coverage": 1.0,
+        "agreement": 0.7,
+        "non_abstained_agreement": 0.7,
+        "wilson_lower_95": 0.6332080400667355,
+        "wilson_upper_95": 0.759253557565936,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 68,
+            "coverage": 1.0,
+            "agreement": 0.68,
+            "non_abstained_agreement": 0.68,
+            "wilson_lower_95": 0.5833719774632081,
+            "wilson_upper_95": 0.7633098918454312,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 72,
+            "coverage": 1.0,
+            "agreement": 0.72,
+            "non_abstained_agreement": 0.72,
+            "wilson_lower_95": 0.6251178763865427,
+            "wilson_upper_95": 0.7986044083240164,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 512,
+      "method": "scaled_logistic10",
+      "fit_ms": 23.364874999970198,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 140,
+        "coverage": 1.0,
+        "agreement": 0.7,
+        "non_abstained_agreement": 0.7,
+        "wilson_lower_95": 0.6332080400667355,
+        "wilson_upper_95": 0.759253557565936,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 68,
+            "coverage": 1.0,
+            "agreement": 0.68,
+            "non_abstained_agreement": 0.68,
+            "wilson_lower_95": 0.5833719774632081,
+            "wilson_upper_95": 0.7633098918454312,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 72,
+            "coverage": 1.0,
+            "agreement": 0.72,
+            "non_abstained_agreement": 0.72,
+            "wilson_lower_95": 0.6251178763865427,
+            "wilson_upper_95": 0.7986044083240164,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 8,
+      "method": "sgd30",
+      "fit_ms": 15.232708072289824,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 50,
+        "coverage": 1.0,
+        "agreement": 0.25,
+        "non_abstained_agreement": 0.25,
+        "wilson_lower_95": 0.19508076816296532,
+        "wilson_upper_95": 0.3143422347961952,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 13,
+            "coverage": 1.0,
+            "agreement": 0.13,
+            "non_abstained_agreement": 0.13,
+            "wilson_lower_95": 0.07757093858414264,
+            "wilson_upper_95": 0.20980521894809878,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 37,
+            "coverage": 1.0,
+            "agreement": 0.37,
+            "non_abstained_agreement": 0.37,
+            "wilson_lower_95": 0.28182212569509163,
+            "wilson_upper_95": 0.46779652424866885,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 8,
+      "method": "averaged_sgd30",
+      "fit_ms": 13.687958009541035,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 50,
+        "coverage": 1.0,
+        "agreement": 0.25,
+        "non_abstained_agreement": 0.25,
+        "wilson_lower_95": 0.19508076816296532,
+        "wilson_upper_95": 0.3143422347961952,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 13,
+            "coverage": 1.0,
+            "agreement": 0.13,
+            "non_abstained_agreement": 0.13,
+            "wilson_lower_95": 0.07757093858414264,
+            "wilson_upper_95": 0.20980521894809878,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 37,
+            "coverage": 1.0,
+            "agreement": 0.37,
+            "non_abstained_agreement": 0.37,
+            "wilson_lower_95": 0.28182212569509163,
+            "wilson_upper_95": 0.46779652424866885,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 8,
+      "method": "logistic10",
+      "fit_ms": 2.3132499773055315,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 53,
+        "coverage": 1.0,
+        "agreement": 0.265,
+        "non_abstained_agreement": 0.265,
+        "wilson_lower_95": 0.20868060011609973,
+        "wilson_upper_95": 0.33017702266551113,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 17,
+            "coverage": 1.0,
+            "agreement": 0.17,
+            "non_abstained_agreement": 0.17,
+            "wilson_lower_95": 0.10893476059773155,
+            "wilson_upper_95": 0.25548181233642975,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 36,
+            "coverage": 1.0,
+            "agreement": 0.36,
+            "non_abstained_agreement": 0.36,
+            "wilson_lower_95": 0.2727107459049014,
+            "wilson_upper_95": 0.45764780018837914,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 8,
+      "method": "scaled_logistic10",
+      "fit_ms": 2.048416994512081,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 54,
+        "coverage": 1.0,
+        "agreement": 0.27,
+        "non_abstained_agreement": 0.27,
+        "wilson_lower_95": 0.2132335473104056,
+        "wilson_upper_95": 0.3354356154120221,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 23,
+            "coverage": 1.0,
+            "agreement": 0.23,
+            "non_abstained_agreement": 0.23,
+            "wilson_lower_95": 0.15843154746876406,
+            "wilson_upper_95": 0.32154564856827694,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 31,
+            "coverage": 1.0,
+            "agreement": 0.31,
+            "non_abstained_agreement": 0.31,
+            "wilson_lower_95": 0.22779563206132378,
+            "wilson_upper_95": 0.40626239477955695,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 32,
+      "method": "sgd30",
+      "fit_ms": 16.10170805361122,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 44,
+        "coverage": 1.0,
+        "agreement": 0.22,
+        "non_abstained_agreement": 0.22,
+        "wilson_lower_95": 0.16816453539463405,
+        "wilson_upper_95": 0.2823892279196257,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 15,
+            "coverage": 1.0,
+            "agreement": 0.15,
+            "non_abstained_agreement": 0.15,
+            "wilson_lower_95": 0.09305903191162297,
+            "wilson_upper_95": 0.23283733332157835,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 29,
+            "coverage": 1.0,
+            "agreement": 0.29,
+            "non_abstained_agreement": 0.29,
+            "wilson_lower_95": 0.21014706973984146,
+            "wilson_upper_95": 0.38539074940007934,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 32,
+      "method": "averaged_sgd30",
+      "fit_ms": 15.969500062055886,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 43,
+        "coverage": 1.0,
+        "agreement": 0.215,
+        "non_abstained_agreement": 0.215,
+        "wilson_lower_95": 0.16371792563672208,
+        "wilson_upper_95": 0.2770242977367209,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 18,
+            "coverage": 1.0,
+            "agreement": 0.18,
+            "non_abstained_agreement": 0.18,
+            "wilson_lower_95": 0.11700131654251038,
+            "wilson_upper_95": 0.26667536024213084,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 25,
+            "coverage": 1.0,
+            "agreement": 0.25,
+            "non_abstained_agreement": 0.25,
+            "wilson_lower_95": 0.1754509400372426,
+            "wilson_upper_95": 0.3430464637007583,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 32,
+      "method": "logistic10",
+      "fit_ms": 2.880082931369543,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 48,
+        "coverage": 1.0,
+        "agreement": 0.24,
+        "non_abstained_agreement": 0.24,
+        "wilson_lower_95": 0.1860652685202468,
+        "wilson_upper_95": 0.3037346545572801,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 15,
+            "coverage": 1.0,
+            "agreement": 0.15,
+            "non_abstained_agreement": 0.15,
+            "wilson_lower_95": 0.09305903191162297,
+            "wilson_upper_95": 0.23283733332157835,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 33,
+            "coverage": 1.0,
+            "agreement": 0.33,
+            "non_abstained_agreement": 0.33,
+            "wilson_lower_95": 0.24562983793895452,
+            "wilson_upper_95": 0.4269483966028862,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 32,
+      "method": "scaled_logistic10",
+      "fit_ms": 2.970790956169367,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 47,
+        "coverage": 1.0,
+        "agreement": 0.235,
+        "non_abstained_agreement": 0.235,
+        "wilson_lower_95": 0.18157345326946356,
+        "wilson_upper_95": 0.29841492986724655,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 15,
+            "coverage": 1.0,
+            "agreement": 0.15,
+            "non_abstained_agreement": 0.15,
+            "wilson_lower_95": 0.09305903191162297,
+            "wilson_upper_95": 0.23283733332157835,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 32,
+            "coverage": 1.0,
+            "agreement": 0.32,
+            "non_abstained_agreement": 0.32,
+            "wilson_lower_95": 0.2366901081545688,
+            "wilson_upper_95": 0.4166280225367919,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 128,
+      "method": "sgd30",
+      "fit_ms": 20.705917035229504,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 41,
+        "coverage": 1.0,
+        "agreement": 0.205,
+        "non_abstained_agreement": 0.205,
+        "wilson_lower_95": 0.15486094831106376,
+        "wilson_upper_95": 0.26625819518074556,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 23,
+            "coverage": 1.0,
+            "agreement": 0.23,
+            "non_abstained_agreement": 0.23,
+            "wilson_lower_95": 0.15843154746876406,
+            "wilson_upper_95": 0.32154564856827694,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 18,
+            "coverage": 1.0,
+            "agreement": 0.18,
+            "non_abstained_agreement": 0.18,
+            "wilson_lower_95": 0.11700131654251038,
+            "wilson_upper_95": 0.26667536024213084,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 128,
+      "method": "averaged_sgd30",
+      "fit_ms": 22.571208071894944,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 41,
+        "coverage": 1.0,
+        "agreement": 0.205,
+        "non_abstained_agreement": 0.205,
+        "wilson_lower_95": 0.15486094831106376,
+        "wilson_upper_95": 0.26625819518074556,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 23,
+            "coverage": 1.0,
+            "agreement": 0.23,
+            "non_abstained_agreement": 0.23,
+            "wilson_lower_95": 0.15843154746876406,
+            "wilson_upper_95": 0.32154564856827694,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 18,
+            "coverage": 1.0,
+            "agreement": 0.18,
+            "non_abstained_agreement": 0.18,
+            "wilson_lower_95": 0.11700131654251038,
+            "wilson_upper_95": 0.26667536024213084,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 128,
+      "method": "logistic10",
+      "fit_ms": 6.676458055153489,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 42,
+        "coverage": 1.0,
+        "agreement": 0.21,
+        "non_abstained_agreement": 0.21,
+        "wilson_lower_95": 0.15928329527863416,
+        "wilson_upper_95": 0.271647388153992,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 23,
+            "coverage": 1.0,
+            "agreement": 0.23,
+            "non_abstained_agreement": 0.23,
+            "wilson_lower_95": 0.15843154746876406,
+            "wilson_upper_95": 0.32154564856827694,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 19,
+            "coverage": 1.0,
+            "agreement": 0.19,
+            "non_abstained_agreement": 0.19,
+            "wilson_lower_95": 0.1251465399270426,
+            "wilson_upper_95": 0.27779024070807856,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 128,
+      "method": "scaled_logistic10",
+      "fit_ms": 6.274417042732239,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 42,
+        "coverage": 1.0,
+        "agreement": 0.21,
+        "non_abstained_agreement": 0.21,
+        "wilson_lower_95": 0.15928329527863416,
+        "wilson_upper_95": 0.271647388153992,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 23,
+            "coverage": 1.0,
+            "agreement": 0.23,
+            "non_abstained_agreement": 0.23,
+            "wilson_lower_95": 0.15843154746876406,
+            "wilson_upper_95": 0.32154564856827694,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 19,
+            "coverage": 1.0,
+            "agreement": 0.19,
+            "non_abstained_agreement": 0.19,
+            "wilson_lower_95": 0.1251465399270426,
+            "wilson_upper_95": 0.27779024070807856,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 512,
+      "method": "sgd30",
+      "fit_ms": 41.501958039589226,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 38,
+        "coverage": 1.0,
+        "agreement": 0.19,
+        "non_abstained_agreement": 0.19,
+        "wilson_lower_95": 0.14167093792456506,
+        "wilson_upper_95": 0.250013585744794,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 23,
+            "coverage": 1.0,
+            "agreement": 0.23,
+            "non_abstained_agreement": 0.23,
+            "wilson_lower_95": 0.15843154746876406,
+            "wilson_upper_95": 0.32154564856827694,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 15,
+            "coverage": 1.0,
+            "agreement": 0.15,
+            "non_abstained_agreement": 0.15,
+            "wilson_lower_95": 0.09305903191162297,
+            "wilson_upper_95": 0.23283733332157835,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 512,
+      "method": "averaged_sgd30",
+      "fit_ms": 45.24658294394612,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 45,
+        "coverage": 1.0,
+        "agreement": 0.225,
+        "non_abstained_agreement": 0.225,
+        "wilson_lower_95": 0.17262283786915622,
+        "wilson_upper_95": 0.28774246538592035,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 28,
+            "coverage": 1.0,
+            "agreement": 0.28,
+            "non_abstained_agreement": 0.28,
+            "wilson_lower_95": 0.2013955916759837,
+            "wilson_upper_95": 0.37488212361345724,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 17,
+            "coverage": 1.0,
+            "agreement": 0.17,
+            "non_abstained_agreement": 0.17,
+            "wilson_lower_95": 0.10893476059773155,
+            "wilson_upper_95": 0.25548181233642975,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 512,
+      "method": "logistic10",
+      "fit_ms": 23.411625064909458,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 43,
+        "coverage": 1.0,
+        "agreement": 0.215,
+        "non_abstained_agreement": 0.215,
+        "wilson_lower_95": 0.16371792563672208,
+        "wilson_upper_95": 0.2770242977367209,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 27,
+            "coverage": 1.0,
+            "agreement": 0.27,
+            "non_abstained_agreement": 0.27,
+            "wilson_lower_95": 0.1926946091766482,
+            "wilson_upper_95": 0.3643230022623127,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 16,
+            "coverage": 1.0,
+            "agreement": 0.16,
+            "non_abstained_agreement": 0.16,
+            "wilson_lower_95": 0.10095202349473717,
+            "wilson_upper_95": 0.24420444558894414,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 512,
+      "method": "scaled_logistic10",
+      "fit_ms": 22.0382499974221,
+      "validation": {
+        "cases": 200,
+        "non_abstained": 200,
+        "correct": 43,
+        "coverage": 1.0,
+        "agreement": 0.215,
+        "non_abstained_agreement": 0.215,
+        "wilson_lower_95": 0.16371792563672208,
+        "wilson_upper_95": 0.2770242977367209,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 27,
+            "coverage": 1.0,
+            "agreement": 0.27,
+            "non_abstained_agreement": 0.27,
+            "wilson_lower_95": 0.1926946091766482,
+            "wilson_upper_95": 0.3643230022623127,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 100,
+            "non_abstained": 100,
+            "correct": 16,
+            "coverage": 1.0,
+            "agreement": 0.16,
+            "non_abstained_agreement": 0.16,
+            "wilson_lower_95": 0.10095202349473717,
+            "wilson_upper_95": 0.24420444558894414,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      }
+    }
+  ],
+  "test_generated": false,
+  "benchmark_only": true,
+  "human_labels": false,
+  "model_exported": false,
+  "seeds": {
+    "train": 41011,
+    "validation": 52021,
+    "calibration": 63031,
+    "test": 74041
+  },
+  "feature_version": "1.0",
+  "benchmark_sha256": "bfc3ea13cabf67eae16aaecb6438f692803887a23edcdcb6dbe9bc163a40da2a",
+  "worker_sha256": "4db7d5852b18ee2ac8e9728b721594ff0613ab5ff4b0aaafa5e87f14981b39dd"
+}

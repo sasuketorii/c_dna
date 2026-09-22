@@ -1,0 +1,4 @@
+.venv/
+scorer
+__pycache__/
+*-receipt.json

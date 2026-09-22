@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "privacy": {
+    "cloud_processing_enabled": false,
+    "diagnostics_enabled": false,
+    "diagnostics_auto_send": false,
+    "personality_external_access": false,
+    "diagnostics_min_cell_count": 20
+  },
+  "learning": {
+    "default_session_questions": 5,
+    "max_concurrent_training_jobs_per_vault": 1,
+    "auto_activate_models": false,
+    "use_personality_features": false,
+    "use_synthetic_answers_as_labels": false,
+    "active_query_ratio": 0.5,
+    "representative_query_ratio": 0.3,
+    "diversity_query_ratio": 0.2
+  },
+  "interaction": {
+    "reduced_motion": "system",
+    "fast_answer_mode": false,
+    "require_confirm_key_for_keyboard_choice": true,
+    "show_model_choice_before_answer": false
+  },
+  "inference": {
+    "max_candidates": 16,
+    "default_engine": "rust_reference",
+    "cloud_fallback_enabled": false,
+    "execution_authorization": "none"
+  },
+  "mcp": {
+    "transport": "stdio",
+    "public_http_enabled": false,
+    "default_requests_per_minute": 60,
+    "default_burst": 10
+  }
+}

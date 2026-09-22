@@ -1,0 +1,79 @@
+{
+  "personaLabel": "架空のCEO・速度と再利用を重視",
+  "model": {
+    "feature_version": "1.0",
+    "weights": [
+      -0.8540059344935852,
+      -0.6445651324216674,
+      1.4123939556594105,
+      1.1730859890293621,
+      0.7585115782449469,
+      -1.1198690185291231,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.447511371606477,
+      1.2204395340869025,
+      1.0882562859264855,
+      -0.5622144018021046,
+      -1.5328925567295804
+    ],
+    "provisional": true,
+    "calibration": null,
+    "abstention_margin": 0.0,
+    "calibration_scope": [],
+    "supported_candidate_missing_masks": [
+      0
+    ]
+  },
+  "provenance": {
+    "kind": "synthetic_demo_only",
+    "humanLabel": false,
+    "userData": false,
+    "personalAccuracyEvidence": false,
+    "seed": 271828,
+    "trainingCases": 2000,
+    "verificationState": "unconfirmed",
+    "caseKind": "hypothetical",
+    "trainingPath": "cdna_learner.worker._fit_snapshot (internal synthetic-only build)",
+    "generator": "learner/benchmarks/preference_bench.py:generate",
+    "teacherWeights": [
+      -0.4,
+      -0.25,
+      0.65,
+      0.5,
+      0.3,
+      -0.45,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.9,
+      0.7,
+      0.6,
+      -0.35,
+      -0.8
+    ],
+    "learnerSha256": "4db7d5852b18ee2ac8e9728b721594ff0613ab5ff4b0aaafa5e87f14981b39dd",
+    "generatorSha256": "59cee566079bae2dff6d189d9020b9e497015c083ed24289440cf763de03d650",
+    "dependencies": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "pydantic": "2.13.5"
+    },
+    "splits": {
+      "train": 1200,
+      "validation": 300,
+      "calibration": 200,
+      "test": 300,
+      "purged": 0
+    },
+    "notice": "架空のCEO像を合成データで事前学習したデモです。実在の経営者の判断・正解率を示しません。"
+  }
+}

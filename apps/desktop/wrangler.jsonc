@@ -1,0 +1,11 @@
+{
+  "name": "cdna-playground",
+  "account_id": "1b0d66d05b34ffe694010807c0c360c7",
+  "compatibility_date": "2026-09-22",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {
+    "directory": "./dist-static",
+    "not_found_handling": "none"
+  }
+}

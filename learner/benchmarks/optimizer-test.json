@@ -1,0 +1,3202 @@
+{
+  "selected": "scaled_logistic10",
+  "test_used_for_selection": false,
+  "results": [
+    {
+      "profile": "context_tradeoff",
+      "size": 8,
+      "method": "sgd30",
+      "fit_ms": 19.141250057145953,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 120,
+        "coverage": 1.0,
+        "agreement": 0.5,
+        "non_abstained_agreement": 0.5,
+        "wilson_lower_95": 0.43724155475169957,
+        "wilson_upper_95": 0.5627584452483004,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 62,
+            "coverage": 1.0,
+            "agreement": 0.5166666666666667,
+            "non_abstained_agreement": 0.5166666666666667,
+            "wilson_lower_95": 0.42813421852868033,
+            "wilson_upper_95": 0.6041651057694554,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 58,
+            "coverage": 1.0,
+            "agreement": 0.48333333333333334,
+            "non_abstained_agreement": 0.48333333333333334,
+            "wilson_lower_95": 0.3958348942305447,
+            "wilson_upper_95": 0.5718657814713197,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.1912826246872159,
+        "log_loss": 0.5644020921051526
+      },
+      "partition_hashes": {
+        "train": "3916180c94810add089b28e28493afd147cc97d989aca57841621b14b153400d",
+        "validation": "c802d07cd052dec33963c1de31312c3c6cd4c409c9e8844af4547d9f6c12cc46",
+        "calibration": "43c1c4ee8eed39ed1798e28983c3e5ba3cb7e708f40a0496596633e0aec363b6",
+        "test": "20bfdd2460072802a3a84143fc8225e1e2bf92d1302784dc432a9a283c1d2ea0"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 8,
+      "method": "scaled_logistic10",
+      "fit_ms": 6.705707986839116,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 158,
+        "coverage": 1.0,
+        "agreement": 0.6583333333333333,
+        "non_abstained_agreement": 0.6583333333333333,
+        "wilson_lower_95": 0.5962579318859403,
+        "wilson_upper_95": 0.7154198130107466,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 84,
+            "coverage": 1.0,
+            "agreement": 0.7,
+            "non_abstained_agreement": 0.7,
+            "wilson_lower_95": 0.6128469049643513,
+            "wilson_upper_95": 0.7747449866132768,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 74,
+            "coverage": 1.0,
+            "agreement": 0.6166666666666667,
+            "non_abstained_agreement": 0.6166666666666667,
+            "wilson_lower_95": 0.5273391477284313,
+            "wilson_upper_95": 0.6987561223585186,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.11809347742608764,
+        "log_loss": 0.3657037995908306
+      },
+      "partition_hashes": {
+        "train": "3916180c94810add089b28e28493afd147cc97d989aca57841621b14b153400d",
+        "validation": "c802d07cd052dec33963c1de31312c3c6cd4c409c9e8844af4547d9f6c12cc46",
+        "calibration": "43c1c4ee8eed39ed1798e28983c3e5ba3cb7e708f40a0496596633e0aec363b6",
+        "test": "20bfdd2460072802a3a84143fc8225e1e2bf92d1302784dc432a9a283c1d2ea0"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 32,
+      "method": "sgd30",
+      "fit_ms": 18.246958032250404,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 203,
+        "coverage": 1.0,
+        "agreement": 0.8458333333333333,
+        "non_abstained_agreement": 0.8458333333333333,
+        "wilson_lower_95": 0.7947334007732189,
+        "wilson_upper_95": 0.8860364104484922,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 100,
+            "coverage": 1.0,
+            "agreement": 0.8333333333333334,
+            "non_abstained_agreement": 0.8333333333333334,
+            "wilson_lower_95": 0.756545606089762,
+            "wilson_upper_95": 0.8894408798729518,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 103,
+            "coverage": 1.0,
+            "agreement": 0.8583333333333333,
+            "non_abstained_agreement": 0.8583333333333333,
+            "wilson_lower_95": 0.7848035127258367,
+            "wilson_upper_95": 0.9096319596840804,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 177,
+        "correct": 163,
+        "coverage": 0.7375,
+        "agreement": 0.6791666666666667,
+        "non_abstained_agreement": 0.9209039548022598,
+        "wilson_lower_95": 0.8716232338084631,
+        "wilson_upper_95": 0.9523022346678165,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 79,
+            "correct": 74,
+            "coverage": 0.6583333333333333,
+            "agreement": 0.6166666666666667,
+            "non_abstained_agreement": 0.9367088607594937,
+            "wilson_lower_95": 0.8602493258443956,
+            "wilson_upper_95": 0.9726655381852706,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 98,
+            "correct": 89,
+            "coverage": 0.8166666666666667,
+            "agreement": 0.7416666666666667,
+            "non_abstained_agreement": 0.9081632653061225,
+            "wilson_lower_95": 0.8346022720739837,
+            "wilson_upper_95": 0.950931340909316,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "fitted_validation",
+      "margin": 0.25,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.044051612983699154,
+        "log_loss": 0.14425034739597295
+      },
+      "partition_hashes": {
+        "train": "3916180c94810add089b28e28493afd147cc97d989aca57841621b14b153400d",
+        "validation": "c802d07cd052dec33963c1de31312c3c6cd4c409c9e8844af4547d9f6c12cc46",
+        "calibration": "43c1c4ee8eed39ed1798e28983c3e5ba3cb7e708f40a0496596633e0aec363b6",
+        "test": "20bfdd2460072802a3a84143fc8225e1e2bf92d1302784dc432a9a283c1d2ea0"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 32,
+      "method": "scaled_logistic10",
+      "fit_ms": 4.230540944263339,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 222,
+        "coverage": 1.0,
+        "agreement": 0.925,
+        "non_abstained_agreement": 0.925,
+        "wilson_lower_95": 0.8845730571258335,
+        "wilson_upper_95": 0.9520356265442214,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 109,
+            "coverage": 1.0,
+            "agreement": 0.9083333333333333,
+            "non_abstained_agreement": 0.9083333333333333,
+            "wilson_lower_95": 0.843290092093749,
+            "wilson_upper_95": 0.9480433532105753,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 113,
+            "coverage": 1.0,
+            "agreement": 0.9416666666666667,
+            "non_abstained_agreement": 0.9416666666666667,
+            "wilson_lower_95": 0.8844727405319686,
+            "wilson_upper_95": 0.9714593533686271,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 222,
+        "coverage": 1.0,
+        "agreement": 0.925,
+        "non_abstained_agreement": 0.925,
+        "wilson_lower_95": 0.8845730571258335,
+        "wilson_upper_95": 0.9520356265442214,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 109,
+            "coverage": 1.0,
+            "agreement": 0.9083333333333333,
+            "non_abstained_agreement": 0.9083333333333333,
+            "wilson_lower_95": 0.843290092093749,
+            "wilson_upper_95": 0.9480433532105753,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 113,
+            "coverage": 1.0,
+            "agreement": 0.9416666666666667,
+            "non_abstained_agreement": 0.9416666666666667,
+            "wilson_lower_95": 0.8844727405319686,
+            "wilson_upper_95": 0.9714593533686271,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "fitted_validation",
+      "margin": 0.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.024203751100067592,
+        "log_loss": 0.08503223897306142
+      },
+      "partition_hashes": {
+        "train": "3916180c94810add089b28e28493afd147cc97d989aca57841621b14b153400d",
+        "validation": "c802d07cd052dec33963c1de31312c3c6cd4c409c9e8844af4547d9f6c12cc46",
+        "calibration": "43c1c4ee8eed39ed1798e28983c3e5ba3cb7e708f40a0496596633e0aec363b6",
+        "test": "20bfdd2460072802a3a84143fc8225e1e2bf92d1302784dc432a9a283c1d2ea0"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 128,
+      "method": "sgd30",
+      "fit_ms": 30.3776670480147,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 215,
+        "coverage": 1.0,
+        "agreement": 0.8958333333333334,
+        "non_abstained_agreement": 0.8958333333333334,
+        "wilson_lower_95": 0.8507508797916045,
+        "wilson_upper_95": 0.9284434824501132,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 107,
+            "coverage": 1.0,
+            "agreement": 0.8916666666666667,
+            "non_abstained_agreement": 0.8916666666666667,
+            "wilson_lower_95": 0.8234449199472613,
+            "wilson_upper_95": 0.9355892010589275,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 108,
+            "coverage": 1.0,
+            "agreement": 0.9,
+            "non_abstained_agreement": 0.9,
+            "wilson_lower_95": 0.8333168001483641,
+            "wilson_upper_95": 0.9418669830068925,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 220,
+        "correct": 207,
+        "coverage": 0.9166666666666666,
+        "agreement": 0.8625,
+        "non_abstained_agreement": 0.9409090909090909,
+        "wilson_lower_95": 0.9015387028777413,
+        "wilson_upper_95": 0.9651455953045447,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 109,
+            "correct": 102,
+            "coverage": 0.9083333333333333,
+            "agreement": 0.85,
+            "non_abstained_agreement": 0.9357798165137615,
+            "wilson_lower_95": 0.8733413439762652,
+            "wilson_upper_95": 0.9685467540301438,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 111,
+            "correct": 105,
+            "coverage": 0.925,
+            "agreement": 0.875,
+            "non_abstained_agreement": 0.9459459459459459,
+            "wilson_lower_95": 0.887062928365998,
+            "wilson_upper_95": 0.9749940266050229,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "fitted_validation",
+      "margin": 0.1,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.022005507635364078,
+        "log_loss": 0.06811575587594126
+      },
+      "partition_hashes": {
+        "train": "3916180c94810add089b28e28493afd147cc97d989aca57841621b14b153400d",
+        "validation": "c802d07cd052dec33963c1de31312c3c6cd4c409c9e8844af4547d9f6c12cc46",
+        "calibration": "43c1c4ee8eed39ed1798e28983c3e5ba3cb7e708f40a0496596633e0aec363b6",
+        "test": "20bfdd2460072802a3a84143fc8225e1e2bf92d1302784dc432a9a283c1d2ea0"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 128,
+      "method": "scaled_logistic10",
+      "fit_ms": 8.307457901537418,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 234,
+        "coverage": 1.0,
+        "agreement": 0.975,
+        "non_abstained_agreement": 0.975,
+        "wilson_lower_95": 0.9465400421995467,
+        "wilson_upper_95": 0.9884931924905143,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 115,
+            "coverage": 1.0,
+            "agreement": 0.9583333333333334,
+            "non_abstained_agreement": 0.9583333333333334,
+            "wilson_lower_95": 0.9061578707045692,
+            "wilson_upper_95": 0.9820735474941622,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 119,
+            "coverage": 1.0,
+            "agreement": 0.9916666666666667,
+            "non_abstained_agreement": 0.9916666666666667,
+            "wilson_lower_95": 0.9543025846256777,
+            "wilson_upper_95": 0.9985274821693252,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 234,
+        "coverage": 1.0,
+        "agreement": 0.975,
+        "non_abstained_agreement": 0.975,
+        "wilson_lower_95": 0.9465400421995467,
+        "wilson_upper_95": 0.9884931924905143,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 115,
+            "coverage": 1.0,
+            "agreement": 0.9583333333333334,
+            "non_abstained_agreement": 0.9583333333333334,
+            "wilson_lower_95": 0.9061578707045692,
+            "wilson_upper_95": 0.9820735474941622,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 119,
+            "coverage": 1.0,
+            "agreement": 0.9916666666666667,
+            "non_abstained_agreement": 0.9916666666666667,
+            "wilson_lower_95": 0.9543025846256777,
+            "wilson_upper_95": 0.9985274821693252,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "fitted_validation",
+      "margin": 0.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.005515762586517392,
+        "log_loss": 0.018009305131130394
+      },
+      "partition_hashes": {
+        "train": "3916180c94810add089b28e28493afd147cc97d989aca57841621b14b153400d",
+        "validation": "c802d07cd052dec33963c1de31312c3c6cd4c409c9e8844af4547d9f6c12cc46",
+        "calibration": "43c1c4ee8eed39ed1798e28983c3e5ba3cb7e708f40a0496596633e0aec363b6",
+        "test": "20bfdd2460072802a3a84143fc8225e1e2bf92d1302784dc432a9a283c1d2ea0"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 512,
+      "method": "sgd30",
+      "fit_ms": 49.95745909400284,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 218,
+        "coverage": 1.0,
+        "agreement": 0.9083333333333333,
+        "non_abstained_agreement": 0.9083333333333333,
+        "wilson_lower_95": 0.8651148636418499,
+        "wilson_upper_95": 0.9386856363548693,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 106,
+            "coverage": 1.0,
+            "agreement": 0.8833333333333333,
+            "non_abstained_agreement": 0.8833333333333333,
+            "wilson_lower_95": 0.8136649880680831,
+            "wilson_upper_95": 0.9292194707890375,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 112,
+            "coverage": 1.0,
+            "agreement": 0.9333333333333333,
+            "non_abstained_agreement": 0.9333333333333333,
+            "wilson_lower_95": 0.8739473292228184,
+            "wilson_upper_95": 0.9658351025287095,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 227,
+        "correct": 212,
+        "coverage": 0.9458333333333333,
+        "agreement": 0.8833333333333333,
+        "non_abstained_agreement": 0.933920704845815,
+        "wilson_lower_95": 0.8938490611894715,
+        "wilson_upper_95": 0.959549979538023,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 116,
+            "correct": 105,
+            "coverage": 0.9666666666666667,
+            "agreement": 0.875,
+            "non_abstained_agreement": 0.9051724137931034,
+            "wilson_lower_95": 0.8381455089440608,
+            "wilson_upper_95": 0.9462231910732954,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 111,
+            "correct": 107,
+            "coverage": 0.925,
+            "agreement": 0.8916666666666667,
+            "non_abstained_agreement": 0.963963963963964,
+            "wilson_lower_95": 0.9109886133681347,
+            "wilson_upper_95": 0.9858989256421195,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "fitted_validation",
+      "margin": 0.05,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.018108126870526,
+        "log_loss": 0.055920580089796196
+      },
+      "partition_hashes": {
+        "train": "3916180c94810add089b28e28493afd147cc97d989aca57841621b14b153400d",
+        "validation": "c802d07cd052dec33963c1de31312c3c6cd4c409c9e8844af4547d9f6c12cc46",
+        "calibration": "43c1c4ee8eed39ed1798e28983c3e5ba3cb7e708f40a0496596633e0aec363b6",
+        "test": "20bfdd2460072802a3a84143fc8225e1e2bf92d1302784dc432a9a283c1d2ea0"
+      }
+    },
+    {
+      "profile": "context_tradeoff",
+      "size": 512,
+      "method": "scaled_logistic10",
+      "fit_ms": 24.641084019094706,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 238,
+        "coverage": 1.0,
+        "agreement": 0.9916666666666667,
+        "non_abstained_agreement": 0.9916666666666667,
+        "wilson_lower_95": 0.9701296537265586,
+        "wilson_upper_95": 0.997711764636838,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 118,
+            "coverage": 1.0,
+            "agreement": 0.9833333333333333,
+            "non_abstained_agreement": 0.9833333333333333,
+            "wilson_lower_95": 0.9412628731870861,
+            "wilson_upper_95": 0.9954175314588486,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 120,
+            "coverage": 1.0,
+            "agreement": 1.0,
+            "non_abstained_agreement": 1.0,
+            "wilson_lower_95": 0.9689797289440706,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 238,
+        "coverage": 1.0,
+        "agreement": 0.9916666666666667,
+        "non_abstained_agreement": 0.9916666666666667,
+        "wilson_lower_95": 0.9701296537265586,
+        "wilson_upper_95": 0.997711764636838,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 118,
+            "coverage": 1.0,
+            "agreement": 0.9833333333333333,
+            "non_abstained_agreement": 0.9833333333333333,
+            "wilson_lower_95": 0.9412628731870861,
+            "wilson_upper_95": 0.9954175314588486,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 120,
+            "coverage": 1.0,
+            "agreement": 1.0,
+            "non_abstained_agreement": 1.0,
+            "wilson_lower_95": 0.9689797289440706,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "fitted_validation",
+      "margin": 0.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.0013957492448501913,
+        "log_loss": 0.004695825104274873
+      },
+      "partition_hashes": {
+        "train": "3916180c94810add089b28e28493afd147cc97d989aca57841621b14b153400d",
+        "validation": "c802d07cd052dec33963c1de31312c3c6cd4c409c9e8844af4547d9f6c12cc46",
+        "calibration": "43c1c4ee8eed39ed1798e28983c3e5ba3cb7e708f40a0496596633e0aec363b6",
+        "test": "20bfdd2460072802a3a84143fc8225e1e2bf92d1302784dc432a9a283c1d2ea0"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 8,
+      "method": "sgd30",
+      "fit_ms": 15.734333079308271,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 89,
+        "coverage": 1.0,
+        "agreement": 0.37083333333333335,
+        "non_abstained_agreement": 0.37083333333333335,
+        "wilson_lower_95": 0.3122059841048854,
+        "wilson_upper_95": 0.4335305924267646,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 43,
+            "coverage": 1.0,
+            "agreement": 0.35833333333333334,
+            "non_abstained_agreement": 0.35833333333333334,
+            "wilson_lower_95": 0.2781594371658861,
+            "wilson_upper_95": 0.44729630629996064,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 46,
+            "coverage": 1.0,
+            "agreement": 0.38333333333333336,
+            "non_abstained_agreement": 0.38333333333333336,
+            "wilson_lower_95": 0.30124387764148153,
+            "wilson_upper_95": 0.47266085227156884,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.22272995968319928,
+        "log_loss": 0.6359047766410169
+      },
+      "partition_hashes": {
+        "train": "d58913bc672f2e47b524a6d195e4653eca53c356208c67a3b5e7397b29ad9b33",
+        "validation": "7333bda65bafb9113ab267d093b46bedbf9676055d446fa3195a3364be68692f",
+        "calibration": "b0f7c3a7077646e161b2c386f2cbbfa667e6795d8f3cf51588a36ee2b4fd2677",
+        "test": "61ed6d58289845075c8ce3b6a65721c9456d73ca5133f8a695389e5f21821925"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 8,
+      "method": "scaled_logistic10",
+      "fit_ms": 2.1572919795289636,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 164,
+        "coverage": 1.0,
+        "agreement": 0.6833333333333333,
+        "non_abstained_agreement": 0.6833333333333333,
+        "wilson_lower_95": 0.6219861447223709,
+        "wilson_upper_95": 0.7389038756843194,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 82,
+            "coverage": 1.0,
+            "agreement": 0.6833333333333333,
+            "non_abstained_agreement": 0.6833333333333333,
+            "wilson_lower_95": 0.595519646541652,
+            "wilson_upper_95": 0.7597729207378406,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 82,
+            "coverage": 1.0,
+            "agreement": 0.6833333333333333,
+            "non_abstained_agreement": 0.6833333333333333,
+            "wilson_lower_95": 0.595519646541652,
+            "wilson_upper_95": 0.7597729207378406,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.1017741532486988,
+        "log_loss": 0.31730298633894166
+      },
+      "partition_hashes": {
+        "train": "d58913bc672f2e47b524a6d195e4653eca53c356208c67a3b5e7397b29ad9b33",
+        "validation": "7333bda65bafb9113ab267d093b46bedbf9676055d446fa3195a3364be68692f",
+        "calibration": "b0f7c3a7077646e161b2c386f2cbbfa667e6795d8f3cf51588a36ee2b4fd2677",
+        "test": "61ed6d58289845075c8ce3b6a65721c9456d73ca5133f8a695389e5f21821925"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 32,
+      "method": "sgd30",
+      "fit_ms": 17.68270891625434,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 83,
+        "coverage": 1.0,
+        "agreement": 0.3458333333333333,
+        "non_abstained_agreement": 0.3458333333333333,
+        "wilson_lower_95": 0.28851201281500544,
+        "wilson_upper_95": 0.4080122882066413,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 46,
+            "coverage": 1.0,
+            "agreement": 0.38333333333333336,
+            "non_abstained_agreement": 0.38333333333333336,
+            "wilson_lower_95": 0.30124387764148153,
+            "wilson_upper_95": 0.47266085227156884,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 37,
+            "coverage": 1.0,
+            "agreement": 0.30833333333333335,
+            "non_abstained_agreement": 0.30833333333333335,
+            "wilson_lower_95": 0.23272612182675728,
+            "wilson_upper_95": 0.3958316487446824,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.2311882178987182,
+        "log_loss": 0.6542476438901376
+      },
+      "partition_hashes": {
+        "train": "d58913bc672f2e47b524a6d195e4653eca53c356208c67a3b5e7397b29ad9b33",
+        "validation": "7333bda65bafb9113ab267d093b46bedbf9676055d446fa3195a3364be68692f",
+        "calibration": "b0f7c3a7077646e161b2c386f2cbbfa667e6795d8f3cf51588a36ee2b4fd2677",
+        "test": "61ed6d58289845075c8ce3b6a65721c9456d73ca5133f8a695389e5f21821925"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 32,
+      "method": "scaled_logistic10",
+      "fit_ms": 3.633582964539528,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 215,
+        "coverage": 1.0,
+        "agreement": 0.8958333333333334,
+        "non_abstained_agreement": 0.8958333333333334,
+        "wilson_lower_95": 0.8507508797916045,
+        "wilson_upper_95": 0.9284434824501132,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 109,
+            "coverage": 1.0,
+            "agreement": 0.9083333333333333,
+            "non_abstained_agreement": 0.9083333333333333,
+            "wilson_lower_95": 0.843290092093749,
+            "wilson_upper_95": 0.9480433532105753,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 106,
+            "coverage": 1.0,
+            "agreement": 0.8833333333333333,
+            "non_abstained_agreement": 0.8833333333333333,
+            "wilson_lower_95": 0.8136649880680831,
+            "wilson_upper_95": 0.9292194707890375,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 215,
+        "coverage": 1.0,
+        "agreement": 0.8958333333333334,
+        "non_abstained_agreement": 0.8958333333333334,
+        "wilson_lower_95": 0.8507508797916045,
+        "wilson_upper_95": 0.9284434824501132,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 109,
+            "coverage": 1.0,
+            "agreement": 0.9083333333333333,
+            "non_abstained_agreement": 0.9083333333333333,
+            "wilson_lower_95": 0.843290092093749,
+            "wilson_upper_95": 0.9480433532105753,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 106,
+            "coverage": 1.0,
+            "agreement": 0.8833333333333333,
+            "non_abstained_agreement": 0.8833333333333333,
+            "wilson_lower_95": 0.8136649880680831,
+            "wilson_upper_95": 0.9292194707890375,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "fitted_validation",
+      "margin": 0.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.031020196630691402,
+        "log_loss": 0.10200348580954627
+      },
+      "partition_hashes": {
+        "train": "d58913bc672f2e47b524a6d195e4653eca53c356208c67a3b5e7397b29ad9b33",
+        "validation": "7333bda65bafb9113ab267d093b46bedbf9676055d446fa3195a3364be68692f",
+        "calibration": "b0f7c3a7077646e161b2c386f2cbbfa667e6795d8f3cf51588a36ee2b4fd2677",
+        "test": "61ed6d58289845075c8ce3b6a65721c9456d73ca5133f8a695389e5f21821925"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 128,
+      "method": "sgd30",
+      "fit_ms": 23.055708035826683,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 90,
+        "coverage": 1.0,
+        "agreement": 0.375,
+        "non_abstained_agreement": 0.375,
+        "wilson_lower_95": 0.3161718052435718,
+        "wilson_upper_95": 0.437766817206412,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 50,
+            "coverage": 1.0,
+            "agreement": 0.4166666666666667,
+            "non_abstained_agreement": 0.4166666666666667,
+            "wilson_lower_95": 0.3323820653533033,
+            "wilson_upper_95": 0.5061213131560184,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 40,
+            "coverage": 1.0,
+            "agreement": 0.3333333333333333,
+            "non_abstained_agreement": 0.3333333333333333,
+            "wilson_lower_95": 0.255316102227993,
+            "wilson_upper_95": 0.4216906547906502,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.22907280760784623,
+        "log_loss": 0.6496060704446482
+      },
+      "partition_hashes": {
+        "train": "d58913bc672f2e47b524a6d195e4653eca53c356208c67a3b5e7397b29ad9b33",
+        "validation": "7333bda65bafb9113ab267d093b46bedbf9676055d446fa3195a3364be68692f",
+        "calibration": "b0f7c3a7077646e161b2c386f2cbbfa667e6795d8f3cf51588a36ee2b4fd2677",
+        "test": "61ed6d58289845075c8ce3b6a65721c9456d73ca5133f8a695389e5f21821925"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 128,
+      "method": "scaled_logistic10",
+      "fit_ms": 7.400250062346458,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 223,
+        "coverage": 1.0,
+        "agreement": 0.9291666666666667,
+        "non_abstained_agreement": 0.9291666666666667,
+        "wilson_lower_95": 0.8895022909855278,
+        "wilson_upper_95": 0.9553084386028606,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 111,
+            "coverage": 1.0,
+            "agreement": 0.925,
+            "non_abstained_agreement": 0.925,
+            "wilson_lower_95": 0.8635894316089088,
+            "wilson_upper_95": 0.9600433379935513,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 112,
+            "coverage": 1.0,
+            "agreement": 0.9333333333333333,
+            "non_abstained_agreement": 0.9333333333333333,
+            "wilson_lower_95": 0.8739473292228184,
+            "wilson_upper_95": 0.9658351025287095,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 223,
+        "coverage": 1.0,
+        "agreement": 0.9291666666666667,
+        "non_abstained_agreement": 0.9291666666666667,
+        "wilson_lower_95": 0.8895022909855278,
+        "wilson_upper_95": 0.9553084386028606,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 111,
+            "coverage": 1.0,
+            "agreement": 0.925,
+            "non_abstained_agreement": 0.925,
+            "wilson_lower_95": 0.8635894316089088,
+            "wilson_upper_95": 0.9600433379935513,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 112,
+            "coverage": 1.0,
+            "agreement": 0.9333333333333333,
+            "non_abstained_agreement": 0.9333333333333333,
+            "wilson_lower_95": 0.8739473292228184,
+            "wilson_upper_95": 0.9658351025287095,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "fitted_validation",
+      "margin": 0.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.014142602809802585,
+        "log_loss": 0.044791106832459314
+      },
+      "partition_hashes": {
+        "train": "d58913bc672f2e47b524a6d195e4653eca53c356208c67a3b5e7397b29ad9b33",
+        "validation": "7333bda65bafb9113ab267d093b46bedbf9676055d446fa3195a3364be68692f",
+        "calibration": "b0f7c3a7077646e161b2c386f2cbbfa667e6795d8f3cf51588a36ee2b4fd2677",
+        "test": "61ed6d58289845075c8ce3b6a65721c9456d73ca5133f8a695389e5f21821925"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 512,
+      "method": "sgd30",
+      "fit_ms": 44.443874969147146,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 87,
+        "coverage": 1.0,
+        "agreement": 0.3625,
+        "non_abstained_agreement": 0.3625,
+        "wilson_lower_95": 0.30428862453168165,
+        "wilson_upper_95": 0.4250438601633006,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 44,
+            "coverage": 1.0,
+            "agreement": 0.36666666666666664,
+            "non_abstained_agreement": 0.36666666666666664,
+            "wilson_lower_95": 0.28582798260490794,
+            "wilson_upper_95": 0.4557774230100067,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 43,
+            "coverage": 1.0,
+            "agreement": 0.35833333333333334,
+            "non_abstained_agreement": 0.35833333333333334,
+            "wilson_lower_95": 0.2781594371658861,
+            "wilson_upper_95": 0.44729630629996064,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.2199493717251127,
+        "log_loss": 0.6289361344801461
+      },
+      "partition_hashes": {
+        "train": "d58913bc672f2e47b524a6d195e4653eca53c356208c67a3b5e7397b29ad9b33",
+        "validation": "7333bda65bafb9113ab267d093b46bedbf9676055d446fa3195a3364be68692f",
+        "calibration": "b0f7c3a7077646e161b2c386f2cbbfa667e6795d8f3cf51588a36ee2b4fd2677",
+        "test": "61ed6d58289845075c8ce3b6a65721c9456d73ca5133f8a695389e5f21821925"
+      }
+    },
+    {
+      "profile": "narrow_signal",
+      "size": 512,
+      "method": "scaled_logistic10",
+      "fit_ms": 25.215959060005844,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 238,
+        "coverage": 1.0,
+        "agreement": 0.9916666666666667,
+        "non_abstained_agreement": 0.9916666666666667,
+        "wilson_lower_95": 0.9701296537265586,
+        "wilson_upper_95": 0.997711764636838,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 119,
+            "coverage": 1.0,
+            "agreement": 0.9916666666666667,
+            "non_abstained_agreement": 0.9916666666666667,
+            "wilson_lower_95": 0.9543025846256777,
+            "wilson_upper_95": 0.9985274821693252,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 119,
+            "coverage": 1.0,
+            "agreement": 0.9916666666666667,
+            "non_abstained_agreement": 0.9916666666666667,
+            "wilson_lower_95": 0.9543025846256777,
+            "wilson_upper_95": 0.9985274821693252,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 238,
+        "coverage": 1.0,
+        "agreement": 0.9916666666666667,
+        "non_abstained_agreement": 0.9916666666666667,
+        "wilson_lower_95": 0.9701296537265586,
+        "wilson_upper_95": 0.997711764636838,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 119,
+            "coverage": 1.0,
+            "agreement": 0.9916666666666667,
+            "non_abstained_agreement": 0.9916666666666667,
+            "wilson_lower_95": 0.9543025846256777,
+            "wilson_upper_95": 0.9985274821693252,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 119,
+            "coverage": 1.0,
+            "agreement": 0.9916666666666667,
+            "non_abstained_agreement": 0.9916666666666667,
+            "wilson_lower_95": 0.9543025846256777,
+            "wilson_upper_95": 0.9985274821693252,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "fitted_validation",
+      "margin": 0.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.0017428576605341734,
+        "log_loss": 0.005883103375597576
+      },
+      "partition_hashes": {
+        "train": "d58913bc672f2e47b524a6d195e4653eca53c356208c67a3b5e7397b29ad9b33",
+        "validation": "7333bda65bafb9113ab267d093b46bedbf9676055d446fa3195a3364be68692f",
+        "calibration": "b0f7c3a7077646e161b2c386f2cbbfa667e6795d8f3cf51588a36ee2b4fd2677",
+        "test": "61ed6d58289845075c8ce3b6a65721c9456d73ca5133f8a695389e5f21821925"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 8,
+      "method": "sgd30",
+      "fit_ms": 14.920250046998262,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 84,
+        "coverage": 1.0,
+        "agreement": 0.35,
+        "non_abstained_agreement": 0.35,
+        "wilson_lower_95": 0.2924488094298485,
+        "wilson_upper_95": 0.4122775375101321,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 40,
+            "coverage": 1.0,
+            "agreement": 0.3333333333333333,
+            "non_abstained_agreement": 0.3333333333333333,
+            "wilson_lower_95": 0.255316102227993,
+            "wilson_upper_95": 0.4216906547906502,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 44,
+            "coverage": 1.0,
+            "agreement": 0.36666666666666664,
+            "non_abstained_agreement": 0.36666666666666664,
+            "wilson_lower_95": 0.28582798260490794,
+            "wilson_upper_95": 0.4557774230100067,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.2281369690601686,
+        "log_loss": 0.6447926203732367
+      },
+      "partition_hashes": {
+        "train": "c95a013f079c7bb9e2f9f9a750d86081538b10898603bc382127f857be1fad67",
+        "validation": "ed2c986f767ef5bc5c3b69a4e9fde13602b3b69bb75b7f48f998e15336cfb9da",
+        "calibration": "b427d405eb5e8be74a32e3b8b3930589b0179f11f264a34f155394177d454657",
+        "test": "720e625fc63b437db80c591e6d8bf1fc14d2bdb590cfa3dba1e634ce65c8d6e3"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 8,
+      "method": "scaled_logistic10",
+      "fit_ms": 2.364833024330437,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 111,
+        "coverage": 1.0,
+        "agreement": 0.4625,
+        "non_abstained_agreement": 0.4625,
+        "wilson_lower_95": 0.4005063165740798,
+        "wilson_upper_95": 0.5256752701609153,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 56,
+            "coverage": 1.0,
+            "agreement": 0.4666666666666667,
+            "non_abstained_agreement": 0.4666666666666667,
+            "wilson_lower_95": 0.3798276424616983,
+            "wilson_upper_95": 0.5555737089420304,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 55,
+            "coverage": 1.0,
+            "agreement": 0.4583333333333333,
+            "non_abstained_agreement": 0.4583333333333333,
+            "wilson_lower_95": 0.371859770816446,
+            "wilson_upper_95": 0.5473919184382149,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.18731919238451045,
+        "log_loss": 0.5499283202260521
+      },
+      "partition_hashes": {
+        "train": "c95a013f079c7bb9e2f9f9a750d86081538b10898603bc382127f857be1fad67",
+        "validation": "ed2c986f767ef5bc5c3b69a4e9fde13602b3b69bb75b7f48f998e15336cfb9da",
+        "calibration": "b427d405eb5e8be74a32e3b8b3930589b0179f11f264a34f155394177d454657",
+        "test": "720e625fc63b437db80c591e6d8bf1fc14d2bdb590cfa3dba1e634ce65c8d6e3"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 32,
+      "method": "sgd30",
+      "fit_ms": 15.502874972298741,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 133,
+        "coverage": 1.0,
+        "agreement": 0.5541666666666667,
+        "non_abstained_agreement": 0.5541666666666667,
+        "wilson_lower_95": 0.49091837418388323,
+        "wilson_upper_95": 0.6157082227544571,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 72,
+            "coverage": 1.0,
+            "agreement": 0.6,
+            "non_abstained_agreement": 0.6,
+            "wilson_lower_95": 0.5105585981828253,
+            "wilson_upper_95": 0.6832373476059888,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 61,
+            "coverage": 1.0,
+            "agreement": 0.5083333333333333,
+            "non_abstained_agreement": 0.5083333333333333,
+            "wilson_lower_95": 0.4200238208480169,
+            "wilson_upper_95": 0.5961258413010508,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.16308948061725878,
+        "log_loss": 0.49437934597519323
+      },
+      "partition_hashes": {
+        "train": "c95a013f079c7bb9e2f9f9a750d86081538b10898603bc382127f857be1fad67",
+        "validation": "ed2c986f767ef5bc5c3b69a4e9fde13602b3b69bb75b7f48f998e15336cfb9da",
+        "calibration": "b427d405eb5e8be74a32e3b8b3930589b0179f11f264a34f155394177d454657",
+        "test": "720e625fc63b437db80c591e6d8bf1fc14d2bdb590cfa3dba1e634ce65c8d6e3"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 32,
+      "method": "scaled_logistic10",
+      "fit_ms": 3.1711249612271786,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 142,
+        "coverage": 1.0,
+        "agreement": 0.5916666666666667,
+        "non_abstained_agreement": 0.5916666666666667,
+        "wilson_lower_95": 0.5285108645804661,
+        "wilson_upper_95": 0.6519341456228789,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 74,
+            "coverage": 1.0,
+            "agreement": 0.6166666666666667,
+            "non_abstained_agreement": 0.6166666666666667,
+            "wilson_lower_95": 0.5273391477284313,
+            "wilson_upper_95": 0.6987561223585186,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 68,
+            "coverage": 1.0,
+            "agreement": 0.5666666666666667,
+            "non_abstained_agreement": 0.5666666666666667,
+            "wilson_lower_95": 0.47729757992376215,
+            "wilson_upper_95": 0.6518997172687806,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.15063577180097737,
+        "log_loss": 0.4548990297461052
+      },
+      "partition_hashes": {
+        "train": "c95a013f079c7bb9e2f9f9a750d86081538b10898603bc382127f857be1fad67",
+        "validation": "ed2c986f767ef5bc5c3b69a4e9fde13602b3b69bb75b7f48f998e15336cfb9da",
+        "calibration": "b427d405eb5e8be74a32e3b8b3930589b0179f11f264a34f155394177d454657",
+        "test": "720e625fc63b437db80c591e6d8bf1fc14d2bdb590cfa3dba1e634ce65c8d6e3"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 128,
+      "method": "sgd30",
+      "fit_ms": 22.42612501140684,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 151,
+        "coverage": 1.0,
+        "agreement": 0.6291666666666667,
+        "non_abstained_agreement": 0.6291666666666667,
+        "wilson_lower_95": 0.5664694075732353,
+        "wilson_upper_95": 0.6877940158951146,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 80,
+            "coverage": 1.0,
+            "agreement": 0.6666666666666666,
+            "non_abstained_agreement": 0.6666666666666666,
+            "wilson_lower_95": 0.5783093452093498,
+            "wilson_upper_95": 0.744683897772007,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 71,
+            "coverage": 1.0,
+            "agreement": 0.5916666666666667,
+            "non_abstained_agreement": 0.5916666666666667,
+            "wilson_lower_95": 0.5022061864748179,
+            "wilson_upper_95": 0.6754400971649285,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.13308181644053538,
+        "log_loss": 0.4066027424561832
+      },
+      "partition_hashes": {
+        "train": "c95a013f079c7bb9e2f9f9a750d86081538b10898603bc382127f857be1fad67",
+        "validation": "ed2c986f767ef5bc5c3b69a4e9fde13602b3b69bb75b7f48f998e15336cfb9da",
+        "calibration": "b427d405eb5e8be74a32e3b8b3930589b0179f11f264a34f155394177d454657",
+        "test": "720e625fc63b437db80c591e6d8bf1fc14d2bdb590cfa3dba1e634ce65c8d6e3"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 128,
+      "method": "scaled_logistic10",
+      "fit_ms": 7.605125079862773,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 159,
+        "coverage": 1.0,
+        "agreement": 0.6625,
+        "non_abstained_agreement": 0.6625,
+        "wilson_lower_95": 0.6005331652397183,
+        "wilson_upper_95": 0.7193466255753025,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 86,
+            "coverage": 1.0,
+            "agreement": 0.7166666666666667,
+            "non_abstained_agreement": 0.7166666666666667,
+            "wilson_lower_95": 0.6302963078582111,
+            "wilson_upper_95": 0.7895949080175528,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 73,
+            "coverage": 1.0,
+            "agreement": 0.6083333333333333,
+            "non_abstained_agreement": 0.6083333333333333,
+            "wilson_lower_95": 0.5189361630897077,
+            "wilson_upper_95": 0.6910094448481742,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.12194430055287754,
+        "log_loss": 0.37144899419178035
+      },
+      "partition_hashes": {
+        "train": "c95a013f079c7bb9e2f9f9a750d86081538b10898603bc382127f857be1fad67",
+        "validation": "ed2c986f767ef5bc5c3b69a4e9fde13602b3b69bb75b7f48f998e15336cfb9da",
+        "calibration": "b427d405eb5e8be74a32e3b8b3930589b0179f11f264a34f155394177d454657",
+        "test": "720e625fc63b437db80c591e6d8bf1fc14d2bdb590cfa3dba1e634ce65c8d6e3"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 512,
+      "method": "sgd30",
+      "fit_ms": 43.7084169825539,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 171,
+        "coverage": 1.0,
+        "agreement": 0.7125,
+        "non_abstained_agreement": 0.7125,
+        "wilson_lower_95": 0.6522450823474496,
+        "wilson_upper_95": 0.7660592594875778,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 87,
+            "coverage": 1.0,
+            "agreement": 0.725,
+            "non_abstained_agreement": 0.725,
+            "wilson_lower_95": 0.6390686764395932,
+            "wilson_upper_95": 0.7969722015852385,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 84,
+            "coverage": 1.0,
+            "agreement": 0.7,
+            "non_abstained_agreement": 0.7,
+            "wilson_lower_95": 0.6128469049643513,
+            "wilson_upper_95": 0.7747449866132768,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.10467805281635996,
+        "log_loss": 0.32704604032426965
+      },
+      "partition_hashes": {
+        "train": "c95a013f079c7bb9e2f9f9a750d86081538b10898603bc382127f857be1fad67",
+        "validation": "ed2c986f767ef5bc5c3b69a4e9fde13602b3b69bb75b7f48f998e15336cfb9da",
+        "calibration": "b427d405eb5e8be74a32e3b8b3930589b0179f11f264a34f155394177d454657",
+        "test": "720e625fc63b437db80c591e6d8bf1fc14d2bdb590cfa3dba1e634ce65c8d6e3"
+      }
+    },
+    {
+      "profile": "nonlinear_target",
+      "size": 512,
+      "method": "scaled_logistic10",
+      "fit_ms": 22.99258392304182,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 171,
+        "coverage": 1.0,
+        "agreement": 0.7125,
+        "non_abstained_agreement": 0.7125,
+        "wilson_lower_95": 0.6522450823474496,
+        "wilson_upper_95": 0.7660592594875778,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 88,
+            "coverage": 1.0,
+            "agreement": 0.7333333333333333,
+            "non_abstained_agreement": 0.7333333333333333,
+            "wilson_lower_95": 0.6478739437150142,
+            "wilson_upper_95": 0.8043165964588853,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 83,
+            "coverage": 1.0,
+            "agreement": 0.6916666666666667,
+            "non_abstained_agreement": 0.6916666666666667,
+            "wilson_lower_95": 0.6041683512553176,
+            "wilson_upper_95": 0.7672738781732428,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.09773041936080577,
+        "log_loss": 0.30627413966092154
+      },
+      "partition_hashes": {
+        "train": "c95a013f079c7bb9e2f9f9a750d86081538b10898603bc382127f857be1fad67",
+        "validation": "ed2c986f767ef5bc5c3b69a4e9fde13602b3b69bb75b7f48f998e15336cfb9da",
+        "calibration": "b427d405eb5e8be74a32e3b8b3930589b0179f11f264a34f155394177d454657",
+        "test": "720e625fc63b437db80c591e6d8bf1fc14d2bdb590cfa3dba1e634ce65c8d6e3"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 8,
+      "method": "sgd30",
+      "fit_ms": 15.004083048552275,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 59,
+        "coverage": 1.0,
+        "agreement": 0.24583333333333332,
+        "non_abstained_agreement": 0.24583333333333332,
+        "wilson_lower_95": 0.19564437467673038,
+        "wilson_upper_95": 0.3040308243049035,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 15,
+            "coverage": 1.0,
+            "agreement": 0.125,
+            "non_abstained_agreement": 0.125,
+            "wilson_lower_95": 0.07723428880969682,
+            "wilson_upper_95": 0.19603091448225032,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 44,
+            "coverage": 1.0,
+            "agreement": 0.36666666666666664,
+            "non_abstained_agreement": 0.36666666666666664,
+            "wilson_lower_95": 0.28582798260490794,
+            "wilson_upper_95": 0.4557774230100067,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.2531059298591922,
+        "log_loss": 0.6994310476731186
+      },
+      "partition_hashes": {
+        "train": "7b7879f7a0ec7f96c08ec328179180a148bb343b89ca4aac43580ff5ce874e75",
+        "validation": "4a6bed29b499646104f58c6134d7cd624d1a554c044991d0188394f749ab1279",
+        "calibration": "ac81f8b0e5ff55c8ae37cf6ead6c6a4e4e06c995ad8617c4e9018938e2255197",
+        "test": "14e3cce3e1d7e63355c860a24725ba7b8453cde70f300451fffbda8ab5e4be78"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 8,
+      "method": "scaled_logistic10",
+      "fit_ms": 2.750375075265765,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 55,
+        "coverage": 1.0,
+        "agreement": 0.22916666666666666,
+        "non_abstained_agreement": 0.22916666666666666,
+        "wilson_lower_95": 0.18050690173091638,
+        "wilson_upper_95": 0.28636011357738206,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 24,
+            "coverage": 1.0,
+            "agreement": 0.2,
+            "non_abstained_agreement": 0.2,
+            "wilson_lower_95": 0.13824380919983048,
+            "wilson_upper_95": 0.2803683534337273,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 31,
+            "coverage": 1.0,
+            "agreement": 0.25833333333333336,
+            "non_abstained_agreement": 0.25833333333333336,
+            "wilson_lower_95": 0.18837283808050675,
+            "wilson_upper_95": 0.343286959596526,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.2513524996730198,
+        "log_loss": 0.695862093505321
+      },
+      "partition_hashes": {
+        "train": "7b7879f7a0ec7f96c08ec328179180a148bb343b89ca4aac43580ff5ce874e75",
+        "validation": "4a6bed29b499646104f58c6134d7cd624d1a554c044991d0188394f749ab1279",
+        "calibration": "ac81f8b0e5ff55c8ae37cf6ead6c6a4e4e06c995ad8617c4e9018938e2255197",
+        "test": "14e3cce3e1d7e63355c860a24725ba7b8453cde70f300451fffbda8ab5e4be78"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 32,
+      "method": "sgd30",
+      "fit_ms": 17.7092500962317,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 59,
+        "coverage": 1.0,
+        "agreement": 0.24583333333333332,
+        "non_abstained_agreement": 0.24583333333333332,
+        "wilson_lower_95": 0.19564437467673038,
+        "wilson_upper_95": 0.3040308243049035,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 27,
+            "coverage": 1.0,
+            "agreement": 0.225,
+            "non_abstained_agreement": 0.225,
+            "wilson_lower_95": 0.1594905146581338,
+            "wilson_upper_95": 0.3075706344226275,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 32,
+            "coverage": 1.0,
+            "agreement": 0.26666666666666666,
+            "non_abstained_agreement": 0.26666666666666666,
+            "wilson_lower_95": 0.1956834035411147,
+            "wilson_upper_95": 0.35212605628498583,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.24999475281065267,
+        "log_loss": 0.6931366861752312
+      },
+      "partition_hashes": {
+        "train": "7b7879f7a0ec7f96c08ec328179180a148bb343b89ca4aac43580ff5ce874e75",
+        "validation": "4a6bed29b499646104f58c6134d7cd624d1a554c044991d0188394f749ab1279",
+        "calibration": "ac81f8b0e5ff55c8ae37cf6ead6c6a4e4e06c995ad8617c4e9018938e2255197",
+        "test": "14e3cce3e1d7e63355c860a24725ba7b8453cde70f300451fffbda8ab5e4be78"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 32,
+      "method": "scaled_logistic10",
+      "fit_ms": 2.9996250523254275,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 55,
+        "coverage": 1.0,
+        "agreement": 0.22916666666666666,
+        "non_abstained_agreement": 0.22916666666666666,
+        "wilson_lower_95": 0.18050690173091638,
+        "wilson_upper_95": 0.28636011357738206,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 18,
+            "coverage": 1.0,
+            "agreement": 0.15,
+            "non_abstained_agreement": 0.15,
+            "wilson_lower_95": 0.09703734033668816,
+            "wilson_upper_95": 0.22467684940246252,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 37,
+            "coverage": 1.0,
+            "agreement": 0.30833333333333335,
+            "non_abstained_agreement": 0.30833333333333335,
+            "wilson_lower_95": 0.23272612182675728,
+            "wilson_upper_95": 0.3958316487446824,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.24999178041784345,
+        "log_loss": 0.6931307413783633
+      },
+      "partition_hashes": {
+        "train": "7b7879f7a0ec7f96c08ec328179180a148bb343b89ca4aac43580ff5ce874e75",
+        "validation": "4a6bed29b499646104f58c6134d7cd624d1a554c044991d0188394f749ab1279",
+        "calibration": "ac81f8b0e5ff55c8ae37cf6ead6c6a4e4e06c995ad8617c4e9018938e2255197",
+        "test": "14e3cce3e1d7e63355c860a24725ba7b8453cde70f300451fffbda8ab5e4be78"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 128,
+      "method": "sgd30",
+      "fit_ms": 22.190083051100373,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 61,
+        "coverage": 1.0,
+        "agreement": 0.25416666666666665,
+        "non_abstained_agreement": 0.25416666666666665,
+        "wilson_lower_95": 0.20325356013077353,
+        "wilson_upper_95": 0.31282573068752806,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 36,
+            "coverage": 1.0,
+            "agreement": 0.3,
+            "non_abstained_agreement": 0.3,
+            "wilson_lower_95": 0.22525501338672319,
+            "wilson_upper_95": 0.38715309503564865,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 25,
+            "coverage": 1.0,
+            "agreement": 0.20833333333333334,
+            "non_abstained_agreement": 0.20833333333333334,
+            "wilson_lower_95": 0.14528341433799086,
+            "wilson_upper_95": 0.28947841044463474,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.249898193922838,
+        "log_loss": 0.6929435648514021
+      },
+      "partition_hashes": {
+        "train": "7b7879f7a0ec7f96c08ec328179180a148bb343b89ca4aac43580ff5ce874e75",
+        "validation": "4a6bed29b499646104f58c6134d7cd624d1a554c044991d0188394f749ab1279",
+        "calibration": "ac81f8b0e5ff55c8ae37cf6ead6c6a4e4e06c995ad8617c4e9018938e2255197",
+        "test": "14e3cce3e1d7e63355c860a24725ba7b8453cde70f300451fffbda8ab5e4be78"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 128,
+      "method": "scaled_logistic10",
+      "fit_ms": 6.657457910478115,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 59,
+        "coverage": 1.0,
+        "agreement": 0.24583333333333332,
+        "non_abstained_agreement": 0.24583333333333332,
+        "wilson_lower_95": 0.19564437467673038,
+        "wilson_upper_95": 0.3040308243049035,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 36,
+            "coverage": 1.0,
+            "agreement": 0.3,
+            "non_abstained_agreement": 0.3,
+            "wilson_lower_95": 0.22525501338672319,
+            "wilson_upper_95": 0.38715309503564865,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 23,
+            "coverage": 1.0,
+            "agreement": 0.19166666666666668,
+            "non_abstained_agreement": 0.19166666666666668,
+            "wilson_lower_95": 0.13124933052612614,
+            "wilson_upper_95": 0.2712131699583638,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.24986405129534947,
+        "log_loss": 0.6928752746060475
+      },
+      "partition_hashes": {
+        "train": "7b7879f7a0ec7f96c08ec328179180a148bb343b89ca4aac43580ff5ce874e75",
+        "validation": "4a6bed29b499646104f58c6134d7cd624d1a554c044991d0188394f749ab1279",
+        "calibration": "ac81f8b0e5ff55c8ae37cf6ead6c6a4e4e06c995ad8617c4e9018938e2255197",
+        "test": "14e3cce3e1d7e63355c860a24725ba7b8453cde70f300451fffbda8ab5e4be78"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 512,
+      "method": "sgd30",
+      "fit_ms": 44.81345904059708,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 62,
+        "coverage": 1.0,
+        "agreement": 0.25833333333333336,
+        "non_abstained_agreement": 0.25833333333333336,
+        "wilson_lower_95": 0.20706787759769646,
+        "wilson_upper_95": 0.3172134591389391,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 37,
+            "coverage": 1.0,
+            "agreement": 0.30833333333333335,
+            "non_abstained_agreement": 0.30833333333333335,
+            "wilson_lower_95": 0.23272612182675728,
+            "wilson_upper_95": 0.3958316487446824,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 25,
+            "coverage": 1.0,
+            "agreement": 0.20833333333333334,
+            "non_abstained_agreement": 0.20833333333333334,
+            "wilson_lower_95": 0.14528341433799086,
+            "wilson_upper_95": 0.28947841044463474,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.24999803528452832,
+        "log_loss": 0.6931432511289446
+      },
+      "partition_hashes": {
+        "train": "7b7879f7a0ec7f96c08ec328179180a148bb343b89ca4aac43580ff5ce874e75",
+        "validation": "4a6bed29b499646104f58c6134d7cd624d1a554c044991d0188394f749ab1279",
+        "calibration": "ac81f8b0e5ff55c8ae37cf6ead6c6a4e4e06c995ad8617c4e9018938e2255197",
+        "test": "14e3cce3e1d7e63355c860a24725ba7b8453cde70f300451fffbda8ab5e4be78"
+      }
+    },
+    {
+      "profile": "domain_conflict",
+      "size": 512,
+      "method": "scaled_logistic10",
+      "fit_ms": 24.695124942809343,
+      "test": {
+        "cases": 240,
+        "non_abstained": 240,
+        "correct": 59,
+        "coverage": 1.0,
+        "agreement": 0.24583333333333332,
+        "non_abstained_agreement": 0.24583333333333332,
+        "wilson_lower_95": 0.19564437467673038,
+        "wilson_upper_95": 0.3040308243049035,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 38,
+            "coverage": 1.0,
+            "agreement": 0.31666666666666665,
+            "non_abstained_agreement": 0.31666666666666665,
+            "wilson_lower_95": 0.2402270792621595,
+            "wilson_upper_95": 0.4044803534583481,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 120,
+            "correct": 21,
+            "coverage": 1.0,
+            "agreement": 0.175,
+            "non_abstained_agreement": 0.175,
+            "wilson_lower_95": 0.11740448670592563,
+            "wilson_upper_95": 0.25275868948042857,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 240,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 120,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "validation_status": "validation_target_not_met_abstain",
+      "margin": 1000000.0,
+      "calibration_test": {
+        "status": "heldout_test",
+        "cases": 240,
+        "brier": 0.2499978083690088,
+        "log_loss": 0.6931427972978869
+      },
+      "partition_hashes": {
+        "train": "7b7879f7a0ec7f96c08ec328179180a148bb343b89ca4aac43580ff5ce874e75",
+        "validation": "4a6bed29b499646104f58c6134d7cd624d1a554c044991d0188394f749ab1279",
+        "calibration": "ac81f8b0e5ff55c8ae37cf6ead6c6a4e4e06c995ad8617c4e9018938e2255197",
+        "test": "14e3cce3e1d7e63355c860a24725ba7b8453cde70f300451fffbda8ab5e4be78"
+      }
+    }
+  ],
+  "repeat_correction": [
+    {
+      "method": "sgd30",
+      "original_fit_ms": 22.30325003620237,
+      "reverse_fit_ms": 22.019625059328973,
+      "order_max_weight_delta": 0.01034964634816121,
+      "before_correction_16_cases": {
+        "cases": 16,
+        "non_abstained": 16,
+        "correct": 0,
+        "coverage": 1.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": 0.0,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 0.19361341827271994,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 8,
+            "non_abstained": 8,
+            "correct": 0,
+            "coverage": 1.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": 0.0,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 0.3244156195108769,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 8,
+            "non_abstained": 8,
+            "correct": 0,
+            "coverage": 1.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": 0.0,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 0.3244156195108769,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "corrected_16_cases": {
+        "cases": 16,
+        "non_abstained": 16,
+        "correct": 1,
+        "coverage": 1.0,
+        "agreement": 0.0625,
+        "non_abstained_agreement": 0.0625,
+        "wilson_lower_95": 0.01111905730833121,
+        "wilson_upper_95": 0.2832926836802987,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 8,
+            "non_abstained": 8,
+            "correct": 0,
+            "coverage": 1.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": 0.0,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 0.3244156195108769,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 8,
+            "non_abstained": 8,
+            "correct": 1,
+            "coverage": 1.0,
+            "agreement": 0.125,
+            "non_abstained_agreement": 0.125,
+            "wilson_lower_95": 0.02241690886329617,
+            "wilson_upper_95": 0.4708948057698615,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "retained_112_cases": {
+        "cases": 112,
+        "non_abstained": 112,
+        "correct": 95,
+        "coverage": 1.0,
+        "agreement": 0.8482142857142857,
+        "non_abstained_agreement": 0.8482142857142857,
+        "wilson_lower_95": 0.77031213348588,
+        "wilson_upper_95": 0.9030211077676937,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 56,
+            "non_abstained": 56,
+            "correct": 46,
+            "coverage": 1.0,
+            "agreement": 0.8214285714285714,
+            "non_abstained_agreement": 0.8214285714285714,
+            "wilson_lower_95": 0.7015856902425105,
+            "wilson_upper_95": 0.9000025025865582,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 56,
+            "non_abstained": 56,
+            "correct": 49,
+            "coverage": 1.0,
+            "agreement": 0.875,
+            "non_abstained_agreement": 0.875,
+            "wilson_lower_95": 0.763742793023606,
+            "wilson_upper_95": 0.9381100986103075,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "correction_fit_median_ms": 22.347499965690076,
+      "repeat_max_weight_delta": 0.0,
+      "restore_fit_ms": 22.022292017936707,
+      "restore_max_weight_delta": 0.0
+    },
+    {
+      "method": "scaled_logistic10",
+      "original_fit_ms": 6.9169169291853905,
+      "reverse_fit_ms": 6.764375022612512,
+      "order_max_weight_delta": 0.0,
+      "before_correction_16_cases": {
+        "cases": 16,
+        "non_abstained": 16,
+        "correct": 0,
+        "coverage": 1.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": 0.0,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 0.19361341827271994,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 8,
+            "non_abstained": 8,
+            "correct": 0,
+            "coverage": 1.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": 0.0,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 0.3244156195108769,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 8,
+            "non_abstained": 8,
+            "correct": 0,
+            "coverage": 1.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": 0.0,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 0.3244156195108769,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "corrected_16_cases": {
+        "cases": 16,
+        "non_abstained": 16,
+        "correct": 1,
+        "coverage": 1.0,
+        "agreement": 0.0625,
+        "non_abstained_agreement": 0.0625,
+        "wilson_lower_95": 0.01111905730833121,
+        "wilson_upper_95": 0.2832926836802987,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 8,
+            "non_abstained": 8,
+            "correct": 1,
+            "coverage": 1.0,
+            "agreement": 0.125,
+            "non_abstained_agreement": 0.125,
+            "wilson_lower_95": 0.02241690886329617,
+            "wilson_upper_95": 0.4708948057698615,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 8,
+            "non_abstained": 8,
+            "correct": 0,
+            "coverage": 1.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": 0.0,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 0.3244156195108769,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "retained_112_cases": {
+        "cases": 112,
+        "non_abstained": 112,
+        "correct": 98,
+        "coverage": 1.0,
+        "agreement": 0.875,
+        "non_abstained_agreement": 0.875,
+        "wilson_lower_95": 0.801067679174165,
+        "wilson_upper_95": 0.9240604267912221,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "product_delivery": {
+            "cases": 56,
+            "non_abstained": 56,
+            "correct": 48,
+            "coverage": 1.0,
+            "agreement": 0.8571428571428571,
+            "non_abstained_agreement": 0.8571428571428571,
+            "wilson_lower_95": 0.7426383257914846,
+            "wilson_upper_95": 0.9257929995741472,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 56,
+            "non_abstained": 56,
+            "correct": 50,
+            "coverage": 1.0,
+            "agreement": 0.8928571428571429,
+            "non_abstained_agreement": 0.8928571428571429,
+            "wilson_lower_95": 0.7853131324833861,
+            "wilson_upper_95": 0.9499613254188092,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "correction_fit_median_ms": 6.590459030121565,
+      "repeat_max_weight_delta": 0.0,
+      "restore_fit_ms": 7.077166927047074,
+      "restore_max_weight_delta": 0.0
+    }
+  ],
+  "peak_rss_platform_units": 160022528,
+  "selection_sha256": "94c23992f022c3d63b2bd1aa1df7470b888ed334d8a4203a52be9d1d0457298f",
+  "benchmark_only": true,
+  "human_labels": false,
+  "model_exported": false,
+  "seeds": {
+    "train": 41011,
+    "validation": 52021,
+    "calibration": 63031,
+    "test": 74041
+  },
+  "feature_version": "1.0",
+  "benchmark_sha256": "2a6e3f4fadd46145f6ab07972f244f4e4aeb48a430fd33477bbb45235a2f66dc",
+  "worker_sha256": "19663bbaa17979c72ee8cd7372364d0fc5cd6da11f2933a1634d1a36278f9e8b"
+}

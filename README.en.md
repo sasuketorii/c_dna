@@ -8,11 +8,11 @@
 
 [日本語](README.md) | **English**
 
-**A fast decision-learning platform that collects an executive's judgments from daily work, actively asks for the decision criteria that are missing, and reproduces that person's own reasoning with citations.**
+**A decision-learning platform that learns an executive's criteria through dialogue with an LLM, consolidates them into small models, memory and policies, and aims to reproduce that person's judgment at low latency.**
 
 C-DNA is not aiming to be "a chatbot that sounds like an executive." The goal is to **return what the CEO of this specific company would choose — with its grounds and its limits — fast enough to be usable in the middle of a sales conversation or a support call.**
 
-> **Current status: design stage.** There is no implementation in this repository yet. The architecture, latency targets, and evaluation methods below are design decisions, not measured results. Measured numbers will be added, with their sources, once they exist.
+> **Current status: implementation and acceptance testing.** Encrypted local storage, learning and MCP are implemented; profile bootstrap from existing AI conversations and LLM teaching are being integrated. Public playground development is stopped to focus on the engine. Full R1 acceptance, semantic distillation and personal prediction accuracy remain unverified. See the [quickstart](docs/QUICKSTART.md) and [acceptance status](docs/release/ACCEPTANCE.md). Targets below are not claims of achieved performance.
 
 ---
 
@@ -67,29 +67,27 @@ So what is actually needed is this:
 
 ## Both existing options fall short in the field
 
-Two approaches have been available for reproducing a CEO's judgment in the field. Neither is sufficient where speed *and* accuracy are both required.
+Rules, LLMs and small decision models have different roles. C-DNA puts LLM dialogue at the center of learning, then measures personal agreement and response time when reusing the result. This table describes design roles, not measured superiority over competitors.
 
 | Aspect | Rule-based decision engine | LLM | C-DNA |
 | --- | --- | --- | --- |
-| **Response speed** | Fast | Slow. Does not arrive in time during a live conversation | Speed is an explicit design target (see [Latency target](#latency-target)) |
-| **Accuracy** | Low. Breaks down outside the rules | High | Measured as agreement with the person's own choices; stays silent where coverage is thin |
+| **Response speed** | Direct evaluation of defined conditions | Depends on model, input and connection | Reuse local learning results; measure input-to-answer latency (see [Latency target](#latency-target)) |
+| **Accuracy** | Depends on rules and their scope | Depends on model, personal context and task | Measure personal agreement and coverage; ask or abstain outside validated scope |
 | **Combined conditions** | Weak. Every new combination means another rule | Strong | Learns combinations such as "short deadline × outsource" |
-| **Setup cost** | Requires tuning to raise accuracy | Light, if writing a prompt is all you need | Requires the person's answering time. Minimizing that time is the core design problem |
-| **Running cost** | Cheap | Expensive. Cost accrues on every call | Kept cheap by assuming local inference |
+| **Setup cost** | Define and maintain rules | May reuse existing conversations and memory | Import existing AI understanding with a dedicated prompt, then ask about gaps |
+| **Running cost** | Depends on rules and runtime | Depends on model, subscription and usage | Optimize LLM training costs separately from decision-time compute |
 | **Grounds for a decision** | Which rule matched | Generated prose; the reasoning tends to be post-hoc | Past decisions, situations, and exception conditions, returned with citations |
-| **Whose judgment is it** | The judgment of whoever wrote the rules | A generically plausible judgment | **The judgment of this company's CEO** |
+| **Whose judgment is it** | Depends on the rules' provenance | Depends on personal information, conversation and instructions | **Independently evaluate agreement with this company's CEO** |
 
-**A rule-based decision engine is fast, but its accuracy is low.** Raising that accuracy requires tuning, and the approach collapses as the number of condition combinations grows. Where both speed and accuracy are required, it stays half-finished.
-
-**An LLM is accurate, but it is slow and expensive.** The CEO's judgment does not appear instantly in the middle of a negotiation or a phone call.
+The LLM proposes hypotheses about criteria the person has not yet articulated and asks about reasons, counterexamples and reversal conditions. Human corrections guide representation and training improvements; independent human answers test what can enter the decision runtime.
 
 ## There was no decision algorithm at the right balance point
 
 This is where C-DNA starts.
 
-Between a fast-but-shallow rule engine and a smart-but-heavy model, the layer that **returns this company's CEO's judgment at field speed** did not exist.
+The goal is to **return this company's CEO's judgment at field speed**.
 
-C-DNA fills that layer. Concretely, the heavy work — understanding long text, generating candidate options — happens **once, at ingestion time**, so that the only thing running in the field is the **lightweight comparison of already-structured candidates.** That separation is why speed and accuracy can be pursued together (see [Architecture](#architecture)).
+Learning uses LLMs to deepen understanding. Inference reuses learned representations, small models and memory. New text and unfamiliar concepts may need additional interpretation; measurements must include that work, rather than presenting structured-candidate scoring alone as end-to-end speed (see [Architecture](#architecture)).
 
 ## Learning through decisions, not through study
 
@@ -109,7 +107,7 @@ Two things follow:
 > **The CEO can clone their judgment.**
 > **The field can use the CEO's judgment directly.**
 
-A CEO's judgment that was too large to invoke instantly through an LLM — and therefore could never be cultivated across the organization — is something C-DNA can cultivate.
+The intended experience depends on a continuous loop in which the person and the LLM examine disagreements and update what the engine has learned.
 
 ## What C-DNA returns
 
@@ -129,12 +127,13 @@ The third mode matters most. **Refusing to answer when the inputs are insufficie
 
 ## Architecture
 
-The key constraint is to **keep learning, inference, and LLM-based text comprehension as separate stages.** Understanding new long-form text and assembling candidate options is a different job from comparing already-structured options. Speeding up only the second one buys nothing if the first still calls an LLM every time.
+The central loop is **CEO ↔ LLM ↔ learning engine**. The LLM conducts detailed teaching dialogue; Python trains and evaluates representations and small models; Rust and Mojo use the resulting artifacts for fast decisions. Separating stages manages latency and authority; it does not remove the LLM from learning.
 
-C-DNA therefore **structures the input once at ingestion and reuses the same context and embeddings afterwards.**
+Bootstrap starts by pasting a dedicated prompt into the person's existing ChatGPT or Claude conversation and importing what it can actually access about their judgments. The person corrects the profile and the LLM asks about important gaps and exceptions. The initial 17 features are a comparison baseline, not a permanent limit on the person's concepts.
 
 ```text
-ChatGPT / Claude summaries and conversation exports
+Dedicated prompt → ChatGPT / Claude judgment profile and exceptions
+Conversation exports and human corrections
 Real decisions made in Codex / Claude Code
 Four-choice, pairwise, and free-text input in the C-DNA app
                     ↓
@@ -143,13 +142,16 @@ Four-choice, pairwise, and free-text input in the C-DNA app
     Verify sources / deduplicate / confirm with the person
                     ↓
             Local decision database
+                    ↕
+     CEO ↔ LLM: reasons, counterexamples, reversal conditions
+     Next questions / representation and training hypotheses
                     ↓
        ┌────────────┴─────────────┐
        ↓                          ↓
  Decision memory &            Training pipeline
- explicit rules               (Python)
+ explicit rules               and independent evaluation (Python)
  applied immediately              ↓
-       ↓                    Small decision model
+       ↓                    Versioned representation + small model
  Similar-case retrieval            │
        └────────────┬─────────────┘
                     ↓

@@ -1,0 +1,1327 @@
+{
+  "schema_version": "1.0",
+  "benchmark_only": true,
+  "source": {
+    "kind": "synthetic_known_utility",
+    "human_label": false,
+    "personal_accuracy_evidence": false,
+    "seed": 271828
+  },
+  "design": {
+    "cases": 2000,
+    "external_holdout": 300,
+    "feature_contract": "1.0",
+    "domains": [
+      "resource_allocation",
+      "product_delivery",
+      "customer_commercial",
+      "organization_delegation",
+      "growth_strategy",
+      "risk_reputation"
+    ],
+    "oracle_weights": [
+      -0.4,
+      -0.25,
+      0.65,
+      0.5,
+      0.3,
+      -0.45,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.9,
+      0.7,
+      0.6,
+      -0.35,
+      -0.8
+    ],
+    "holdout_tuning": false,
+    "model_exported": false
+  },
+  "learning_curve": [
+    {
+      "observations": 0,
+      "fit_ms": 0.10020902846008539,
+      "unconditional": {
+        "cases": 300,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "customer_commercial": {
+            "cases": 50,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "organization_delegation": {
+            "cases": 50,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "growth_strategy": {
+            "cases": 50,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 50,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "resource_allocation": {
+            "cases": 50,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "product_delivery": {
+            "cases": 50,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 300,
+        "non_abstained": 0,
+        "correct": 0,
+        "coverage": 0.0,
+        "agreement": 0.0,
+        "non_abstained_agreement": null,
+        "wilson_lower_95": 0.0,
+        "wilson_upper_95": 1.0,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "customer_commercial": {
+            "cases": 50,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "organization_delegation": {
+            "cases": 50,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "growth_strategy": {
+            "cases": 50,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 50,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "resource_allocation": {
+            "cases": 50,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          },
+          "product_delivery": {
+            "cases": 50,
+            "non_abstained": 0,
+            "correct": 0,
+            "coverage": 0.0,
+            "agreement": 0.0,
+            "non_abstained_agreement": null,
+            "wilson_lower_95": 0.0,
+            "wilson_upper_95": 1.0,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "calibration_status": "insufficient_data",
+      "validation_status": "insufficient_data"
+    },
+    {
+      "observations": 8,
+      "fit_ms": 45.10745801962912,
+      "unconditional": {
+        "cases": 300,
+        "non_abstained": 300,
+        "correct": 152,
+        "coverage": 1.0,
+        "agreement": 0.5066666666666667,
+        "non_abstained_agreement": 0.5066666666666667,
+        "wilson_lower_95": 0.450365807743735,
+        "wilson_upper_95": 0.5627989465229618,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "customer_commercial": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 26,
+            "coverage": 1.0,
+            "agreement": 0.52,
+            "non_abstained_agreement": 0.52,
+            "wilson_lower_95": 0.3851151225880844,
+            "wilson_upper_95": 0.6520308760449429,
+            "numeric_targets_met": false
+          },
+          "organization_delegation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 26,
+            "coverage": 1.0,
+            "agreement": 0.52,
+            "non_abstained_agreement": 0.52,
+            "wilson_lower_95": 0.3851151225880844,
+            "wilson_upper_95": 0.6520308760449429,
+            "numeric_targets_met": false
+          },
+          "growth_strategy": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 25,
+            "coverage": 1.0,
+            "agreement": 0.5,
+            "non_abstained_agreement": 0.5,
+            "wilson_lower_95": 0.36644286412332855,
+            "wilson_upper_95": 0.6335571358766714,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 28,
+            "coverage": 1.0,
+            "agreement": 0.56,
+            "non_abstained_agreement": 0.56,
+            "wilson_lower_95": 0.4230578680014353,
+            "wilson_upper_95": 0.6883801278976466,
+            "numeric_targets_met": false
+          },
+          "resource_allocation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 26,
+            "coverage": 1.0,
+            "agreement": 0.52,
+            "non_abstained_agreement": 0.52,
+            "wilson_lower_95": 0.3851151225880844,
+            "wilson_upper_95": 0.6520308760449429,
+            "numeric_targets_met": false
+          },
+          "product_delivery": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 21,
+            "coverage": 1.0,
+            "agreement": 0.42,
+            "non_abstained_agreement": 0.42,
+            "wilson_lower_95": 0.2937479723456693,
+            "wilson_upper_95": 0.5576680331222217,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 300,
+        "non_abstained": 300,
+        "correct": 152,
+        "coverage": 1.0,
+        "agreement": 0.5066666666666667,
+        "non_abstained_agreement": 0.5066666666666667,
+        "wilson_lower_95": 0.450365807743735,
+        "wilson_upper_95": 0.5627989465229618,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "customer_commercial": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 26,
+            "coverage": 1.0,
+            "agreement": 0.52,
+            "non_abstained_agreement": 0.52,
+            "wilson_lower_95": 0.3851151225880844,
+            "wilson_upper_95": 0.6520308760449429,
+            "numeric_targets_met": false
+          },
+          "organization_delegation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 26,
+            "coverage": 1.0,
+            "agreement": 0.52,
+            "non_abstained_agreement": 0.52,
+            "wilson_lower_95": 0.3851151225880844,
+            "wilson_upper_95": 0.6520308760449429,
+            "numeric_targets_met": false
+          },
+          "growth_strategy": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 25,
+            "coverage": 1.0,
+            "agreement": 0.5,
+            "non_abstained_agreement": 0.5,
+            "wilson_lower_95": 0.36644286412332855,
+            "wilson_upper_95": 0.6335571358766714,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 28,
+            "coverage": 1.0,
+            "agreement": 0.56,
+            "non_abstained_agreement": 0.56,
+            "wilson_lower_95": 0.4230578680014353,
+            "wilson_upper_95": 0.6883801278976466,
+            "numeric_targets_met": false
+          },
+          "resource_allocation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 26,
+            "coverage": 1.0,
+            "agreement": 0.52,
+            "non_abstained_agreement": 0.52,
+            "wilson_lower_95": 0.3851151225880844,
+            "wilson_upper_95": 0.6520308760449429,
+            "numeric_targets_met": false
+          },
+          "product_delivery": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 21,
+            "coverage": 1.0,
+            "agreement": 0.42,
+            "non_abstained_agreement": 0.42,
+            "wilson_lower_95": 0.2937479723456693,
+            "wilson_upper_95": 0.5576680331222217,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "calibration_status": "insufficient_data",
+      "validation_status": "insufficient_data"
+    },
+    {
+      "observations": 32,
+      "fit_ms": 19.523541908711195,
+      "unconditional": {
+        "cases": 300,
+        "non_abstained": 300,
+        "correct": 216,
+        "coverage": 1.0,
+        "agreement": 0.72,
+        "non_abstained_agreement": 0.72,
+        "wilson_lower_95": 0.6666550937163631,
+        "wilson_upper_95": 0.7677817970846332,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "customer_commercial": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 35,
+            "coverage": 1.0,
+            "agreement": 0.7,
+            "non_abstained_agreement": 0.7,
+            "wilson_lower_95": 0.562493877226366,
+            "wilson_upper_95": 0.8089661091039063,
+            "numeric_targets_met": false
+          },
+          "organization_delegation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 34,
+            "coverage": 1.0,
+            "agreement": 0.68,
+            "non_abstained_agreement": 0.68,
+            "wilson_lower_95": 0.5418944286372394,
+            "wilson_upper_95": 0.792419559060006,
+            "numeric_targets_met": false
+          },
+          "growth_strategy": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 36,
+            "coverage": 1.0,
+            "agreement": 0.72,
+            "non_abstained_agreement": 0.72,
+            "wilson_lower_95": 0.5833461285401034,
+            "wilson_upper_95": 0.8252598564231963,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 39,
+            "coverage": 1.0,
+            "agreement": 0.78,
+            "non_abstained_agreement": 0.78,
+            "wilson_lower_95": 0.6475818431054045,
+            "wilson_upper_95": 0.8724621377569771,
+            "numeric_targets_met": false
+          },
+          "resource_allocation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 36,
+            "coverage": 1.0,
+            "agreement": 0.72,
+            "non_abstained_agreement": 0.72,
+            "wilson_lower_95": 0.5833461285401034,
+            "wilson_upper_95": 0.8252598564231963,
+            "numeric_targets_met": false
+          },
+          "product_delivery": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 36,
+            "coverage": 1.0,
+            "agreement": 0.72,
+            "non_abstained_agreement": 0.72,
+            "wilson_lower_95": 0.5833461285401034,
+            "wilson_upper_95": 0.8252598564231963,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 300,
+        "non_abstained": 300,
+        "correct": 216,
+        "coverage": 1.0,
+        "agreement": 0.72,
+        "non_abstained_agreement": 0.72,
+        "wilson_lower_95": 0.6666550937163631,
+        "wilson_upper_95": 0.7677817970846332,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "customer_commercial": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 35,
+            "coverage": 1.0,
+            "agreement": 0.7,
+            "non_abstained_agreement": 0.7,
+            "wilson_lower_95": 0.562493877226366,
+            "wilson_upper_95": 0.8089661091039063,
+            "numeric_targets_met": false
+          },
+          "organization_delegation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 34,
+            "coverage": 1.0,
+            "agreement": 0.68,
+            "non_abstained_agreement": 0.68,
+            "wilson_lower_95": 0.5418944286372394,
+            "wilson_upper_95": 0.792419559060006,
+            "numeric_targets_met": false
+          },
+          "growth_strategy": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 36,
+            "coverage": 1.0,
+            "agreement": 0.72,
+            "non_abstained_agreement": 0.72,
+            "wilson_lower_95": 0.5833461285401034,
+            "wilson_upper_95": 0.8252598564231963,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 39,
+            "coverage": 1.0,
+            "agreement": 0.78,
+            "non_abstained_agreement": 0.78,
+            "wilson_lower_95": 0.6475818431054045,
+            "wilson_upper_95": 0.8724621377569771,
+            "numeric_targets_met": false
+          },
+          "resource_allocation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 36,
+            "coverage": 1.0,
+            "agreement": 0.72,
+            "non_abstained_agreement": 0.72,
+            "wilson_lower_95": 0.5833461285401034,
+            "wilson_upper_95": 0.8252598564231963,
+            "numeric_targets_met": false
+          },
+          "product_delivery": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 36,
+            "coverage": 1.0,
+            "agreement": 0.72,
+            "non_abstained_agreement": 0.72,
+            "wilson_lower_95": 0.5833461285401034,
+            "wilson_upper_95": 0.8252598564231963,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "calibration_status": "insufficient_data",
+      "validation_status": "insufficient_data"
+    },
+    {
+      "observations": 128,
+      "fit_ms": 26.347292005084455,
+      "unconditional": {
+        "cases": 300,
+        "non_abstained": 300,
+        "correct": 247,
+        "coverage": 1.0,
+        "agreement": 0.8233333333333334,
+        "non_abstained_agreement": 0.8233333333333334,
+        "wilson_lower_95": 0.7761666509606149,
+        "wilson_upper_95": 0.8623239309741828,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "customer_commercial": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 43,
+            "coverage": 1.0,
+            "agreement": 0.86,
+            "non_abstained_agreement": 0.86,
+            "wilson_lower_95": 0.738135428014719,
+            "wilson_upper_95": 0.9304925473797714,
+            "numeric_targets_met": false
+          },
+          "organization_delegation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 40,
+            "coverage": 1.0,
+            "agreement": 0.8,
+            "non_abstained_agreement": 0.8,
+            "wilson_lower_95": 0.6696262789551477,
+            "wilson_upper_95": 0.8875637005402612,
+            "numeric_targets_met": false
+          },
+          "growth_strategy": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 43,
+            "coverage": 1.0,
+            "agreement": 0.86,
+            "non_abstained_agreement": 0.86,
+            "wilson_lower_95": 0.738135428014719,
+            "wilson_upper_95": 0.9304925473797714,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 42,
+            "coverage": 1.0,
+            "agreement": 0.84,
+            "non_abstained_agreement": 0.84,
+            "wilson_lower_95": 0.7148551903823401,
+            "wilson_upper_95": 0.9166267863791231,
+            "numeric_targets_met": false
+          },
+          "resource_allocation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 38,
+            "coverage": 1.0,
+            "agreement": 0.76,
+            "non_abstained_agreement": 0.76,
+            "wilson_lower_95": 0.6258705062480763,
+            "wilson_upper_95": 0.8570274759812779,
+            "numeric_targets_met": false
+          },
+          "product_delivery": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 41,
+            "coverage": 1.0,
+            "agreement": 0.82,
+            "non_abstained_agreement": 0.82,
+            "wilson_lower_95": 0.6920368054529739,
+            "wilson_upper_95": 0.902299172675462,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 300,
+        "non_abstained": 300,
+        "correct": 247,
+        "coverage": 1.0,
+        "agreement": 0.8233333333333334,
+        "non_abstained_agreement": 0.8233333333333334,
+        "wilson_lower_95": 0.7761666509606149,
+        "wilson_upper_95": 0.8623239309741828,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "customer_commercial": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 43,
+            "coverage": 1.0,
+            "agreement": 0.86,
+            "non_abstained_agreement": 0.86,
+            "wilson_lower_95": 0.738135428014719,
+            "wilson_upper_95": 0.9304925473797714,
+            "numeric_targets_met": false
+          },
+          "organization_delegation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 40,
+            "coverage": 1.0,
+            "agreement": 0.8,
+            "non_abstained_agreement": 0.8,
+            "wilson_lower_95": 0.6696262789551477,
+            "wilson_upper_95": 0.8875637005402612,
+            "numeric_targets_met": false
+          },
+          "growth_strategy": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 43,
+            "coverage": 1.0,
+            "agreement": 0.86,
+            "non_abstained_agreement": 0.86,
+            "wilson_lower_95": 0.738135428014719,
+            "wilson_upper_95": 0.9304925473797714,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 42,
+            "coverage": 1.0,
+            "agreement": 0.84,
+            "non_abstained_agreement": 0.84,
+            "wilson_lower_95": 0.7148551903823401,
+            "wilson_upper_95": 0.9166267863791231,
+            "numeric_targets_met": false
+          },
+          "resource_allocation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 38,
+            "coverage": 1.0,
+            "agreement": 0.76,
+            "non_abstained_agreement": 0.76,
+            "wilson_lower_95": 0.6258705062480763,
+            "wilson_upper_95": 0.8570274759812779,
+            "numeric_targets_met": false
+          },
+          "product_delivery": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 41,
+            "coverage": 1.0,
+            "agreement": 0.82,
+            "non_abstained_agreement": 0.82,
+            "wilson_lower_95": 0.6920368054529739,
+            "wilson_upper_95": 0.902299172675462,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "calibration_status": "insufficient_data",
+      "validation_status": "insufficient_data"
+    },
+    {
+      "observations": 512,
+      "fit_ms": 66.11329200677574,
+      "unconditional": {
+        "cases": 300,
+        "non_abstained": 300,
+        "correct": 268,
+        "coverage": 1.0,
+        "agreement": 0.8933333333333333,
+        "non_abstained_agreement": 0.8933333333333333,
+        "wilson_lower_95": 0.8532958822657974,
+        "wilson_upper_95": 0.9234246194693172,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "customer_commercial": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 44,
+            "coverage": 1.0,
+            "agreement": 0.88,
+            "non_abstained_agreement": 0.88,
+            "wilson_lower_95": 0.7619492111337642,
+            "wilson_upper_95": 0.9438247628937535,
+            "numeric_targets_met": false
+          },
+          "organization_delegation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 45,
+            "coverage": 1.0,
+            "agreement": 0.9,
+            "non_abstained_agreement": 0.9,
+            "wilson_lower_95": 0.7863950966521162,
+            "wilson_upper_95": 0.956524876008429,
+            "numeric_targets_met": false
+          },
+          "growth_strategy": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 45,
+            "coverage": 1.0,
+            "agreement": 0.9,
+            "non_abstained_agreement": 0.9,
+            "wilson_lower_95": 0.7863950966521162,
+            "wilson_upper_95": 0.956524876008429,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 45,
+            "coverage": 1.0,
+            "agreement": 0.9,
+            "non_abstained_agreement": 0.9,
+            "wilson_lower_95": 0.7863950966521162,
+            "wilson_upper_95": 0.956524876008429,
+            "numeric_targets_met": false
+          },
+          "resource_allocation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 44,
+            "coverage": 1.0,
+            "agreement": 0.88,
+            "non_abstained_agreement": 0.88,
+            "wilson_lower_95": 0.7619492111337642,
+            "wilson_upper_95": 0.9438247628937535,
+            "numeric_targets_met": false
+          },
+          "product_delivery": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 45,
+            "coverage": 1.0,
+            "agreement": 0.9,
+            "non_abstained_agreement": 0.9,
+            "wilson_lower_95": 0.7863950966521162,
+            "wilson_upper_95": 0.956524876008429,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 300,
+        "non_abstained": 300,
+        "correct": 268,
+        "coverage": 1.0,
+        "agreement": 0.8933333333333333,
+        "non_abstained_agreement": 0.8933333333333333,
+        "wilson_lower_95": 0.8532958822657974,
+        "wilson_upper_95": 0.9234246194693172,
+        "numeric_targets_met": false,
+        "by_domain": {
+          "customer_commercial": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 44,
+            "coverage": 1.0,
+            "agreement": 0.88,
+            "non_abstained_agreement": 0.88,
+            "wilson_lower_95": 0.7619492111337642,
+            "wilson_upper_95": 0.9438247628937535,
+            "numeric_targets_met": false
+          },
+          "organization_delegation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 45,
+            "coverage": 1.0,
+            "agreement": 0.9,
+            "non_abstained_agreement": 0.9,
+            "wilson_lower_95": 0.7863950966521162,
+            "wilson_upper_95": 0.956524876008429,
+            "numeric_targets_met": false
+          },
+          "growth_strategy": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 45,
+            "coverage": 1.0,
+            "agreement": 0.9,
+            "non_abstained_agreement": 0.9,
+            "wilson_lower_95": 0.7863950966521162,
+            "wilson_upper_95": 0.956524876008429,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 45,
+            "coverage": 1.0,
+            "agreement": 0.9,
+            "non_abstained_agreement": 0.9,
+            "wilson_lower_95": 0.7863950966521162,
+            "wilson_upper_95": 0.956524876008429,
+            "numeric_targets_met": false
+          },
+          "resource_allocation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 44,
+            "coverage": 1.0,
+            "agreement": 0.88,
+            "non_abstained_agreement": 0.88,
+            "wilson_lower_95": 0.7619492111337642,
+            "wilson_upper_95": 0.9438247628937535,
+            "numeric_targets_met": false
+          },
+          "product_delivery": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 45,
+            "coverage": 1.0,
+            "agreement": 0.9,
+            "non_abstained_agreement": 0.9,
+            "wilson_lower_95": 0.7863950966521162,
+            "wilson_upper_95": 0.956524876008429,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "calibration_status": "insufficient_data",
+      "validation_status": "fitted_validation"
+    },
+    {
+      "observations": 1700,
+      "fit_ms": 223.62891701050103,
+      "unconditional": {
+        "cases": 300,
+        "non_abstained": 300,
+        "correct": 273,
+        "coverage": 1.0,
+        "agreement": 0.91,
+        "non_abstained_agreement": 0.91,
+        "wilson_lower_95": 0.8722221947968226,
+        "wilson_upper_95": 0.9374101926050341,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "customer_commercial": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 46,
+            "coverage": 1.0,
+            "agreement": 0.92,
+            "non_abstained_agreement": 0.92,
+            "wilson_lower_95": 0.8116149745493629,
+            "wilson_upper_95": 0.9684509967442093,
+            "numeric_targets_met": false
+          },
+          "organization_delegation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 47,
+            "coverage": 1.0,
+            "agreement": 0.94,
+            "non_abstained_agreement": 0.94,
+            "wilson_lower_95": 0.8378265662912299,
+            "wilson_upper_95": 0.9793854036353695,
+            "numeric_targets_met": false
+          },
+          "growth_strategy": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 46,
+            "coverage": 1.0,
+            "agreement": 0.92,
+            "non_abstained_agreement": 0.92,
+            "wilson_lower_95": 0.8116149745493629,
+            "wilson_upper_95": 0.9684509967442093,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 46,
+            "coverage": 1.0,
+            "agreement": 0.92,
+            "non_abstained_agreement": 0.92,
+            "wilson_lower_95": 0.8116149745493629,
+            "wilson_upper_95": 0.9684509967442093,
+            "numeric_targets_met": false
+          },
+          "resource_allocation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 42,
+            "coverage": 1.0,
+            "agreement": 0.84,
+            "non_abstained_agreement": 0.84,
+            "wilson_lower_95": 0.7148551903823401,
+            "wilson_upper_95": 0.9166267863791231,
+            "numeric_targets_met": false
+          },
+          "product_delivery": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 46,
+            "coverage": 1.0,
+            "agreement": 0.92,
+            "non_abstained_agreement": 0.92,
+            "wilson_lower_95": 0.8116149745493629,
+            "wilson_upper_95": 0.9684509967442093,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "selective": {
+        "cases": 300,
+        "non_abstained": 300,
+        "correct": 273,
+        "coverage": 1.0,
+        "agreement": 0.91,
+        "non_abstained_agreement": 0.91,
+        "wilson_lower_95": 0.8722221947968226,
+        "wilson_upper_95": 0.9374101926050341,
+        "numeric_targets_met": true,
+        "by_domain": {
+          "customer_commercial": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 46,
+            "coverage": 1.0,
+            "agreement": 0.92,
+            "non_abstained_agreement": 0.92,
+            "wilson_lower_95": 0.8116149745493629,
+            "wilson_upper_95": 0.9684509967442093,
+            "numeric_targets_met": false
+          },
+          "organization_delegation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 47,
+            "coverage": 1.0,
+            "agreement": 0.94,
+            "non_abstained_agreement": 0.94,
+            "wilson_lower_95": 0.8378265662912299,
+            "wilson_upper_95": 0.9793854036353695,
+            "numeric_targets_met": false
+          },
+          "growth_strategy": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 46,
+            "coverage": 1.0,
+            "agreement": 0.92,
+            "non_abstained_agreement": 0.92,
+            "wilson_lower_95": 0.8116149745493629,
+            "wilson_upper_95": 0.9684509967442093,
+            "numeric_targets_met": false
+          },
+          "risk_reputation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 46,
+            "coverage": 1.0,
+            "agreement": 0.92,
+            "non_abstained_agreement": 0.92,
+            "wilson_lower_95": 0.8116149745493629,
+            "wilson_upper_95": 0.9684509967442093,
+            "numeric_targets_met": false
+          },
+          "resource_allocation": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 42,
+            "coverage": 1.0,
+            "agreement": 0.84,
+            "non_abstained_agreement": 0.84,
+            "wilson_lower_95": 0.7148551903823401,
+            "wilson_upper_95": 0.9166267863791231,
+            "numeric_targets_met": false
+          },
+          "product_delivery": {
+            "cases": 50,
+            "non_abstained": 50,
+            "correct": 46,
+            "coverage": 1.0,
+            "agreement": 0.92,
+            "non_abstained_agreement": 0.92,
+            "wilson_lower_95": 0.8116149745493629,
+            "wilson_upper_95": 0.9684509967442093,
+            "numeric_targets_met": false
+          }
+        },
+        "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+      },
+      "calibration_status": "fitted_calibration",
+      "validation_status": "fitted_validation"
+    }
+  ],
+  "internal_final_test": {
+    "cases": 254,
+    "non_abstained": 254,
+    "correct": 234,
+    "coverage": 1.0,
+    "agreement": 0.9212598425196851,
+    "non_abstained_agreement": 0.9212598425196851,
+    "wilson_lower_95": 0.8815144676674032,
+    "wilson_upper_95": 0.9484524577627835,
+    "numeric_targets_met": true,
+    "by_domain": {
+      "resource_allocation": {
+        "cases": 43,
+        "non_abstained": 43,
+        "correct": 37,
+        "coverage": 1.0,
+        "agreement": 0.8604651162790697,
+        "non_abstained_agreement": 0.8604651162790697,
+        "wilson_lower_95": 0.7273612340557432,
+        "wilson_upper_95": 0.9344436573228605,
+        "numeric_targets_met": false
+      },
+      "product_delivery": {
+        "cases": 43,
+        "non_abstained": 43,
+        "correct": 42,
+        "coverage": 1.0,
+        "agreement": 0.9767441860465116,
+        "non_abstained_agreement": 0.9767441860465116,
+        "wilson_lower_95": 0.8794073213878312,
+        "wilson_upper_95": 0.9958830188225801,
+        "numeric_targets_met": false
+      },
+      "customer_commercial": {
+        "cases": 42,
+        "non_abstained": 42,
+        "correct": 38,
+        "coverage": 1.0,
+        "agreement": 0.9047619047619048,
+        "non_abstained_agreement": 0.9047619047619048,
+        "wilson_lower_95": 0.7793460477494668,
+        "wilson_upper_95": 0.9623383611716879,
+        "numeric_targets_met": false
+      },
+      "organization_delegation": {
+        "cases": 42,
+        "non_abstained": 42,
+        "correct": 38,
+        "coverage": 1.0,
+        "agreement": 0.9047619047619048,
+        "non_abstained_agreement": 0.9047619047619048,
+        "wilson_lower_95": 0.7793460477494668,
+        "wilson_upper_95": 0.9623383611716879,
+        "numeric_targets_met": false
+      },
+      "growth_strategy": {
+        "cases": 42,
+        "non_abstained": 42,
+        "correct": 40,
+        "coverage": 1.0,
+        "agreement": 0.9523809523809523,
+        "non_abstained_agreement": 0.9523809523809523,
+        "wilson_lower_95": 0.8420986468452026,
+        "wilson_upper_95": 0.9868427513607937,
+        "numeric_targets_met": false
+      },
+      "risk_reputation": {
+        "cases": 42,
+        "non_abstained": 42,
+        "correct": 39,
+        "coverage": 1.0,
+        "agreement": 0.9285714285714286,
+        "non_abstained_agreement": 0.9285714285714286,
+        "wilson_lower_95": 0.8099028671147483,
+        "wilson_upper_95": 0.9754100364488272,
+        "numeric_targets_met": false
+      }
+    },
+    "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair",
+    "calibration": {
+      "status": "heldout_test",
+      "cases": 254,
+      "brier": 0.021007862908518145,
+      "log_loss": 0.06948565263417511,
+      "out_of_scope_cases": 0
+    },
+    "memory_baseline": {
+      "kind": "feature_exact_replay_train_only",
+      "cases": 254,
+      "non_abstained": 0,
+      "correct": 0,
+      "coverage": 0.0,
+      "agreement": 0.0,
+      "non_abstained_agreement": null,
+      "wilson_lower_95": 0.0,
+      "wilson_upper_95": 1.0,
+      "numeric_targets_met": false
+    },
+    "rule_baseline": {
+      "status": "unavailable",
+      "reason": "no_explicit_rule_snapshot"
+    },
+    "abstention_margin": 0.0,
+    "threshold_source": "validation",
+    "statistically_eligible": false,
+    "verified": false,
+    "promotion_allowed": false,
+    "reason": "independent_scope_policy_and_paired_evidence_required"
+  },
+  "latency": {
+    "p50_ms_per_case": 0.03625402653900286,
+    "p95_ms_per_case": 0.041044887310514845
+  },
+  "contradiction_20_percent": {
+    "fit_ms": 274.01620894670486,
+    "unconditional": {
+      "cases": 300,
+      "non_abstained": 300,
+      "correct": 261,
+      "coverage": 1.0,
+      "agreement": 0.87,
+      "non_abstained_agreement": 0.87,
+      "wilson_lower_95": 0.8272186992368379,
+      "wilson_upper_95": 0.9034251625648376,
+      "numeric_targets_met": false,
+      "by_domain": {
+        "customer_commercial": {
+          "cases": 50,
+          "non_abstained": 50,
+          "correct": 43,
+          "coverage": 1.0,
+          "agreement": 0.86,
+          "non_abstained_agreement": 0.86,
+          "wilson_lower_95": 0.738135428014719,
+          "wilson_upper_95": 0.9304925473797714,
+          "numeric_targets_met": false
+        },
+        "organization_delegation": {
+          "cases": 50,
+          "non_abstained": 50,
+          "correct": 42,
+          "coverage": 1.0,
+          "agreement": 0.84,
+          "non_abstained_agreement": 0.84,
+          "wilson_lower_95": 0.7148551903823401,
+          "wilson_upper_95": 0.9166267863791231,
+          "numeric_targets_met": false
+        },
+        "growth_strategy": {
+          "cases": 50,
+          "non_abstained": 50,
+          "correct": 44,
+          "coverage": 1.0,
+          "agreement": 0.88,
+          "non_abstained_agreement": 0.88,
+          "wilson_lower_95": 0.7619492111337642,
+          "wilson_upper_95": 0.9438247628937535,
+          "numeric_targets_met": false
+        },
+        "risk_reputation": {
+          "cases": 50,
+          "non_abstained": 50,
+          "correct": 44,
+          "coverage": 1.0,
+          "agreement": 0.88,
+          "non_abstained_agreement": 0.88,
+          "wilson_lower_95": 0.7619492111337642,
+          "wilson_upper_95": 0.9438247628937535,
+          "numeric_targets_met": false
+        },
+        "resource_allocation": {
+          "cases": 50,
+          "non_abstained": 50,
+          "correct": 42,
+          "coverage": 1.0,
+          "agreement": 0.84,
+          "non_abstained_agreement": 0.84,
+          "wilson_lower_95": 0.7148551903823401,
+          "wilson_upper_95": 0.9166267863791231,
+          "numeric_targets_met": false
+        },
+        "product_delivery": {
+          "cases": 50,
+          "non_abstained": 50,
+          "correct": 46,
+          "coverage": 1.0,
+          "agreement": 0.92,
+          "non_abstained_agreement": 0.92,
+          "wilson_lower_95": 0.8116149745493629,
+          "wilson_upper_95": 0.9684509967442093,
+          "numeric_targets_met": false
+        }
+      },
+      "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+    },
+    "selective": {
+      "cases": 300,
+      "non_abstained": 0,
+      "correct": 0,
+      "coverage": 0.0,
+      "agreement": 0.0,
+      "non_abstained_agreement": null,
+      "wilson_lower_95": 0.0,
+      "wilson_upper_95": 1.0,
+      "numeric_targets_met": false,
+      "by_domain": {
+        "customer_commercial": {
+          "cases": 50,
+          "non_abstained": 0,
+          "correct": 0,
+          "coverage": 0.0,
+          "agreement": 0.0,
+          "non_abstained_agreement": null,
+          "wilson_lower_95": 0.0,
+          "wilson_upper_95": 1.0,
+          "numeric_targets_met": false
+        },
+        "organization_delegation": {
+          "cases": 50,
+          "non_abstained": 0,
+          "correct": 0,
+          "coverage": 0.0,
+          "agreement": 0.0,
+          "non_abstained_agreement": null,
+          "wilson_lower_95": 0.0,
+          "wilson_upper_95": 1.0,
+          "numeric_targets_met": false
+        },
+        "growth_strategy": {
+          "cases": 50,
+          "non_abstained": 0,
+          "correct": 0,
+          "coverage": 0.0,
+          "agreement": 0.0,
+          "non_abstained_agreement": null,
+          "wilson_lower_95": 0.0,
+          "wilson_upper_95": 1.0,
+          "numeric_targets_met": false
+        },
+        "risk_reputation": {
+          "cases": 50,
+          "non_abstained": 0,
+          "correct": 0,
+          "coverage": 0.0,
+          "agreement": 0.0,
+          "non_abstained_agreement": null,
+          "wilson_lower_95": 0.0,
+          "wilson_upper_95": 1.0,
+          "numeric_targets_met": false
+        },
+        "resource_allocation": {
+          "cases": 50,
+          "non_abstained": 0,
+          "correct": 0,
+          "coverage": 0.0,
+          "agreement": 0.0,
+          "non_abstained_agreement": null,
+          "wilson_lower_95": 0.0,
+          "wilson_upper_95": 1.0,
+          "numeric_targets_met": false
+        },
+        "product_delivery": {
+          "cases": 50,
+          "non_abstained": 0,
+          "correct": 0,
+          "coverage": 0.0,
+          "agreement": 0.0,
+          "non_abstained_agreement": null,
+          "wilson_lower_95": 0.0,
+          "wilson_upper_95": 1.0,
+          "numeric_targets_met": false
+        }
+      },
+      "metric_definition": "unique_top_in_chosen_set; pairwise restricted to compared pair"
+    }
+  },
+  "dense_choose_set": {
+    "cases": 128,
+    "candidates": 16,
+    "pairs": 16384,
+    "pair_generation_median_ms": 150.77566704712808
+  },
+  "external_scenarios": {
+    "status": "not_available"
+  }
+}

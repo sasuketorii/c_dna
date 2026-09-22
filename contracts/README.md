@@ -1,0 +1,15 @@
+# C-DNA contracts
+
+`cdna-domain` owns serde/schemars types. All external input structs reject unknown fields. Call `RankRequest::from_json(bytes)` or `ObservationProposal::from_json(bytes)` at the trust boundary: deserialization alone does not enforce semantic limits. Limits use UTF-8 bytes as well as character counts. The rank request schema is the appendix 29 baseline. Remaining JSON schemas are generated with `cargo run -p cdna-domain --example schemas`; runtime validation additionally checks unique references, unknown facts, units, and byte limits.
+
+RankRequest fields match requirements appendix 29. `Context` contains as_of, summary, facts, unknown_fields; `Candidate` contains id, text, attributes. `FactValue` is a typed untagged scalar/money/string-list union. `ObservationProposal` contains schema_version, request_id, workspace_id, family_id, case_kind, domain, context, candidates, response, source, model_exposure. Its `ObservationResponse` is tagged by response_type; choose_one carries candidate_id, choose_set carries candidate_ids, pairwise carries left_id/right_id/outcome, acceptability carries candidate_id/outcome; need_information carries fields; none_fit/skip/defer carry no labels. SourceProvenance carries artifact_id, source_kind, occurred_at (nullable), observed_at. Confirmation is a separate trusted application command and is never accepted as proposal input. No external contract accepts training_eligible or verification_state.
+
+`PolicyExpr` is a bounded, typed AST; evaluation is three-valued and rejects unit/type mismatch. Unknown facts propagate Unknown. Policy approval, authorization, conflict resolution and effective periods belong to the application layer.
+
+Schema version 1.0 is exact; extensions and unknown fields are rejected. `defaults.json` is the sole initial-settings manifest; other components should read it. Generated schemas describe structural contracts; fixtures plus domain validation specify semantic contracts.
+
+Observation proposals optionally carry rationale_explicit (8192 bytes) and reversal_conditions (16 entries of 2048 bytes). Conditional acceptability requires explicit conditions. Candidate numeric attributes are schema-supported; the feature-v1 keys cost, effort, speed, reuse, customer_impact, irreversibility represent dimensionless normalized values in [-1,1], validated by the inference feature boundary. Numeric context facts require an explicit unit (`ratio` for normalized values).
+
+Transport envelopes must call `cdna_domain::parse_json(raw_bytes)` before converting JSON to `Value`; a subsequent serialize/parse cannot recover duplicate keys already discarded by another parser. It rejects duplicate keys at every depth, trailing values, nonstandard numbers, and oversized bodies. Typed semantic validation remains required afterwards.
+
+Numeric context facts with keys deadline_pressure, asset_importance, loss_tolerance, customer_impact, or budget_pressure must carry unit `ratio` and values in [-1,1]. Categorical facts (for example customer_impact="high") remain valid input facts; feature extraction must not reinterpret them as normalized numbers.

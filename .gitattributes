@@ -1,0 +1,2 @@
+# Preserve the upstream license bytes; CRLF is not trailing whitespace here.
+benchmarks/natural-language/QWEN-LICENSE.txt whitespace=cr-at-eol

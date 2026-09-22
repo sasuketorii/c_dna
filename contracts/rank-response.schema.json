@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RankResponse",
+  "type": "object",
+  "properties": {
+    "calibration_status": {
+      "$ref": "#/$defs/CalibrationStatus"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      }
+    },
+    "execution_authorization": {
+      "$ref": "#/$defs/ExecutionAuthorization"
+    },
+    "explanation": {
+      "type": "string"
+    },
+    "human_review_required": {
+      "type": "boolean"
+    },
+    "mode": {
+      "$ref": "#/$defs/Mode"
+    },
+    "pairwise_probability": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "format": "double"
+    },
+    "ranking": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/RankedCandidate"
+      }
+    },
+    "reason_codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "request_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "score_scope": {
+      "$ref": "#/$defs/ScoreScope"
+    },
+    "status": {
+      "$ref": "#/$defs/PredictionStatus"
+    },
+    "top_choice_agreement_estimate": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "format": "double"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "request_id",
+    "status",
+    "mode",
+    "ranking",
+    "score_scope",
+    "calibration_status",
+    "reason_codes",
+    "evidence",
+    "explanation",
+    "human_review_required",
+    "execution_authorization"
+  ],
+  "$defs": {
+    "CalibrationStatus": {
+      "type": "string",
+      "enum": [
+        "insufficient_data",
+        "uncalibrated",
+        "calibrated"
+      ]
+    },
+    "ExecutionAuthorization": {
+      "type": "string",
+      "enum": [
+        "none"
+      ]
+    },
+    "Mode": {
+      "type": "string",
+      "enum": [
+        "imitate",
+        "advisor"
+      ]
+    },
+    "PredictionStatus": {
+      "type": "string",
+      "enum": [
+        "predicted",
+        "needs_information",
+        "abstain",
+        "policy_conflict"
+      ]
+    },
+    "RankedCandidate": {
+      "type": "object",
+      "properties": {
+        "candidate_id": {
+          "type": "string"
+        },
+        "raw_score": {
+          "type": "number",
+          "format": "double"
+        },
+        "tie_group": {
+          "type": "integer",
+          "format": "uint32",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "candidate_id",
+        "raw_score",
+        "tie_group"
+      ]
+    },
+    "ScoreScope": {
+      "type": "string",
+      "enum": [
+        "all_presented_candidates",
+        "eligible_candidates"
+      ]
+    }
+  }
+}

@@ -1,0 +1,572 @@
+{
+  "corpus": 10000,
+  "database_bytes": 46706688,
+  "matching_dense": 9980,
+  "matching_sparse": 20,
+  "personal_accuracy": "not measured",
+  "probes": [
+    {
+      "probe": "training_at_10000_records",
+      "result": {
+        "error": "INPUT_INVALID: training snapshot limit reached; explicit paging required",
+        "ok": false
+      }
+    },
+    {
+      "probe": "trailing_space_exact_memory",
+      "result": {
+        "abstained": true,
+        "abstention_reasons": [
+          "no_matching_confirmed_memory"
+        ],
+        "evidence": [],
+        "execution_authorization": "none",
+        "mode": "imitate",
+        "model_status": "memory_only",
+        "probability": null,
+        "ranking": [
+          {
+            "candidate_id": "fast",
+            "memory_match": false,
+            "policy_status": "compliant",
+            "probability": null,
+            "raw_score": null
+          },
+          {
+            "candidate_id": "slow",
+            "memory_match": false,
+            "policy_status": "violated",
+            "probability": null,
+            "raw_score": null
+          }
+        ],
+        "selected_candidate_id": null
+      }
+    },
+    {
+      "probe": "conflicting_confirmed_answer",
+      "result": {
+        "abstained": true,
+        "abstention_reasons": [
+          "conflicting_evidence",
+          "policy_violation_or_unknown"
+        ],
+        "evidence": [
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "12480101-0e51-4d4a-a160-da5f0d784f61",
+            "revision": 2,
+            "source": {
+              "artifact_id": "79214189-09db-4992-8827-4c7e486099e3",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "14d99089-1246-4a7e-99ce-b27fce2b0488",
+            "revision": 2,
+            "source": {
+              "artifact_id": "ed95bafa-3616-43bb-a885-a33cc80fd46a",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "1e53cb27-a273-4a79-b609-5f70fae38d9a",
+            "revision": 2,
+            "source": {
+              "artifact_id": "0652a93c-166f-484a-b43d-41ae1bc7fb07",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "30fd3068-37f3-4faa-887f-c5426976d96b",
+            "revision": 2,
+            "source": {
+              "artifact_id": "6daf7534-4e1a-487b-bbd6-f16f7299da44",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "3373c662-63c1-49a1-a554-6ef5938e219c",
+            "revision": 2,
+            "source": {
+              "artifact_id": "6679e552-c006-4bf2-a5e9-34c8065003d3",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "364c6e63-ea25-4fe5-a245-c3c0f744c7e1",
+            "revision": 2,
+            "source": {
+              "artifact_id": "5e8edd79-050d-4ac8-adf0-c63a3ef8aa2a",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "442c4f0e-3bed-42d8-a2b4-06987b14063d",
+            "revision": 2,
+            "source": {
+              "artifact_id": "9b02d265-feb5-4a8b-b5da-f5aa35d8ef56",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "4b850d4b-8511-4d45-a676-e8e1df6bd7b9",
+            "revision": 2,
+            "source": {
+              "artifact_id": "7ceaf20c-c548-4179-b501-d9202a8c5f84",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "slow",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "525bd774-a0d3-4a92-b2ec-09cdc0c35727",
+            "revision": 2,
+            "source": {
+              "artifact_id": "4df0f593-cbf4-4bcb-a530-091628ff3b3d",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "59064e63-28da-4f71-b8a3-7c6de66655c9",
+            "revision": 2,
+            "source": {
+              "artifact_id": "bfda6c34-f9c1-4517-857c-4addbf24243a",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "59a2a086-bd70-4c65-a1b9-5aa2b7d6f949",
+            "revision": 2,
+            "source": {
+              "artifact_id": "fa38e767-6e2f-49e4-9f06-a7981a3fbeb4",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "64a3eefe-3cbd-4979-bc9a-83731fc45500",
+            "revision": 2,
+            "source": {
+              "artifact_id": "971ca5d1-fe62-4f52-9a92-cb35267b7889",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "66482955-7b84-4584-8b81-99867afd41d0",
+            "revision": 2,
+            "source": {
+              "artifact_id": "13e043e8-f068-452a-af26-7fddee67631b",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "68b0930e-81b1-449c-b6e5-f5453a281537",
+            "revision": 2,
+            "source": {
+              "artifact_id": "f18b34e4-ff75-4b1b-9d2f-2c589cc3f7ec",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "9062bae4-7664-4552-92bc-0d8c588fee66",
+            "revision": 2,
+            "source": {
+              "artifact_id": "93289172-8389-4d29-b26b-09e3a81c506d",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "9e8b5abd-ce6a-449a-bc32-a62dd93a59af",
+            "revision": 2,
+            "source": {
+              "artifact_id": "baddec0c-6c70-4515-b1f5-bc7676412f47",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "b3d2bb1a-1d48-4f80-8399-527af4d6eb5b",
+            "revision": 2,
+            "source": {
+              "artifact_id": "6086b5e7-8b13-4242-b6a4-26c5a0e60e22",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "d7dafa2e-35df-44eb-a214-233ed3ec19c4",
+            "revision": 2,
+            "source": {
+              "artifact_id": "5005c2d5-41e6-411a-aae2-b71cf5fb9f7e",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "f188a7e9-5267-4f29-b7c7-d4bd0cecafbc",
+            "revision": 2,
+            "source": {
+              "artifact_id": "39049965-84f6-4c32-8469-169663ec4d87",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          },
+          {
+            "candidate_id": "fast",
+            "case_kind": "hypothetical",
+            "kind": "confirmed_observation",
+            "model_exposure": false,
+            "record_id": "f996d66f-adfc-4294-92ad-1813ebc379a3",
+            "revision": 2,
+            "source": {
+              "artifact_id": "238736d4-e10a-4f67-8d52-4e7ce2a0635a",
+              "observed_at": "2026-01-01T00:00:00Z",
+              "occurred_at": null,
+              "source_kind": "human_app"
+            }
+          }
+        ],
+        "execution_authorization": "none",
+        "mode": "imitate",
+        "model_status": "memory_only",
+        "probability": null,
+        "ranking": [
+          {
+            "candidate_id": "fast",
+            "memory_match": false,
+            "policy_status": "compliant",
+            "probability": null,
+            "raw_score": null
+          },
+          {
+            "candidate_id": "slow",
+            "memory_match": false,
+            "policy_status": "violated",
+            "probability": null,
+            "raw_score": null
+          }
+        ],
+        "selected_candidate_id": null
+      }
+    },
+    {
+      "passed": true,
+      "probe": "delete_conflicting_answer_restores_match"
+    },
+    {
+      "probe": "preview_export_1001_messages",
+      "result": {
+        "error": "INPUT_INVALID: source batch too large",
+        "ok": false
+      }
+    }
+  ],
+  "reopen_and_first_rank_us": 79337.542,
+  "results": [
+    {
+      "first_call_us": 1468.0,
+      "max": 514.917,
+      "p50": 371.458,
+      "p95": 464.33299999999997,
+      "percentile": "nearest_rank",
+      "samples": 200,
+      "scenario": "engine_rank_10k_20_matches_no_policy",
+      "unit": "microseconds",
+      "warmup": 10
+    },
+    {
+      "first_call_us": 153.791,
+      "max": 902.667,
+      "p50": 139.833,
+      "p95": 162.084,
+      "percentile": "nearest_rank",
+      "samples": 200,
+      "scenario": "encrypted_index_retrieval_10k_20_matches",
+      "unit": "microseconds",
+      "warmup": 10
+    },
+    {
+      "first_call_us": 27.375,
+      "max": 14.417,
+      "p50": 10.125,
+      "p95": 10.334,
+      "percentile": "nearest_rank",
+      "samples": 200,
+      "scenario": "policy_evaluation_preloaded_one_policy",
+      "unit": "microseconds",
+      "warmup": 10
+    },
+    {
+      "first_call_us": 71.375,
+      "max": 64.875,
+      "p50": 36.75,
+      "p95": 38.583,
+      "percentile": "nearest_rank",
+      "samples": 200,
+      "scenario": "encrypted_policy_retrieval_and_evaluation",
+      "unit": "microseconds",
+      "warmup": 10
+    },
+    {
+      "first_call_us": 5.25,
+      "max": 2.0,
+      "p50": 1.666,
+      "p95": 1.75,
+      "percentile": "nearest_rank",
+      "samples": 200,
+      "scenario": "structured_features_and_linear_scoring_not_active_rank",
+      "unit": "microseconds",
+      "warmup": 10
+    },
+    {
+      "first_call_us": 13.292000000000002,
+      "max": 9.125,
+      "p50": 7.375,
+      "p95": 7.542,
+      "percentile": "nearest_rank",
+      "samples": 200,
+      "scenario": "explanation_evidence_serialization_precomputed_not_generation",
+      "unit": "microseconds",
+      "warmup": 10
+    },
+    {
+      "first_call_us": 578.083,
+      "max": 587.333,
+      "p50": 387.584,
+      "p95": 489.41700000000003,
+      "percentile": "nearest_rank",
+      "samples": 200,
+      "scenario": "engine_rank_10k_20_matches_with_policy_and_response_json",
+      "unit": "microseconds",
+      "warmup": 10
+    },
+    {
+      "first_call_us": 47863.084,
+      "max": 86185.16699999999,
+      "p50": 36800.209,
+      "p95": 41088.375,
+      "percentile": "nearest_rank",
+      "samples": 100,
+      "scenario": "engine_rank_10k_9980_matches_abstention",
+      "unit": "microseconds",
+      "warmup": 10
+    },
+    {
+      "first_call_us": 1364.166,
+      "max": 702.916,
+      "p50": 529.917,
+      "p95": 641.375,
+      "percentile": "nearest_rank",
+      "samples": 200,
+      "scenario": "concurrent_reader_0_10k_20_matches",
+      "unit": "microseconds",
+      "warmup": 10
+    },
+    {
+      "first_call_us": 1362.292,
+      "max": 744.417,
+      "p50": 530.709,
+      "p95": 650.75,
+      "percentile": "nearest_rank",
+      "samples": 200,
+      "scenario": "concurrent_reader_1_10k_20_matches",
+      "unit": "microseconds",
+      "warmup": 10
+    }
+  ],
+  "schema_version": "1.0",
+  "scope": {
+    "build_profile": "release",
+    "cold": "first scenario call or connection reopen; no OS page-cache eviction",
+    "database": "real SQLCipher temporary file; public propose/confirm ingestion",
+    "explanation": "precomputed evidence serialization only; generation remains in full rank timing",
+    "reader_threads": 2,
+    "scoring": "separate structured numeric microbenchmark, not active rank and not arbitrary NL",
+    "test_processes": 1,
+    "timings": "overlapping independent component measurements; do not add or subtract as stage profiling"
+  },
+  "setup_seconds": 32.510028875,
+  "synthetic": true,
+  "artifact_binding": {
+    "binary_sha256": "ae21954721447e1abf7d605e37b6ba4e2d135186a56e6eb7aa3bcff7a6534282",
+    "binary_unchanged": true,
+    "sources_sha256": {
+      "Cargo.lock": "c7b94c0e6fdf4e7c6e7535741914d6b2d7bff637b555cadce0815dbf4e7153a7",
+      "Cargo.toml": "106f49bfa891fd7f7d45e99b3f574e41f044ebac88d22c6977fc78fb43599d14",
+      "benchmarks/core/Cargo.toml": "fd01599ed308f824cb2517d30cf5c185406b5b480433b5be74df720600a4b122",
+      "benchmarks/core/run.py": "984e96bc65dd800a83ffa433197c0ab7ad8e3474aa01585df60689bd974702c8",
+      "benchmarks/core/src/main.rs": "11e4f9f969b57584eec818b4ed346b1e931585498bfb6a94264f7a681c7c0abb",
+      "benchmarks/engine/Cargo.lock": "9ae9097a1e3b3d102b5fa46678f4cb969f41c1766be1defa99d1334076537f76",
+      "benchmarks/engine/Cargo.toml": "15f639f8c07178c0cea88df2eacc4fb792b2471d03226e7d04fd63dcbb2c8801",
+      "benchmarks/engine/learner_probes.py": "af094201dc904a0b6b5a456bc987c1f04cc1d1c40fefe2d7144788dfe31c674a",
+      "benchmarks/engine/run.py": "6fa73b4029da97838588d6794826d81aee88b6c9bd56b6f4f1a3462038210ba8",
+      "benchmarks/engine/src/main.rs": "1b624610a99990c2035a6635b44bcde6af4836503d07bd12106a08330045aa43",
+      "crates/cdna-app/Cargo.toml": "21533cf1bcc1bbf19eaba2966a26ce5ebd8bbe2b5e63e1d05c462937b0768b36",
+      "crates/cdna-app/src/assessment.rs": "c7820933e27bc3a18662675a7de40e8537ad74f71128521353f9aa5235c2e01a",
+      "crates/cdna-app/src/evolution_bridge.rs": "883c5446fb8fa507f56a6e20a3dd13c453c5c0af35ceed4f57601372e64bc925",
+      "crates/cdna-app/src/evolution_cli.rs": "b5c50ed25ee4fae62d45158739b8fe9300b051a7ddd792aadfe01eae4fed370b",
+      "crates/cdna-app/src/importer.rs": "f40b99b665ff539a7e0c69225dd8381af2fc36082db62282b06d9a2987d6cff6",
+      "crates/cdna-app/src/inference_runtime.rs": "90e7e997430d759db705dcd1c6a11b0d9fcc8467a1277a06b6bed36df3d02e2f",
+      "crates/cdna-app/src/lib.rs": "9bf0c79ad5836163ec63819594ec3973be4d17cce46b783c46e8794fd68f9406",
+      "crates/cdna-app/src/main.rs": "9f0ef37ad094be1fc1ca5891cd2f44de237a6a6d61bbf0b0a0b73234c05cc64d",
+      "crates/cdna-app/src/mcp_bridge.rs": "6c531baeb00f7112cbe427ba1e2ffbde2f366a2d819ac82b1baa87428e72e565",
+      "crates/cdna-app/src/natural_language.rs": "80d6e470c2cac47e34ef23f9947442ddfa3989631bf107137ce5fbc055b0929c",
+      "crates/cdna-app/src/policy.rs": "f564de429ed6d49b81945856f6d40ac2cd3bb83a6172018581d0b75a7072fb6f",
+      "crates/cdna-app/src/questions.rs": "81c9d38f6ae3f38db8a72c5f84cc5f014de5307f08ccbb36f729bcc9fae9e393",
+      "crates/cdna-app/src/training_snapshot.rs": "9309516fc0ec83ffbadc0eef6e74bb98adbf672c0ded28dcce68d4f08f2cce5d",
+      "crates/cdna-app/tests/adversarial.rs": "00b17de78ff4bd7a2152e72554025313312a87e13e298efd97dc67f830e38285",
+      "crates/cdna-app/tests/learned_inference.rs": "b1bdcbe9cdfce1531c8169f24b3499cc56a7c0d6563b51cadec21d53a2b2d0a1",
+      "crates/cdna-app/tests/natural_language.rs": "e2a365476287adbeeb5a4303b73630322981b897251771e1875ee02d56436d8a",
+      "crates/cdna-app/tests/onboarding_workflow.rs": "b9b8df4fae9e0ed63de6cadbaf9fd761ae437d9d8060cdaee40499582809f785",
+      "crates/cdna-app/tests/policy_workflow.rs": "6df8a2c7c29325ba57b819b89d6844c679d3afdd5f71505b0b0b0e2c4abc4b5e",
+      "crates/cdna-app/tests/workflow.rs": "ee6f51c0552af2708633aa34d6ff0c68ffc184ccc5c043b28b3da59f03987e8b",
+      "crates/cdna-domain/Cargo.toml": "d6f382deec1e5de29d3607d29bfb699f691dd92142722c568371a7141aa4f65a",
+      "crates/cdna-domain/examples/schemas.rs": "60266d79a06c80b3595bf55c7cd4103fe94d0253d6717a9c62ea062a26c8cc8e",
+      "crates/cdna-domain/src/lib.rs": "ef10c67bf77adac9d226b359a75653ae32fd6bcbc6d0c2ce482f80a16c7310e3",
+      "crates/cdna-evolution/Cargo.toml": "da2113d39dad9fcec819a1936a6982534271515a3b1bbecfea1c21e7129100f3",
+      "crates/cdna-evolution/src/lib.rs": "45cc2fa6b9fc6f50c471c7804a67489e7bb3504d1bd65619732cc84d0242ee3a",
+      "crates/cdna-inference/Cargo.toml": "67b026669092d842fa0341335078d100a64ec3022c128aa3116eda2ce5822100",
+      "crates/cdna-inference/examples/native_bench.rs": "f6e2f6961ce27988d8384f9bb1d84947a3e1817a5e4583893df2b10aa147485b",
+      "crates/cdna-inference/examples/verify_mojo.rs": "f6491779ab21ad7d8d39dd3e249e32f4e5dbf982fd14b681cb3912da9243fce7",
+      "crates/cdna-inference/src/lib.rs": "146af6b649183886e00536abfe987431d13b000613b66a010bc0bd6499314119",
+      "crates/cdna-inference/src/main.rs": "36b3e0b1c2134adf85a423e21121f459e4a6b451950b32a1390ee64f8046dbe9",
+      "crates/cdna-store/Cargo.toml": "562e2568f976a36fae6e4dd32142025af94d50f2026eea0083ff7701b976d31a",
+      "crates/cdna-store/src/lib.rs": "8ea49e31d79ff6980bcae989d112eea46048a06885baf85aa3c992d2259b1d2b",
+      "crates/cdna-store/src/matching.rs": "9830f01aefbe2c6b19a8868ea28edb0d824745c211d5892e8eec17a449c95049",
+      "crates/cdna-store/src/source_deletion.rs": "74b967577f78f94030456c411ba090aeafb8e00e080ff098896d52a5c13917ad"
+    },
+    "sources_unchanged": false,
+    "git_commit_after_run": "61b48f9895114fc156381f70ae9eaab0f06252b9",
+    "git_dirty_after_run": "M README.en.md\n M README.md\n?? Cargo.lock\n?? Cargo.toml\n?? HARNESS_FINDINGS.md\n?? HARNESS_LEARNINGS.md\n?? PROJECT_FINDINGS.md\n?? PROJECT_LEARNINGS.md\n?? SKILLS_FINDINGS.md\n?? SKILLS_LEARNINGS.md\n?? apps/\n?? benchmarks/\n?? contracts/\n?? crates/\n?? docs/QUICKSTART.md\n?? docs/architecture/\n?? docs/release/\n?? learner/\n?? mojo/\n?? rust-toolchain.toml\n?? scripts/",
+    "note": "Hashes bind existing files; build provenance is not inferred from matching timestamps. Git metadata is read after the run."
+  },
+  "process_resources": {
+    "scope": "entire benchmark process tree, including SQLCipher setup, database writes and cleanup",
+    "wall_seconds": 38.434125542000004,
+    "user_cpu_seconds": 13.165242,
+    "system_cpu_seconds": 11.607912,
+    "cpu_seconds_per_wall_second": 0.6445614060590091,
+    "peak_rss_bytes": 25559040,
+    "peak_rss_native_value": 25559040,
+    "measurement": "Python resource.getrusage(RUSAGE_CHILDREN); not instantaneous RSS, allocation count, or per-scenario memory"
+  },
+  "environment": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "architecture": "arm64",
+    "logical_cpu_count": 12,
+    "cpu_model": "Apple M2 Max",
+    "physical_memory_bytes": "103079215104",
+    "rustc_available": "rustc 1.98.1 (48a229cea 2026-09-01)",
+    "cargo_available": "cargo 1.98.1 (797e8a9bc 2026-08-05)",
+    "python": "3.9.6",
+    "compiler_note": "Available toolchain version is recorded; this is not proof it built the supplied binary."
+  },
+  "measurement_validity": "source_or_binary_changed"
+}

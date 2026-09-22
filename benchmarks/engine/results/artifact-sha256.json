@@ -1,0 +1,15 @@
+{
+  "build-binding.json": "a433e204432f66f2a52d9891741eb32e3bea2bc53dee7389ee1b2cb3cba38043",
+  "capture-binding.json": "c05fce5825481e38903a0d4cc1c455893b8a903a9715b7ff137950dea40e1264",
+  "cdna-engine-isolated-receipt.json": "8fbf6db19cd0b8a45bcc15d16839b08bcc60f6cd6138ca78077ba3ffde5f8f6b",
+  "cdna-engine-isolated-receipt.json.stderr.log": "c737d568405f4df3703a4872624afc8710da95c801c760a452747e938f27cea5",
+  "cdna-engine-isolated-receipt.json.stdout.log": "5aaf5a2bde5a817e8fd121026e4165e01996d87431d14489ff967b2c97eadb26",
+  "cdna-engine-learner-isolated-final.json": "10c0560d60ac32732ba034e870b453468072fc0374a6e1b883be5e902a691a5e",
+  "cdna-engine-learner-isolated-final.json.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "cdna-engine-learner-isolated-final.json.stdout.log": "3ac978c9d1a4e7759b2e2a955628381a9775d0a855acfbbcc686d7ad7b572188",
+  "learner-before.json": "891af1209da25b99bc341b40276d21b2b7f8e716179078b277d30cf166aac7ea",
+  "learner-final.json": "3ac978c9d1a4e7759b2e2a955628381a9775d0a855acfbbcc686d7ad7b572188",
+  "memory-final.json": "2202c7c04646c5e670edeb17dafa7c3b0c4464a2cb99ac28ab79ec5e54085115",
+  "memory-path.json": "57b532fb1419e960e15e7077d9d4160b04cac7610777944c8fd684b50811f039",
+  "signed-final.json": "dc78049069d70f1ee5dd01d569d377455657211a8208de887c00814e042b01d1"
+}

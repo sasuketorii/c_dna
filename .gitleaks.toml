@@ -1,0 +1,10 @@
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Public evidence digests: harness mutex identity and tokenizer file SHA256, not credentials"
+regexTarget = "match"
+regexes = [
+  '''^lockKey": "[0-9a-f]{64}"$''',
+  '''^source_tokenizer_config_sha256": "[0-9a-f]{64}"$''',
+]

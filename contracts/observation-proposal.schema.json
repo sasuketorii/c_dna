@@ -1,0 +1,427 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ObservationProposal",
+  "type": "object",
+  "properties": {
+    "candidates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Candidate"
+      }
+    },
+    "case_kind": {
+      "$ref": "#/$defs/CaseKind"
+    },
+    "context": {
+      "$ref": "#/$defs/Context"
+    },
+    "domain": {
+      "$ref": "#/$defs/Domain"
+    },
+    "family_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "model_exposure": {
+      "type": "boolean"
+    },
+    "rationale_explicit": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": null
+    },
+    "request_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "response": {
+      "$ref": "#/$defs/ObservationResponse"
+    },
+    "reversal_conditions": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "string"
+      }
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "source": {
+      "$ref": "#/$defs/SourceProvenance"
+    },
+    "workspace_id": {
+      "type": "string",
+      "format": "uuid"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "request_id",
+    "workspace_id",
+    "family_id",
+    "case_kind",
+    "domain",
+    "context",
+    "candidates",
+    "response",
+    "source",
+    "model_exposure"
+  ],
+  "$defs": {
+    "AcceptabilityOutcome": {
+      "type": "string",
+      "enum": [
+        "accept",
+        "reject",
+        "conditional",
+        "insufficient"
+      ]
+    },
+    "Candidate": {
+      "type": "object",
+      "properties": {
+        "attributes": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/FactValue"
+          }
+        },
+        "id": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "text",
+        "attributes"
+      ]
+    },
+    "CaseKind": {
+      "type": "string",
+      "enum": [
+        "actual",
+        "hypothetical"
+      ]
+    },
+    "Context": {
+      "type": "object",
+      "properties": {
+        "as_of": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "facts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Fact"
+          }
+        },
+        "summary": {
+          "type": "string"
+        },
+        "unknown_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "as_of",
+        "summary",
+        "facts",
+        "unknown_fields"
+      ]
+    },
+    "Domain": {
+      "type": "string",
+      "enum": [
+        "resource_allocation",
+        "product_delivery",
+        "customer_commercial",
+        "organization_delegation",
+        "growth_strategy",
+        "risk_reputation"
+      ]
+    },
+    "EvidenceStatus": {
+      "type": "string",
+      "enum": [
+        "explicit",
+        "inferred",
+        "unknown"
+      ]
+    },
+    "Fact": {
+      "type": "object",
+      "properties": {
+        "evidence_status": {
+          "$ref": "#/$defs/EvidenceStatus"
+        },
+        "key": {
+          "type": "string"
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "value": {
+          "$ref": "#/$defs/FactValue"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "value",
+        "evidence_status"
+      ]
+    },
+    "FactValue": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number",
+          "format": "double"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "$ref": "#/$defs/Money"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "Money": {
+      "type": "object",
+      "properties": {
+        "amount_minor": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "currency": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "amount_minor",
+        "currency"
+      ]
+    },
+    "ObservationResponse": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "candidate_id": {
+              "type": "string"
+            },
+            "response_type": {
+              "type": "string",
+              "const": "choose_one"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "response_type",
+            "candidate_id"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "candidate_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "response_type": {
+              "type": "string",
+              "const": "choose_set"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "response_type",
+            "candidate_ids"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "left_id": {
+              "type": "string"
+            },
+            "outcome": {
+              "$ref": "#/$defs/PairwiseOutcome"
+            },
+            "response_type": {
+              "type": "string",
+              "const": "pairwise"
+            },
+            "right_id": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "response_type",
+            "left_id",
+            "right_id",
+            "outcome"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "candidate_id": {
+              "type": "string"
+            },
+            "outcome": {
+              "$ref": "#/$defs/AcceptabilityOutcome"
+            },
+            "response_type": {
+              "type": "string",
+              "const": "acceptability"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "response_type",
+            "candidate_id",
+            "outcome"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "fields": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "response_type": {
+              "type": "string",
+              "const": "need_information"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "response_type",
+            "fields"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "response_type": {
+              "type": "string",
+              "const": "none_fit"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "response_type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "response_type": {
+              "type": "string",
+              "const": "skip"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "response_type"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "response_type": {
+              "type": "string",
+              "const": "defer"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "response_type"
+          ]
+        }
+      ]
+    },
+    "PairwiseOutcome": {
+      "type": "string",
+      "enum": [
+        "left",
+        "right",
+        "tie",
+        "insufficient"
+      ]
+    },
+    "SourceKind": {
+      "type": "string",
+      "enum": [
+        "human_app",
+        "imported",
+        "agent_proposal",
+        "ai_generated"
+      ]
+    },
+    "SourceProvenance": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "observed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "occurred_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "source_kind": {
+          "$ref": "#/$defs/SourceKind"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "artifact_id",
+        "source_kind",
+        "observed_at"
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+READY http://127.0.0.1:18765 pid=89972
+negation: 20.856s schema_valid=False
+budget_pending: 1.288s schema_valid=False
+budget_rejected: 1.524s schema_valid=False
+deadline_date: 18.227s schema_valid=False
+deadline_missing: 1.594s schema_valid=False
+{"n": 5, "schema_valid": 0, "invalid_or_transport_error": 5, "valid_result_p50_seconds": null, "valid_result_p95_seconds": null, "percentile_method": "nearest rank; small heterogeneous single-pass corpus, not production SLO evidence", "semantic_error_count": null, "semantic_correct_count": null, "abstention_count": 0}
